@@ -1,0 +1,35 @@
+[
+  {
+    "path": "posts/welcome/",
+    "title": "Welcome to TestBlog",
+    "description": "Welcome to our new blog, TestBlog. We hope you enjoy \nreading what we have to say!",
+    "author": [
+      {
+        "name": "Uwe Sterr",
+        "url": "https://example.com/norajones"
+      }
+    ],
+    "date": "2020-01-17",
+    "categories": [],
+    "preview": {},
+    "last_modified": "2020-01-17T19:07:26+01:00"
+  },
+  {
+    "path": "posts/2020-01-17-create-a-blog-with-distill/",
+    "title": "Create a blog with Distill",
+    "description": "A short description of the post.",
+    "author": [
+      {
+        "name": "Uwe Sterr",
+        "url": "https://example.com/norajones"
+      }
+    ],
+    "date": "2020-01-11",
+    "categories": [
+      "portfolios",
+      "dygraphs"
+    ],
+    "preview": {},
+    "last_modified": "2020-01-17T19:12:39+01:00"
+  }
+]
