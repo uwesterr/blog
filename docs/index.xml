@@ -7,7 +7,16 @@
     <description>A blog about ML, making and programming
 </description>
     <generator>Distill</generator>
-    <lastBuildDate>Fri, 17 Jan 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 18 Jan 2020 00:00:00 +0000</lastBuildDate>
+    <item>
+      <title>Analysis of 2019 Kaggle ML &amp; DS Survey</title>
+      <dc:creator>Uwe Sterr</dc:creator>
+      <link>https://uwesterr.github.io/blog/posts/2020-01-18-analysis-of-2019-kaggle-ml-ds-survey</link>
+      <description>This is an analysis based on Kaggle survey data, details are at https://www.kaggle.com/c/kaggle-survey-2019.</description>
+      <guid>https://uwesterr.github.io/blog/posts/2020-01-18-analysis-of-2019-kaggle-ml-ds-survey</guid>
+      <pubDate>Sat, 18 Jan 2020 00:00:00 +0000</pubDate>
+      <media:content url="https://uwesterr.github.io/blog/posts/2020-01-18-analysis-of-2019-kaggle-ml-ds-survey/analysis-of-2019-kaggle-ml-ds-survey_files/figure-html5/histo_age-1.png" medium="image" type="image/png" width="1248" height="768"/>
+    </item>
     <item>
       <title>Create a blog with Distill</title>
       <dc:creator>Uwe Sterr</dc:creator>

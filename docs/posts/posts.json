@@ -1,5 +1,27 @@
 [
   {
+    "path": "posts/2020-01-18-analysis-of-2019-kaggle-ml-ds-survey/",
+    "title": "Analysis of 2019 Kaggle ML & DS Survey",
+    "description": "This is an analysis based on Kaggle survey data, details are at https://www.kaggle.com/c/kaggle-survey-2019.",
+    "author": [
+      {
+        "name": "Uwe Sterr",
+        "url": "https://example.com/norajones"
+      }
+    ],
+    "date": "2020-01-18",
+    "categories": [
+      "Kaggle",
+      "Survey",
+      "Tools",
+      "Analysis"
+    ],
+    "preview": "posts/2020-01-18-analysis-of-2019-kaggle-ml-ds-survey/analysis-of-2019-kaggle-ml-ds-survey_files/figure-html5/histo_age-1.png",
+    "last_modified": "2020-01-18T10:49:34+01:00",
+    "preview_width": 1248,
+    "preview_height": 768
+  },
+  {
     "path": "posts/2020-01-17-create-a-blog-with-distill/",
     "title": "Create a blog with Distill",
     "description": "Tutorial to build a blog with Distill.",
@@ -18,7 +40,7 @@
       "R"
     ],
     "preview": "posts/2020-01-17-create-a-blog-with-distill/image/CreateDistillBlog.png",
-    "last_modified": "2020-01-18T09:24:25+01:00",
+    "last_modified": "2020-01-18T09:55:51+01:00",
     "preview_width": 1060,
     "preview_height": 754
   }
