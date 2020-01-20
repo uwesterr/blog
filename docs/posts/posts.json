@@ -22,25 +22,6 @@
     "preview_height": 768
   },
   {
-    "path": "posts/2020-01-20-genetic-algorithm-for-feature-selection/",
-    "title": "Genetic Algorithm for Feature Selection",
-    "description": "A short description of the post.",
-    "author": [
-      {
-        "name": "Uwe Sterr",
-        "url": "http://uwesterr.de"
-      }
-    ],
-    "date": "2020-01-17",
-    "categories": [
-      "genetic algorithm",
-      "feature selection",
-      "machine learning"
-    ],
-    "preview": "posts/2020-01-20-genetic-algorithm-for-feature-selection/images/GaCrossOverMutation.gif",
-    "last_modified": "2020-01-20T16:42:22+01:00"
-  },
-  {
     "path": "posts/2020-01-20-my-book-list/",
     "title": "My book list",
     "description": "In this list I keep track of books which impressed me",
@@ -75,6 +56,25 @@
     "last_modified": "2020-01-20T16:42:00+01:00",
     "preview_width": 754,
     "preview_height": 383
+  },
+  {
+    "path": "posts/2020-01-20-genetic-algorithm-for-feature-selection/",
+    "title": "Genetic Algorithm for Feature Selection",
+    "description": "An example of how to use genetic algorithms for feature selection using the programming language \"R\"",
+    "author": [
+      {
+        "name": "Uwe Sterr",
+        "url": "http://uwesterr.de"
+      }
+    ],
+    "date": "2020-01-17",
+    "categories": [
+      "genetic algorithm",
+      "feature selection",
+      "machine learning"
+    ],
+    "preview": "posts/2020-01-20-genetic-algorithm-for-feature-selection/images/GaCrossOverMutation.gif",
+    "last_modified": "2020-01-20T16:49:00+01:00"
   },
   {
     "path": "posts/2020-01-17-create-a-blog-with-distill/",
