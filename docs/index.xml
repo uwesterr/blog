@@ -7,14 +7,14 @@
     <description>A blog about ML, making and programming
 </description>
     <generator>Distill</generator>
-    <lastBuildDate>Sat, 18 Jan 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 17 Jan 2020 00:00:00 +0000</lastBuildDate>
     <item>
       <title>Analysis of 2019 Kaggle ML &amp; DS Survey</title>
       <dc:creator>Uwe Sterr</dc:creator>
       <link>http://uwesterr.de/posts/2020-01-18-analysis-of-2019-kaggle-ml-ds-survey</link>
       <description>This is an analysis based on Kaggle survey data, details are at https://www.kaggle.com/c/kaggle-survey-2019.</description>
       <guid>http://uwesterr.de/posts/2020-01-18-analysis-of-2019-kaggle-ml-ds-survey</guid>
-      <pubDate>Sat, 18 Jan 2020 00:00:00 +0000</pubDate>
+      <pubDate>Fri, 17 Jan 2020 00:00:00 +0000</pubDate>
       <media:content url="http://uwesterr.de/posts/2020-01-18-analysis-of-2019-kaggle-ml-ds-survey/analysis-of-2019-kaggle-ml-ds-survey_files/figure-html5/histo_age-1.png" medium="image" type="image/png" width="1248" height="768"/>
     </item>
     <item>
@@ -50,7 +50,7 @@
       <link>http://uwesterr.de/posts/2020-01-17-create-a-blog-with-distill</link>
       <description>Tutorial to build a blog with Distill. A RStudio package which allows to write scientific and technical articles in a suitable format for the web. 'Distill' articles feature attractive, reader-friendly typography, flexible layout options for visualizations, and full support for footnotes and citations.</description>
       <guid>http://uwesterr.de/posts/2020-01-17-create-a-blog-with-distill</guid>
-      <pubDate>Wed, 15 Jan 2020 00:00:00 +0000</pubDate>
+      <pubDate>Thu, 16 Jan 2020 00:00:00 +0000</pubDate>
       <media:content url="http://uwesterr.de/posts/2020-01-17-create-a-blog-with-distill/image/CreateDistillBlog.png" medium="image" type="image/png" width="1060" height="754"/>
     </item>
   </channel>
