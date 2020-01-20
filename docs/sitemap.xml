@@ -1,23 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" version="1.0">
   <url>
-    <loc>https://uwesterr.github.io/blog/about.html</loc>
+    <loc>http://uwesterr.de/about.html</loc>
     <lastmod>2020-01-17T19:44:54+01:00</lastmod>
   </url>
   <url>
-    <loc>https://uwesterr.github.io/blog/</loc>
+    <loc>http://uwesterr.de/</loc>
     <lastmod>2020-01-17T19:53:18+01:00</lastmod>
   </url>
   <url>
-    <loc>https://uwesterr.github.io/blog/privacy.html</loc>
+    <loc>http://uwesterr.de/privacy.html</loc>
     <lastmod>2020-01-18T12:06:50+01:00</lastmod>
   </url>
   <url>
-    <loc>https://uwesterr.github.io/blog/posts/2020-01-18-analysis-of-2019-kaggle-ml-ds-survey/</loc>
+    <loc>http://uwesterr.de/posts/2020-01-18-analysis-of-2019-kaggle-ml-ds-survey/</loc>
     <lastmod>2020-01-18T10:49:34+01:00</lastmod>
   </url>
   <url>
-    <loc>https://uwesterr.github.io/blog/posts/2020-01-17-create-a-blog-with-distill/</loc>
-    <lastmod>2020-01-18T09:55:51+01:00</lastmod>
+    <loc>http://uwesterr.de/posts/2020-01-20-genetic-algorithm-for-feature-selection/</loc>
+    <lastmod>2020-01-20T16:42:22+01:00</lastmod>
+  </url>
+  <url>
+    <loc>http://uwesterr.de/posts/2020-01-20-my-book-list/</loc>
+    <lastmod>2020-01-20T16:41:55+01:00</lastmod>
+  </url>
+  <url>
+    <loc>http://uwesterr.de/posts/2020-01-20-simulated-annealing-optimisation-of-reinforcement-learning-hyper-parameters/</loc>
+    <lastmod>2020-01-20T16:42:00+01:00</lastmod>
+  </url>
+  <url>
+    <loc>http://uwesterr.de/posts/2020-01-17-create-a-blog-with-distill/</loc>
+    <lastmod>2020-01-20T16:41:32+01:00</lastmod>
   </url>
 </urlset>

@@ -2,8 +2,8 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0">
   <channel>
     <title>Uwe's Blog</title>
-    <link>https://uwesterr.github.io/blog/</link>
-    <atom:link href="https://uwesterr.github.io/blog/index.xml" rel="self" type="application/rss+xml"/>
+    <link>http://uwesterr.de</link>
+    <atom:link href="http://uwesterr.de/index.xml" rel="self" type="application/rss+xml"/>
     <description>A blog about ML, making and programming
 </description>
     <generator>Distill</generator>
@@ -11,20 +11,47 @@
     <item>
       <title>Analysis of 2019 Kaggle ML &amp; DS Survey</title>
       <dc:creator>Uwe Sterr</dc:creator>
-      <link>https://uwesterr.github.io/blog/posts/2020-01-18-analysis-of-2019-kaggle-ml-ds-survey</link>
+      <link>http://uwesterr.de/posts/2020-01-18-analysis-of-2019-kaggle-ml-ds-survey</link>
       <description>This is an analysis based on Kaggle survey data, details are at https://www.kaggle.com/c/kaggle-survey-2019.</description>
-      <guid>https://uwesterr.github.io/blog/posts/2020-01-18-analysis-of-2019-kaggle-ml-ds-survey</guid>
+      <guid>http://uwesterr.de/posts/2020-01-18-analysis-of-2019-kaggle-ml-ds-survey</guid>
       <pubDate>Sat, 18 Jan 2020 00:00:00 +0000</pubDate>
-      <media:content url="https://uwesterr.github.io/blog/posts/2020-01-18-analysis-of-2019-kaggle-ml-ds-survey/analysis-of-2019-kaggle-ml-ds-survey_files/figure-html5/histo_age-1.png" medium="image" type="image/png" width="1248" height="768"/>
+      <media:content url="http://uwesterr.de/posts/2020-01-18-analysis-of-2019-kaggle-ml-ds-survey/analysis-of-2019-kaggle-ml-ds-survey_files/figure-html5/histo_age-1.png" medium="image" type="image/png" width="1248" height="768"/>
+    </item>
+    <item>
+      <title>Genetic Algorithm for Feature Selection</title>
+      <dc:creator>Uwe Sterr</dc:creator>
+      <link>http://uwesterr.de/posts/2020-01-20-genetic-algorithm-for-feature-selection</link>
+      <description>A short description of the post.</description>
+      <guid>http://uwesterr.de/posts/2020-01-20-genetic-algorithm-for-feature-selection</guid>
+      <pubDate>Fri, 17 Jan 2020 00:00:00 +0000</pubDate>
+      <media:content url="http://uwesterr.de/posts/2020-01-20-genetic-algorithm-for-feature-selection/images/GaCrossOverMutation.gif" medium="image" type="image/gif"/>
+    </item>
+    <item>
+      <title>My book list</title>
+      <dc:creator>Uwe Sterr</dc:creator>
+      <link>http://uwesterr.de/posts/2020-01-20-my-book-list</link>
+      <description>In this list I keep track of books which impressed me</description>
+      <guid>http://uwesterr.de/posts/2020-01-20-my-book-list</guid>
+      <pubDate>Fri, 17 Jan 2020 00:00:00 +0000</pubDate>
+      <media:content url="http://uwesterr.de/posts/2020-01-20-my-book-list/images/picOfBooks.jpg" medium="image" type="image/jpeg"/>
+    </item>
+    <item>
+      <title>Simulated Annealing optimisation of Reinforcement Learning hyper parameters</title>
+      <dc:creator>Uwe Sterr</dc:creator>
+      <link>http://uwesterr.de/posts/2020-01-20-simulated-annealing-optimisation-of-reinforcement-learning-hyper-parameters</link>
+      <description>How to employ simulated annealing to optimize reinforcement learning hyper parameters with the programming language "R"</description>
+      <guid>http://uwesterr.de/posts/2020-01-20-simulated-annealing-optimisation-of-reinforcement-learning-hyper-parameters</guid>
+      <pubDate>Fri, 17 Jan 2020 00:00:00 +0000</pubDate>
+      <media:content url="http://uwesterr.de/posts/2020-01-20-simulated-annealing-optimisation-of-reinforcement-learning-hyper-parameters/images/rlConceptII.png" medium="image" type="image/png" width="754" height="383"/>
     </item>
     <item>
       <title>Create a blog with Distill</title>
       <dc:creator>Uwe Sterr</dc:creator>
-      <link>https://uwesterr.github.io/blog/posts/2020-01-17-create-a-blog-with-distill</link>
+      <link>http://uwesterr.de/posts/2020-01-17-create-a-blog-with-distill</link>
       <description>Tutorial to build a blog with Distill.</description>
-      <guid>https://uwesterr.github.io/blog/posts/2020-01-17-create-a-blog-with-distill</guid>
-      <pubDate>Fri, 17 Jan 2020 00:00:00 +0000</pubDate>
-      <media:content url="https://uwesterr.github.io/blog/posts/2020-01-17-create-a-blog-with-distill/image/CreateDistillBlog.png" medium="image" type="image/png" width="1060" height="754"/>
+      <guid>http://uwesterr.de/posts/2020-01-17-create-a-blog-with-distill</guid>
+      <pubDate>Thu, 16 Jan 2020 00:00:00 +0000</pubDate>
+      <media:content url="http://uwesterr.de/posts/2020-01-17-create-a-blog-with-distill/image/CreateDistillBlog.png" medium="image" type="image/png" width="1060" height="754"/>
     </item>
   </channel>
 </rss>
