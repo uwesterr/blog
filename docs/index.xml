@@ -18,13 +18,22 @@
       <media:content url="http://uwesterr.de/posts/2020-01-18-analysis-of-2019-kaggle-ml-ds-survey/analysis-of-2019-kaggle-ml-ds-survey_files/figure-html5/histo_age-1.png" medium="image" type="image/png" width="1248" height="768"/>
     </item>
     <item>
-      <title>My book list</title>
+      <title>Genetic Algorithm for Feature Selection</title>
+      <dc:creator>Uwe Sterr</dc:creator>
+      <link>http://uwesterr.de/posts/2020-01-20-genetic-algorithm-for-feature-selection</link>
+      <description>An example of how to use genetic algorithms for feature selection using the programming language "R"</description>
+      <guid>http://uwesterr.de/posts/2020-01-20-genetic-algorithm-for-feature-selection</guid>
+      <pubDate>Fri, 17 Jan 2020 00:00:00 +0000</pubDate>
+      <media:content url="http://uwesterr.de/posts/2020-01-20-genetic-algorithm-for-feature-selection/images/GaCrossOverMutation.gif" medium="image" type="image/gif"/>
+    </item>
+    <item>
+      <title>Uwe's book list</title>
       <dc:creator>Uwe Sterr</dc:creator>
       <link>http://uwesterr.de/posts/2020-01-20-my-book-list</link>
-      <description>In this list I keep track of books which impressed me</description>
+      <description>In this list I keep track of books which impressed me in the fields of Society development, Artificial Intelligence, Purposeful Networking, Psychology, Society,  Politics, Tech, R, Machine Learning, ...</description>
       <guid>http://uwesterr.de/posts/2020-01-20-my-book-list</guid>
       <pubDate>Fri, 17 Jan 2020 00:00:00 +0000</pubDate>
-      <media:content url="http://uwesterr.de/posts/2020-01-20-my-book-list/images/picOfBooks.jpg" medium="image" type="image/jpeg"/>
+      <media:content url="http://uwesterr.de/posts/2020-01-20-my-book-list/images/picOfBooks.png" medium="image" type="image/png" width="987" height="1316"/>
     </item>
     <item>
       <title>Simulated Annealing optimisation of Reinforcement Learning hyper parameters</title>
@@ -36,21 +45,12 @@
       <media:content url="http://uwesterr.de/posts/2020-01-20-simulated-annealing-optimisation-of-reinforcement-learning-hyper-parameters/images/rlConceptII.png" medium="image" type="image/png" width="754" height="383"/>
     </item>
     <item>
-      <title>Genetic Algorithm for Feature Selection</title>
-      <dc:creator>Uwe Sterr</dc:creator>
-      <link>http://uwesterr.de/posts/2020-01-20-genetic-algorithm-for-feature-selection</link>
-      <description>An example of how to use genetic algorithms for feature selection using the programming language "R"</description>
-      <guid>http://uwesterr.de/posts/2020-01-20-genetic-algorithm-for-feature-selection</guid>
-      <pubDate>Thu, 16 Jan 2020 00:00:00 +0000</pubDate>
-      <media:content url="http://uwesterr.de/posts/2020-01-20-genetic-algorithm-for-feature-selection/images/GaCrossOverMutation.gif" medium="image" type="image/gif"/>
-    </item>
-    <item>
       <title>Create a blog with Distill</title>
       <dc:creator>Uwe Sterr</dc:creator>
       <link>http://uwesterr.de/posts/2020-01-17-create-a-blog-with-distill</link>
-      <description>Tutorial to build a blog with Distill.</description>
+      <description>Tutorial to build a blog with Distill. A RStudio package which allows to write scientific and technical articles in a suitable format for the web. 'Distill' articles feature attractive, reader-friendly typography, flexible layout options for visualizations, and full support for footnotes and citations.</description>
       <guid>http://uwesterr.de/posts/2020-01-17-create-a-blog-with-distill</guid>
-      <pubDate>Thu, 16 Jan 2020 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 15 Jan 2020 00:00:00 +0000</pubDate>
       <media:content url="http://uwesterr.de/posts/2020-01-17-create-a-blog-with-distill/image/CreateDistillBlog.png" medium="image" type="image/png" width="1060" height="754"/>
     </item>
   </channel>

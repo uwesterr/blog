@@ -22,9 +22,9 @@
     "preview_height": 768
   },
   {
-    "path": "posts/2020-01-20-my-book-list/",
-    "title": "My book list",
-    "description": "In this list I keep track of books which impressed me",
+    "path": "posts/2020-01-20-genetic-algorithm-for-feature-selection/",
+    "title": "Genetic Algorithm for Feature Selection",
+    "description": "An example of how to use genetic algorithms for feature selection using the programming language \"R\"",
     "author": [
       {
         "name": "Uwe Sterr",
@@ -32,9 +32,32 @@
       }
     ],
     "date": "2020-01-17",
-    "categories": [],
-    "preview": "posts/2020-01-20-my-book-list/images/picOfBooks.jpg",
-    "last_modified": "2020-01-20T16:41:55+01:00"
+    "categories": [
+      "genetic algorithm",
+      "feature selection",
+      "machine learning"
+    ],
+    "preview": "posts/2020-01-20-genetic-algorithm-for-feature-selection/images/GaCrossOverMutation.gif",
+    "last_modified": "2020-01-20T16:49:00+01:00"
+  },
+  {
+    "path": "posts/2020-01-20-my-book-list/",
+    "title": "Uwe's book list",
+    "description": "In this list I keep track of books which impressed me in the fields of Society development, Artificial Intelligence, Purposeful Networking, Psychology, Society,  Politics, Tech, R, Machine Learning, ...",
+    "author": [
+      {
+        "name": "Uwe Sterr",
+        "url": "http://uwesterr.de"
+      }
+    ],
+    "date": "2020-01-17",
+    "categories": [
+      "books"
+    ],
+    "preview": "posts/2020-01-20-my-book-list/images/picOfBooks.png",
+    "last_modified": "2020-01-20T20:59:04+01:00",
+    "preview_width": 987,
+    "preview_height": 1316
   },
   {
     "path": "posts/2020-01-20-simulated-annealing-optimisation-of-reinforcement-learning-hyper-parameters/",
@@ -58,28 +81,9 @@
     "preview_height": 383
   },
   {
-    "path": "posts/2020-01-20-genetic-algorithm-for-feature-selection/",
-    "title": "Genetic Algorithm for Feature Selection",
-    "description": "An example of how to use genetic algorithms for feature selection using the programming language \"R\"",
-    "author": [
-      {
-        "name": "Uwe Sterr",
-        "url": "http://uwesterr.de"
-      }
-    ],
-    "date": "2020-01-17",
-    "categories": [
-      "genetic algorithm",
-      "feature selection",
-      "machine learning"
-    ],
-    "preview": "posts/2020-01-20-genetic-algorithm-for-feature-selection/images/GaCrossOverMutation.gif",
-    "last_modified": "2020-01-20T16:49:00+01:00"
-  },
-  {
     "path": "posts/2020-01-17-create-a-blog-with-distill/",
     "title": "Create a blog with Distill",
-    "description": "Tutorial to build a blog with Distill.",
+    "description": "Tutorial to build a blog with Distill. A RStudio package which allows to write scientific and technical articles in a suitable format for the web. 'Distill' articles feature attractive, reader-friendly typography, flexible layout options for visualizations, and full support for footnotes and citations.",
     "author": [
       {
         "name": "Uwe Sterr",
@@ -95,7 +99,7 @@
       "R"
     ],
     "preview": "posts/2020-01-17-create-a-blog-with-distill/image/CreateDistillBlog.png",
-    "last_modified": "2020-01-20T16:41:32+01:00",
+    "last_modified": "2020-01-20T21:12:15+01:00",
     "preview_width": 1060,
     "preview_height": 754
   }
