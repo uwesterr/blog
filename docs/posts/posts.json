@@ -1,5 +1,46 @@
 [
   {
+    "path": "posts/2020-02-13-how-to-run-jupyter-notebooks-on-remote-server-ssh/",
+    "title": "How to run Jupyter Notebooks on remote server — SSH",
+    "description": "How to run a Jupyter Notebook on Nvidea nano via SSH",
+    "author": [
+      {
+        "name": "Uwe Sterr",
+        "url": "http://uwesterr.de"
+      }
+    ],
+    "date": "2020-02-13",
+    "categories": [
+      "ssh",
+      "Jetson nano",
+      "Jupyter Notebook"
+    ],
+    "preview": "posts/2020-02-13-how-to-run-jupyter-notebooks-on-remote-server-ssh/images/notebook.png",
+    "last_modified": "2020-02-13T21:07:41+01:00",
+    "preview_width": 2336,
+    "preview_height": 1048
+  },
+  {
+    "path": "posts/2020-01-21-machine-learning-shall-we/",
+    "title": "Machine learning, shall we?",
+    "description": "Why should we use machine learning and what are reasons why we should restrict its use",
+    "author": [
+      {
+        "name": "Uwe Sterr",
+        "url": "http://uwesterr.de"
+      }
+    ],
+    "date": "2020-01-21",
+    "categories": [
+      "machine learning",
+      "AGI"
+    ],
+    "preview": "posts/2020-01-21-machine-learning-shall-we/images/AiMlDeep.png",
+    "last_modified": "2020-01-28T16:11:19+01:00",
+    "preview_width": 1089,
+    "preview_height": 668
+  },
+  {
     "path": "posts/2020-01-18-analysis-of-2019-kaggle-ml-ds-survey/",
     "title": "Analysis of 2019 Kaggle ML & DS Survey",
     "description": "This is an analysis based on Kaggle survey data, details are at https://www.kaggle.com/c/kaggle-survey-2019.",
@@ -17,7 +58,7 @@
       "Analysis"
     ],
     "preview": "posts/2020-01-18-analysis-of-2019-kaggle-ml-ds-survey/analysis-of-2019-kaggle-ml-ds-survey_files/figure-html5/histo_age-1.png",
-    "last_modified": "2020-01-20T21:31:06+01:00",
+    "last_modified": "2020-01-20T21:35:17+01:00",
     "preview_width": 1248,
     "preview_height": 768
   },
@@ -55,7 +96,7 @@
       "books"
     ],
     "preview": "posts/2020-01-20-my-book-list/images/picOfBooks.png",
-    "last_modified": "2020-01-20T20:59:04+01:00",
+    "last_modified": "2020-01-21T10:29:09+01:00",
     "preview_width": 987,
     "preview_height": 1316
   },
@@ -96,10 +137,11 @@
       "tutorial",
       "distill",
       "RStudio",
-      "R"
+      "R",
+      "Nikola"
     ],
     "preview": "posts/2020-01-17-create-a-blog-with-distill/image/CreateDistillBlog.png",
-    "last_modified": "2020-01-20T21:12:15+01:00",
+    "last_modified": "2020-01-28T09:15:19+01:00",
     "preview_width": 1060,
     "preview_height": 754
   }

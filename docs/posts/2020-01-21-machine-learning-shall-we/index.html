@@ -1,0 +1,3069 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+  <meta name="generator" content="distill" />
+
+  <style type="text/css">
+  /* Hide doc at startup (prevent jankiness while JS renders/transforms) */
+  body {
+    visibility: hidden;
+  }
+  </style>
+
+ <!--radix_placeholder_import_source-->
+ <!--/radix_placeholder_import_source-->
+
+  <!--radix_placeholder_meta_tags-->
+<title>Uwe's Blog: Machine learning, shall we?</title>
+
+<meta property="description" itemprop="description" content="Why should we use machine learning and what are reasons why we should restrict its use"/>
+
+<link rel="canonical" href="http://uwesterr.de/posts/2020-01-21-machine-learning-shall-we/"/>
+<link rel="license" href="https://creativecommons.org/licenses/by/4.0/"/>
+
+<!--  https://schema.org/Article -->
+<meta property="article:published" itemprop="datePublished" content="2020-01-21"/>
+<meta property="article:created" itemprop="dateCreated" content="2020-01-21"/>
+<meta name="article:author" content="Uwe Sterr"/>
+
+<!--  https://developers.facebook.com/docs/sharing/webmasters#markup -->
+<meta property="og:title" content="Uwe&#39;s Blog: Machine learning, shall we?"/>
+<meta property="og:type" content="article"/>
+<meta property="og:description" content="Why should we use machine learning and what are reasons why we should restrict its use"/>
+<meta property="og:url" content="http://uwesterr.de/posts/2020-01-21-machine-learning-shall-we/"/>
+<meta property="og:image" content="http://uwesterr.de/posts/2020-01-21-machine-learning-shall-we/images/AiMlDeep.png"/>
+<meta property="og:image:width" content="1089"/>
+<meta property="og:image:height" content="668"/>
+<meta property="og:locale" content="en_US"/>
+<meta property="og:site_name" content="Uwe&#39;s Blog"/>
+
+<!--  https://dev.twitter.com/cards/types/summary -->
+<meta property="twitter:card" content="summary_large_image"/>
+<meta property="twitter:title" content="Uwe&#39;s Blog: Machine learning, shall we?"/>
+<meta property="twitter:description" content="Why should we use machine learning and what are reasons why we should restrict its use"/>
+<meta property="twitter:url" content="http://uwesterr.de/posts/2020-01-21-machine-learning-shall-we/"/>
+<meta property="twitter:image" content="http://uwesterr.de/posts/2020-01-21-machine-learning-shall-we/images/AiMlDeep.png"/>
+<meta property="twitter:image:width" content="1089"/>
+<meta property="twitter:image:height" content="668"/>
+
+<!--  https://scholar.google.com/intl/en/scholar/inclusion.html#indexing -->
+<meta name="citation_title" content="Uwe&#39;s Blog: Machine learning, shall we?"/>
+<meta name="citation_fulltext_html_url" content="http://uwesterr.de/posts/2020-01-21-machine-learning-shall-we/"/>
+<meta name="citation_fulltext_world_readable" content=""/>
+<meta name="citation_online_date" content="2020/01/21"/>
+<meta name="citation_publication_date" content="2020/01/21"/>
+<meta name="citation_author" content="Uwe Sterr"/>
+<!--/radix_placeholder_meta_tags-->
+  
+  <meta name="citation_reference" content="citation_title=New methods for the diagnosis of the intellectual level of subnormals.(L’Année psych., 1905, pp. 191-244).;citation_publication_date=1916;citation_publisher=Williams &amp; Wilkins Co;citation_author=Alfred Binet;citation_author=Th Simon"/>
+  <meta name="citation_reference" content="citation_title=Mainstream science on intelligence: An editorial with 52 signatories, history, and bibliography;citation_publication_date=1997;citation_publisher=Citeseer;citation_author=Linda S Gottfredson"/>
+  <meta name="citation_reference" content="citation_title=Explaining and harnessing adversarial examples;citation_publication_date=2014;citation_author=Ian J Goodfellow;citation_author=Jonathon Shlens;citation_author=Christian Szegedy"/>
+  <meta name="citation_reference" content="citation_title=ImageNet Large Scale Visual Recognition Challenge;citation_publication_date=2015;citation_volume=115;citation_doi=10.1007/s11263-015-0816-y;citation_author=Olga Russakovsky;citation_author=Jia Deng;citation_author=Hao Su;citation_author=Jonathan Krause;citation_author=Sanjeev Satheesh;citation_author=Sean Ma;citation_author=Zhiheng Huang;citation_author=Andrej Karpathy;citation_author=Aditya Khosla;citation_author=Michael Bernstein;citation_author=Alexander C. Berg;citation_author=Li Fei-Fei"/>
+  <meta name="citation_reference" content="citation_title=Thinking, fast and slow;citation_publication_date=2011;citation_publisher=Macmillan;citation_author=Daniel Kahneman"/>
+  <meta name="citation_reference" content="citation_title=Homo deus: A brief history of tomorrow;citation_publication_date=2016;citation_publisher=Random House;citation_author=Yuval Noah Harari"/>
+  <meta name="citation_reference" content="citation_title=Life 3.0: Being human in the age of artificial intelligence;citation_publication_date=2017;citation_publisher=Knopf;citation_author=Max Tegmark"/>
+  <!--radix_placeholder_rmarkdown_metadata-->
+
+<script type="text/json" id="radix-rmarkdown-metadata">
+{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","description","author","date","preview","bibliography","categories","output","creative_commons","citation_url","canonical_url"]}},"value":[{"type":"character","attributes":{},"value":["Machine learning, shall we?"]},{"type":"character","attributes":{},"value":["Why should we use machine learning and what are reasons why we should restrict its use"]},{"type":"list","attributes":{},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["name","url"]}},"value":[{"type":"character","attributes":{},"value":["Uwe Sterr"]},{"type":"character","attributes":{},"value":["http://uwesterr.de"]}]}]},{"type":"character","attributes":{},"value":["01-21-2020"]},{"type":"character","attributes":{},"value":["images/AiMlDeep.png"]},{"type":"character","attributes":{},"value":["../../../bibliographyGeneral.bib"]},{"type":"character","attributes":{},"value":["machine learning","AGI"]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["distill::distill_article"]}},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["self_contained","toc","toc_depth"]}},"value":[{"type":"logical","attributes":{},"value":[false]},{"type":"logical","attributes":{},"value":[true]},{"type":"integer","attributes":{},"value":[2]}]}]},{"type":"character","attributes":{},"value":["CC BY"]},{"type":"character","attributes":{},"value":["http://uwesterr.de/posts/2020-01-21-machine-learning-shall-we/"]},{"type":"character","attributes":{},"value":["http://uwesterr.de/posts/2020-01-21-machine-learning-shall-we/"]}]}
+</script>
+<!--/radix_placeholder_rmarkdown_metadata-->
+  
+  <script type="text/json" id="radix-resource-manifest">
+  {"type":"character","attributes":{},"value":["images/600px-Woman_1.jpg","images/AiMlDeep.png","images/AiMlDeepTimeLine.png","images/AlphaZeroPerformance.png","images/AlphaZeroTraining.gif","images/AlphaZeroTrainingTime.png","images/biology.svg","images/CabsBlueGreen.png","images/Chess.svg","images/DataToWisdom.png","images/FaultyReward.png","images/GanAttack.png","images/GanPrinciple.png","images/GanPrincipleAndSteps.png","images/GanSteps.png","images/GanWomen.png","images/Gender.svg","images/goal.svg","images/hardAndSoftware.png","images/HumanBias.png","images/life3_0ThreeStagesOfLife.png","images/LineLengthIllusion.png","images/lung.svg","images/MachineLearning.png","images/PingoQrCode.png","images/Pollyanna.svg","images/ship.png","images/ship.svg","images/Stetoscope.svg","images/threeStagesOfLife.png","images/Unknown.svg","images/WillSuperhumanAi.png","images/Zebra.svg","machine-learning-shall-we_files/bowser-1.9.3/bowser.min.js","machine-learning-shall-we_files/chromatography-0.1/chromatography.js","machine-learning-shall-we_files/chromatography-0.1/LICENSE","machine-learning-shall-we_files/crosstalk-1.0.0/css/crosstalk.css","machine-learning-shall-we_files/crosstalk-1.0.0/js/crosstalk.js","machine-learning-shall-we_files/crosstalk-1.0.0/js/crosstalk.js.map","machine-learning-shall-we_files/crosstalk-1.0.0/js/crosstalk.min.js","machine-learning-shall-we_files/crosstalk-1.0.0/js/crosstalk.min.js.map","machine-learning-shall-we_files/d3-3.3.8/d3.min.js","machine-learning-shall-we_files/d3-3.3.8/LICENSE","machine-learning-shall-we_files/dagre-0.4.0/dagre-d3.min.js","machine-learning-shall-we_files/dagre-0.4.0/LICENSE","machine-learning-shall-we_files/datatables-binding-0.11/datatables.js","machine-learning-shall-we_files/datatables-css-0.0.0/datatables-crosstalk.css","machine-learning-shall-we_files/DiagrammeR-binding-1.0.5/DiagrammeR.js","machine-learning-shall-we_files/DiagrammeR-styles-0.2/styles.css","machine-learning-shall-we_files/distill-2.2.21/template.v2.js","machine-learning-shall-we_files/dt-core-1.10.19/css/jquery.dataTables.extra.css","machine-learning-shall-we_files/dt-core-1.10.19/css/jquery.dataTables.min.css","machine-learning-shall-we_files/dt-core-1.10.19/js/jquery.dataTables.min.js","machine-learning-shall-we_files/figure-html5/booklistTable-1.png","machine-learning-shall-we_files/grViz-binding-1.0.5/grViz.js","machine-learning-shall-we_files/htmlwidgets-1.5.1/htmlwidgets.js","machine-learning-shall-we_files/jquery-1.11.3/jquery.min.js","machine-learning-shall-we_files/jquery-1.12.4/jquery.min.js","machine-learning-shall-we_files/jquery-1.12.4/LICENSE.txt","machine-learning-shall-we_files/leaflet-1.3.1/images/layers-2x.png","machine-learning-shall-we_files/leaflet-1.3.1/images/layers.png","machine-learning-shall-we_files/leaflet-1.3.1/images/marker-icon-2x.png","machine-learning-shall-we_files/leaflet-1.3.1/images/marker-icon.png","machine-learning-shall-we_files/leaflet-1.3.1/images/marker-shadow.png","machine-learning-shall-we_files/leaflet-1.3.1/leaflet.css","machine-learning-shall-we_files/leaflet-1.3.1/leaflet.js","machine-learning-shall-we_files/leaflet-binding-2.0.3/leaflet.js","machine-learning-shall-we_files/leafletfix-1.0.0/leafletfix.css","machine-learning-shall-we_files/mermaid-0.3.0/dist/mermaid.css","machine-learning-shall-we_files/mermaid-0.3.0/dist/mermaid.js","machine-learning-shall-we_files/mermaid-0.3.0/LICENSE","machine-learning-shall-we_files/nouislider-7.0.10/jquery.nouislider.min.css","machine-learning-shall-we_files/nouislider-7.0.10/jquery.nouislider.min.js","machine-learning-shall-we_files/plotly-binding-4.9.1/plotly.js","machine-learning-shall-we_files/plotly-htmlwidgets-css-1.49.4/plotly-htmlwidgets.css","machine-learning-shall-we_files/plotly-main-1.49.4/plotly-latest.min.js","machine-learning-shall-we_files/Proj4Leaflet-1.0.1/proj4-compressed.js","machine-learning-shall-we_files/Proj4Leaflet-1.0.1/proj4leaflet.js","machine-learning-shall-we_files/rstudio_leaflet-1.3.1/images/1px.png","machine-learning-shall-we_files/rstudio_leaflet-1.3.1/rstudio_leaflet.css","machine-learning-shall-we_files/selectize-0.12.0/selectize.bootstrap3.css","machine-learning-shall-we_files/selectize-0.12.0/selectize.min.js","machine-learning-shall-we_files/typedarray-0.1/typedarray.min.js","machine-learning-shall-we_files/viz-1.8.2/viz.js","machine-learning-shall-we_files/webcomponents-2.0.0/webcomponents.js","tableExample.js"]}
+  </script>
+  <!--radix_placeholder_navigation_in_header-->
+
+<script type="application/javascript">
+
+  window.headroom_prevent_pin = false;
+
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+
+    // initialize headroom for banner
+    var header = $('header').get(0);
+    var headerHeight = header.offsetHeight;
+    var headroom = new Headroom(header, {
+      onPin : function() {
+        if (window.headroom_prevent_pin) {
+          window.headroom_prevent_pin = false;
+          headroom.unpin();
+        }
+      }
+    });
+    headroom.init();
+    if(window.location.hash)
+      headroom.unpin();
+    $(header).addClass('headroom--transition');
+
+    // offset scroll location for banner on hash change
+    // (see: https://github.com/WickyNilliams/headroom.js/issues/38)
+    window.addEventListener("hashchange", function(event) {
+      window.scrollTo(0, window.pageYOffset - (headerHeight + 25));
+    });
+
+    // responsive menu
+    $('.distill-site-header').each(function(i, val) {
+      var topnav = $(this);
+      var toggle = topnav.find('.nav-toggle');
+      toggle.on('click', function() {
+        topnav.toggleClass('responsive');
+      });
+    });
+
+    // nav dropdowns
+    $('.nav-dropbtn').click(function(e) {
+      $(this).next('.nav-dropdown-content').toggleClass('nav-dropdown-active');
+      $(this).parent().siblings('.nav-dropdown')
+         .children('.nav-dropdown-content').removeClass('nav-dropdown-active');
+    });
+    $("body").click(function(e){
+      $('.nav-dropdown-content').removeClass('nav-dropdown-active');
+    });
+    $(".nav-dropdown").click(function(e){
+      e.stopPropagation();
+    });
+  });
+</script>
+
+<style type="text/css">
+
+/* Theme (user-documented overrideables for nav appearance) */
+
+.distill-site-nav {
+  color: rgba(255, 255, 255, 0.8);
+  background-color: #455a64;
+  font-size: 15px;
+  font-weight: 300;
+}
+
+.distill-site-nav a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.distill-site-nav a:hover {
+  color: white;
+}
+
+@media print {
+  .distill-site-nav {
+    display: none;
+  }
+}
+
+.distill-site-header {
+
+}
+
+.distill-site-footer {
+
+}
+
+
+/* Site Header */
+
+.distill-site-header {
+  width: 100%;
+  box-sizing: border-box;
+  z-index: 3;
+}
+
+.distill-site-header .nav-left {
+  display: inline-block;
+  margin-left: 8px;
+}
+
+@media screen and (max-width: 768px) {
+  .distill-site-header .nav-left {
+    margin-left: 0;
+  }
+}
+
+
+.distill-site-header .nav-right {
+  float: right;
+  margin-right: 8px;
+}
+
+.distill-site-header a,
+.distill-site-header .title {
+  display: inline-block;
+  text-align: center;
+  padding: 14px 10px 14px 10px;
+}
+
+.distill-site-header .title {
+  font-size: 18px;
+}
+
+.distill-site-header .logo {
+  padding: 0;
+}
+
+.distill-site-header .logo img {
+  display: none;
+  max-height: 20px;
+  width: auto;
+  margin-bottom: -4px;
+}
+
+.distill-site-header .nav-image img {
+  max-height: 18px;
+  width: auto;
+  display: inline-block;
+  margin-bottom: -3px;
+}
+
+
+
+@media screen and (min-width: 1000px) {
+  .distill-site-header .logo img {
+    display: inline-block;
+  }
+  .distill-site-header .nav-left {
+    margin-left: 20px;
+  }
+  .distill-site-header .nav-right {
+    margin-right: 20px;
+  }
+  .distill-site-header .title {
+    padding-left: 12px;
+  }
+}
+
+
+.distill-site-header .nav-toggle {
+  display: none;
+}
+
+.nav-dropdown {
+  display: inline-block;
+  position: relative;
+}
+
+.nav-dropdown .nav-dropbtn {
+  border: none;
+  outline: none;
+  color: rgba(255, 255, 255, 0.8);
+  padding: 16px 10px;
+  background-color: transparent;
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  margin: 0;
+  margin-top: 1px;
+  z-index: 2;
+}
+
+.nav-dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: white;
+  min-width: 200px;
+  border: 1px solid rgba(0,0,0,0.15);
+  border-radius: 4px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.1);
+  z-index: 1;
+  margin-top: 2px;
+  white-space: nowrap;
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+
+.nav-dropdown-content hr {
+  margin-top: 4px;
+  margin-bottom: 4px;
+  border: none;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.nav-dropdown-active {
+  display: block;
+}
+
+.nav-dropdown-content a, .nav-dropdown-content .nav-dropdown-header {
+  color: black;
+  padding: 6px 24px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.nav-dropdown-content .nav-dropdown-header {
+  display: block;
+  padding: 5px 24px;
+  padding-bottom: 0;
+  text-transform: uppercase;
+  font-size: 14px;
+  color: #999999;
+  white-space: nowrap;
+}
+
+.nav-dropdown:hover .nav-dropbtn {
+  color: white;
+}
+
+.nav-dropdown-content a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.nav-right .nav-dropdown-content {
+  margin-left: -45%;
+  right: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .distill-site-header a, .distill-site-header .nav-dropdown  {display: none;}
+  .distill-site-header a.nav-toggle {
+    float: right;
+    display: block;
+  }
+  .distill-site-header .title {
+    margin-left: 0;
+  }
+  .distill-site-header .nav-right {
+    margin-right: 0;
+  }
+  .distill-site-header {
+    overflow: hidden;
+  }
+  .nav-right .nav-dropdown-content {
+    margin-left: 0;
+  }
+}
+
+
+@media screen and (max-width: 768px) {
+  .distill-site-header.responsive {position: relative;}
+  .distill-site-header.responsive a.nav-toggle {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .distill-site-header.responsive a,
+  .distill-site-header.responsive .nav-dropdown {
+    display: block;
+    text-align: left;
+  }
+  .distill-site-header.responsive .nav-left,
+  .distill-site-header.responsive .nav-right {
+    width: 100%;
+  }
+  .distill-site-header.responsive .nav-dropdown {float: none;}
+  .distill-site-header.responsive .nav-dropdown-content {position: relative;}
+  .distill-site-header.responsive .nav-dropdown .nav-dropbtn {
+    display: block;
+    width: 100%;
+    text-align: left;
+  }
+}
+
+/* Site Footer */
+
+.distill-site-footer {
+  width: 100%;
+  overflow: hidden;
+  box-sizing: border-box;
+  z-index: 3;
+  margin-top: 30px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  text-align: center;
+}
+
+/* Headroom */
+
+d-title {
+  padding-top: 6rem;
+}
+
+@media print {
+  d-title {
+    padding-top: 4rem;
+  }
+}
+
+.headroom {
+  z-index: 1000;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.headroom--transition {
+  transition: all .4s ease-in-out;
+}
+
+.headroom--unpinned {
+  top: -100px;
+}
+
+.headroom--pinned {
+  top: 0;
+}
+
+</style>
+
+<link href="../../site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet"/>
+<link href="../../site_libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet"/>
+<script src="../../site_libs/headroom-0.9.4/headroom.min.js"></script>
+<!--/radix_placeholder_navigation_in_header-->
+  <!--radix_placeholder_distill-->
+
+<style type="text/css">
+
+body {
+  background-color: white;
+}
+
+.pandoc-table {
+  width: 100%;
+}
+
+.pandoc-table>caption {
+  margin-bottom: 10px;
+}
+
+.pandoc-table th:not([align]) {
+  text-align: left;
+}
+
+.pagedtable-footer {
+  font-size: 15px;
+}
+
+.html-widget {
+  margin-bottom: 2.0em;
+}
+
+.l-screen-inset {
+  padding-right: 16px;
+}
+
+.l-screen .caption {
+  margin-left: 10px;
+}
+
+.shaded {
+  background: rgb(247, 247, 247);
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.shaded .html-widget {
+  margin-bottom: 0;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.shaded .shaded-content {
+  background: white;
+}
+
+.text-output {
+  margin-top: 0;
+  line-height: 1.5em;
+}
+
+.hidden {
+  display: none !important;
+}
+
+d-article {
+  padding-bottom: 30px;
+}
+
+d-appendix {
+  padding-top: 30px;
+}
+
+d-article>p>img {
+  width: 100%;
+}
+
+d-article iframe {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  margin-bottom: 2.0em;
+  width: 100%;
+}
+
+figure img.external {
+  background: white;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  box-shadow: 0 1px 8px rgba(0, 0, 0, 0.1);
+  padding: 18px;
+  box-sizing: border-box;
+}
+
+/* CSS for table of contents */
+
+.d-toc {
+  color: rgba(0,0,0,0.8);
+  font-size: 0.8em;
+  line-height: 1em;
+}
+
+.d-toc-header {
+  font-size: 0.6rem;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 0.5);
+  text-transform: uppercase;
+  margin-top: 0;
+  margin-bottom: 1.3em;
+}
+
+.d-toc a {
+  border-bottom: none;
+}
+
+.d-toc ul {
+  padding-left: 0;
+}
+
+.d-toc li>ul {
+  padding-top: 0.8em;
+  padding-left: 16px;
+  margin-bottom: 0.6em;
+}
+
+.d-toc ul,
+.d-toc li {
+  list-style-type: none;
+}
+
+.d-toc li {
+  margin-bottom: 0.9em;
+}
+
+.d-toc-separator {
+  margin-top: 20px;
+  margin-bottom: 2em;
+}
+
+.d-article-with-toc {
+  border-top: none;
+  padding-top: 0;
+}
+
+
+
+/* Tweak code blocks (note that this CSS is repeated above in an injection
+   into the d-code shadow dom) */
+
+d-code {
+  overflow-x: auto !important;
+}
+
+pre.d-code code.d-code {
+  padding-left: 10px;
+  font-size: 12px;
+  border-left: 2px solid rgba(0,0,0,0.1);
+}
+
+pre.text-output {
+
+  font-size: 12px;
+  color: black;
+  background: none;
+  font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+  text-align: left;
+  white-space: pre;
+  word-spacing: normal;
+  word-break: normal;
+  word-wrap: normal;
+  line-height: 1.5;
+
+  -moz-tab-size: 4;
+  -o-tab-size: 4;
+  tab-size: 4;
+
+  -webkit-hyphens: none;
+  -moz-hyphens: none;
+  -ms-hyphens: none;
+  hyphens: none;
+}
+
+@media(min-width: 768px) {
+
+d-code {
+  overflow-x: visible !important;
+}
+
+pre.d-code code.d-code  {
+    padding-left: 18px;
+    font-size: 14px;
+}
+pre.text-output {
+  font-size: 14px;
+}
+}
+
+/* Figure */
+
+.figure {
+  position: relative;
+  margin-bottom: 2.5em;
+  margin-top: 1.5em;
+}
+
+.figure img {
+  width: 100%;
+}
+
+.figure .caption {
+  color: rgba(0, 0, 0, 0.6);
+  font-size: 12px;
+  line-height: 1.5em;
+}
+
+.figure img.external {
+  background: white;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  box-shadow: 0 1px 8px rgba(0, 0, 0, 0.1);
+  padding: 18px;
+  box-sizing: border-box;
+}
+
+.figure .caption a {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.figure .caption b,
+.figure .caption strong, {
+  font-weight: 600;
+  color: rgba(0, 0, 0, 1.0);
+}
+
+
+
+/* Tweak 1000px media break to show more text */
+
+@media(min-width: 1000px) {
+  .base-grid,
+  distill-header,
+  d-title,
+  d-abstract,
+  d-article,
+  d-appendix,
+  distill-appendix,
+  d-byline,
+  d-footnote-list,
+  d-citation-list,
+  distill-footer {
+    grid-template-columns: [screen-start] 1fr [page-start kicker-start] 80px [middle-start] 50px [text-start kicker-end] 65px 65px 65px 65px 65px 65px 65px 65px [text-end gutter-start] 65px [middle-end] 65px [page-end gutter-end] 1fr [screen-end];
+    grid-column-gap: 16px;
+  }
+
+  .grid {
+    grid-column-gap: 16px;
+  }
+
+  d-article {
+    font-size: 1.06rem;
+    line-height: 1.7em;
+  }
+  figure .caption, .figure .caption, figure figcaption {
+    font-size: 13px;
+  }
+}
+
+@media(min-width: 1180px) {
+  .base-grid,
+  distill-header,
+  d-title,
+  d-abstract,
+  d-article,
+  d-appendix,
+  distill-appendix,
+  d-byline,
+  d-footnote-list,
+  d-citation-list,
+  distill-footer {
+    grid-template-columns: [screen-start] 1fr [page-start kicker-start] 60px [middle-start] 60px [text-start kicker-end] 60px 60px 60px 60px 60px 60px 60px 60px [text-end gutter-start] 60px [middle-end] 60px [page-end gutter-end] 1fr [screen-end];
+    grid-column-gap: 32px;
+  }
+
+  .grid {
+    grid-column-gap: 32px;
+  }
+}
+
+
+/* Get the citation styles for the appendix (not auto-injected on render since
+   we do our own rendering of the citation appendix) */
+
+d-appendix .citation-appendix,
+.d-appendix .citation-appendix {
+  font-size: 11px;
+  line-height: 15px;
+  border-left: 1px solid rgba(0, 0, 0, 0.1);
+  padding-left: 18px;
+  border: 1px solid rgba(0,0,0,0.1);
+  background: rgba(0, 0, 0, 0.02);
+  padding: 10px 18px;
+  border-radius: 3px;
+  color: rgba(150, 150, 150, 1);
+  overflow: hidden;
+  margin-top: -12px;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+
+/* Social footer */
+
+.social_footer {
+  margin-top: 30px;
+  margin-bottom: 0;
+  color: rgba(0,0,0,0.67);
+}
+
+.disqus-comments {
+  margin-right: 30px;
+}
+
+.disqus-comment-count {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+  cursor: pointer;
+}
+
+#disqus_thread {
+  margin-top: 30px;
+}
+
+.article-sharing a {
+  border-bottom: none;
+  margin-right: 8px;
+}
+
+.article-sharing a:hover {
+  border-bottom: none;
+}
+
+.sidebar-section.subscribe {
+  font-size: 12px;
+  line-height: 1.6em;
+}
+
+.subscribe p {
+  margin-bottom: 0.5em;
+}
+
+
+.article-footer .subscribe {
+  font-size: 15px;
+  margin-top: 45px;
+}
+
+
+/* Improve display for browsers without grid (IE/Edge <= 15) */
+
+.downlevel {
+  line-height: 1.6em;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Arial, sans-serif;
+  margin: 0;
+}
+
+.downlevel .d-title {
+  padding-top: 6rem;
+  padding-bottom: 1.5rem;
+}
+
+.downlevel .d-title h1 {
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 1.1em;
+  margin: 0 0 0.5rem;
+}
+
+.downlevel .d-title p {
+  font-weight: 300;
+  font-size: 1.2rem;
+  line-height: 1.55em;
+  margin-top: 0;
+}
+
+.downlevel .d-byline {
+  padding-top: 0.8em;
+  padding-bottom: 0.8em;
+  font-size: 0.8rem;
+  line-height: 1.8em;
+}
+
+.downlevel .section-separator {
+  border: none;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.downlevel .d-article {
+  font-size: 1.06rem;
+  line-height: 1.7em;
+  padding-top: 1rem;
+  padding-bottom: 2rem;
+}
+
+
+.downlevel .d-appendix {
+  padding-left: 0;
+  padding-right: 0;
+  max-width: none;
+  font-size: 0.8em;
+  line-height: 1.7em;
+  margin-bottom: 0;
+  color: rgba(0,0,0,0.5);
+  padding-top: 40px;
+  padding-bottom: 48px;
+}
+
+.downlevel .footnotes ol {
+  padding-left: 13px;
+}
+
+.downlevel .base-grid,
+.downlevel .distill-header,
+.downlevel .d-title,
+.downlevel .d-abstract,
+.downlevel .d-article,
+.downlevel .d-appendix,
+.downlevel .distill-appendix,
+.downlevel .d-byline,
+.downlevel .d-footnote-list,
+.downlevel .d-citation-list,
+.downlevel .distill-footer,
+.downlevel .appendix-bottom,
+.downlevel .posts-container {
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+@media(min-width: 768px) {
+  .downlevel .base-grid,
+  .downlevel .distill-header,
+  .downlevel .d-title,
+  .downlevel .d-abstract,
+  .downlevel .d-article,
+  .downlevel .d-appendix,
+  .downlevel .distill-appendix,
+  .downlevel .d-byline,
+  .downlevel .d-footnote-list,
+  .downlevel .d-citation-list,
+  .downlevel .distill-footer,
+  .downlevel .appendix-bottom,
+  .downlevel .posts-container {
+  padding-left: 150px;
+  padding-right: 150px;
+  max-width: 900px;
+}
+}
+
+.downlevel pre code {
+  display: block;
+  border-left: 2px solid rgba(0, 0, 0, .1);
+  padding: 0 0 0 20px;
+  font-size: 14px;
+}
+
+.downlevel code, .downlevel pre {
+  color: black;
+  background: none;
+  font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+  text-align: left;
+  white-space: pre;
+  word-spacing: normal;
+  word-break: normal;
+  word-wrap: normal;
+  line-height: 1.5;
+
+  -moz-tab-size: 4;
+  -o-tab-size: 4;
+  tab-size: 4;
+
+  -webkit-hyphens: none;
+  -moz-hyphens: none;
+  -ms-hyphens: none;
+  hyphens: none;
+}
+
+</style>
+
+<script type="application/javascript">
+
+function is_downlevel_browser() {
+  if (bowser.isUnsupportedBrowser({ msie: "12", msedge: "16"},
+                                 window.navigator.userAgent)) {
+    return true;
+  } else {
+    return window.load_distill_framework === undefined;
+  }
+}
+
+// show body when load is complete
+function on_load_complete() {
+
+  // set body to visible
+  document.body.style.visibility = 'visible';
+
+  // force redraw for leaflet widgets
+  if (window.HTMLWidgets) {
+    var maps = window.HTMLWidgets.findAll(".leaflet");
+    $.each(maps, function(i, el) {
+      var map = this.getMap();
+      map.invalidateSize();
+      map.eachLayer(function(layer) {
+        if (layer instanceof L.TileLayer)
+          layer.redraw();
+      });
+    });
+  }
+
+  // trigger 'shown' so htmlwidgets resize
+  $('d-article').trigger('shown');
+}
+
+function init_distill() {
+
+  init_common();
+
+  // create front matter
+  var front_matter = $('<d-front-matter></d-front-matter>');
+  $('#distill-front-matter').wrap(front_matter);
+
+  // create d-title
+  $('.d-title').changeElementType('d-title');
+
+  // create d-byline
+  var byline = $('<d-byline></d-byline>');
+  $('.d-byline').replaceWith(byline);
+
+  // create d-article
+  var article = $('<d-article></d-article>');
+  $('.d-article').wrap(article).children().unwrap();
+
+  // move posts container into article
+  $('.posts-container').appendTo($('d-article'));
+
+  // create d-appendix
+  $('.d-appendix').changeElementType('d-appendix');
+
+  // create d-bibliography
+  var bibliography = $('<d-bibliography></d-bibliography>');
+  $('#distill-bibliography').wrap(bibliography);
+
+  // flag indicating that we have appendix items
+  var appendix = $('.appendix-bottom').children('h3').length > 0;
+
+  // replace citations with <d-cite>
+  $('.citation').each(function(i, val) {
+    appendix = true;
+    var cites = $(this).attr('data-cites').split(" ");
+    var dt_cite = $('<d-cite></d-cite>');
+    dt_cite.attr('key', cites.join());
+    $(this).replaceWith(dt_cite);
+  });
+  // remove refs
+  $('#refs').remove();
+
+  // replace footnotes with <d-footnote>
+  $('.footnote-ref').each(function(i, val) {
+    appendix = true;
+    var href = $(this).attr('href');
+    var id = href.replace('#', '');
+    var fn = $('#' + id);
+    var fn_p = $('#' + id + '>p');
+    fn_p.find('.footnote-back').remove();
+    var text = fn_p.html();
+    var dtfn = $('<d-footnote></d-footnote>');
+    dtfn.html(text);
+    $(this).replaceWith(dtfn);
+  });
+  // remove footnotes
+  $('.footnotes').remove();
+
+  $('h1.appendix, h2.appendix').each(function(i, val) {
+    $(this).changeElementType('h3');
+  });
+  $('h3.appendix').each(function(i, val) {
+    var id = $(this).attr('id');
+    $('.d-toc a[href="#' + id + '"]').parent().remove();
+    appendix = true;
+    $(this).nextUntil($('h1, h2, h3')).addBack().appendTo($('d-appendix'));
+  });
+
+  // show d-appendix if we have appendix content
+  $("d-appendix").css('display', appendix ? 'grid' : 'none');
+
+  // replace code blocks with d-code
+  $('pre>code').each(function(i, val) {
+    var code = $(this);
+    var pre = code.parent();
+    var clz = "";
+    var language = pre.attr('class');
+    if (language) {
+      // map unknown languages to "clike" (without this they just dissapear)
+      if ($.inArray(language, ["bash", "clike", "css", "go", "html",
+                               "javascript", "js", "julia", "lua", "markdown",
+                               "markup", "mathml", "python", "svg", "xml"]) == -1)
+        language = "clike";
+      language = ' language="' + language + '"';
+      var dt_code = $('<d-code block' + language + clz + '></d-code>');
+      dt_code.text(code.text());
+      pre.replaceWith(dt_code);
+    } else {
+      code.addClass('text-output').unwrap().changeElementType('pre');
+    }
+  });
+
+  // localize layout chunks to just output
+  $('.layout-chunk').each(function(i, val) {
+
+    // capture layout
+    var layout = $(this).attr('data-layout');
+
+    // apply layout to markdown level block elements
+    var elements = $(this).children().not('d-code, pre.text-output, script');
+    elements.each(function(i, el) {
+      var layout_div = $('<div class="' + layout + '"></div>');
+      if (layout_div.hasClass('shaded')) {
+        var shaded_content = $('<div class="shaded-content"></div>');
+        $(this).wrap(shaded_content);
+        $(this).parent().wrap(layout_div);
+      } else {
+        $(this).wrap(layout_div);
+      }
+    });
+
+
+    // unwrap the layout-chunk div
+    $(this).children().unwrap();
+  });
+
+  // load distill framework
+  load_distill_framework();
+
+  // wait for window.distillRunlevel == 4 to do post processing
+  function distill_post_process() {
+
+    if (!window.distillRunlevel || window.distillRunlevel < 4)
+      return;
+
+    // hide author/affiliations entirely if we have no authors
+    var front_matter = JSON.parse($("#distill-front-matter").html());
+    var have_authors = front_matter.authors && front_matter.authors.length > 0;
+    if (!have_authors)
+      $('d-byline').addClass('hidden');
+
+    // table of contents
+    if (have_authors) // adjust border if we are in authors
+      $('.d-toc').parent().addClass('d-article-with-toc');
+
+    // strip links that point to #
+    $('.authors-affiliations').find('a[href="#"]').removeAttr('href');
+
+    // hide elements of author/affiliations grid that have no value
+    function hide_byline_column(caption) {
+      $('d-byline').find('h3:contains("' + caption + '")').parent().css('visibility', 'hidden');
+    }
+
+    // affiliations
+    var have_affiliations = false;
+    for (var i = 0; i<front_matter.authors.length; ++i) {
+      var author = front_matter.authors[i];
+      if (author.affiliation !== "&nbsp;") {
+        have_affiliations = true;
+        break;
+      }
+    }
+    if (!have_affiliations)
+      $('d-byline').find('h3:contains("Affiliations")').css('visibility', 'hidden');
+
+    // published date
+    if (!front_matter.publishedDate)
+      hide_byline_column("Published");
+
+    // document object identifier
+    var doi = $('d-byline').find('h3:contains("DOI")');
+    var doi_p = doi.next().empty();
+    if (!front_matter.doi) {
+      // if we have a citation and valid citationText then link to that
+      if ($('#citation').length > 0 && front_matter.citationText) {
+        doi.html('Citation');
+        $('<a href="#citation"></a>')
+          .text(front_matter.citationText)
+          .appendTo(doi_p);
+      } else {
+        hide_byline_column("DOI");
+      }
+    } else {
+      $('<a></a>')
+         .attr('href', "https://doi.org/" + front_matter.doi)
+         .html(front_matter.doi)
+         .appendTo(doi_p);
+    }
+
+     // change plural form of authors/affiliations
+    if (front_matter.authors.length === 1) {
+      var grid = $('.authors-affiliations');
+      grid.children('h3:contains("Authors")').text('Author');
+      grid.children('h3:contains("Affiliations")').text('Affiliation');
+    }
+
+    // inject pre code styles (can't do this with a global stylesheet b/c a shadow root is used)
+    $('d-code').each(function(i, val) {
+      var style = document.createElement('style');
+      style.innerHTML = 'pre code { padding-left: 10px; font-size: 12px; border-left: 2px solid rgba(0,0,0,0.1); } ' +
+                        '@media(min-width: 768px) { pre code { padding-left: 18px; font-size: 14px; } }';
+      if (this.shadowRoot)
+        this.shadowRoot.appendChild(style);
+    });
+
+    // move appendix-bottom entries to the bottom
+    $('.appendix-bottom').appendTo('d-appendix').children().unwrap();
+    $('.appendix-bottom').remove();
+
+    // clear polling timer
+    clearInterval(tid);
+
+    // show body now that everything is ready
+    on_load_complete();
+  }
+
+  var tid = setInterval(distill_post_process, 50);
+  distill_post_process();
+
+}
+
+function init_downlevel() {
+
+  init_common();
+
+   // insert hr after d-title
+  $('.d-title').after($('<hr class="section-separator"/>'));
+
+  // check if we have authors
+  var front_matter = JSON.parse($("#distill-front-matter").html());
+  var have_authors = front_matter.authors && front_matter.authors.length > 0;
+
+  // manage byline/border
+  if (!have_authors)
+    $('.d-byline').remove();
+  $('.d-byline').after($('<hr class="section-separator"/>'));
+  $('.d-byline a').remove();
+
+  // remove toc
+  $('.d-toc-header').remove();
+  $('.d-toc').remove();
+  $('.d-toc-separator').remove();
+
+  // move appendix elements
+  $('h1.appendix, h2.appendix').each(function(i, val) {
+    $(this).changeElementType('h3');
+  });
+  $('h3.appendix').each(function(i, val) {
+    $(this).nextUntil($('h1, h2, h3')).addBack().appendTo($('.d-appendix'));
+  });
+
+
+  // inject headers into references and footnotes
+  var refs_header = $('<h3></h3>');
+  refs_header.text('References');
+  $('#refs').prepend(refs_header);
+
+  var footnotes_header = $('<h3></h3');
+  footnotes_header.text('Footnotes');
+  $('.footnotes').children('hr').first().replaceWith(footnotes_header);
+
+  // move appendix-bottom entries to the bottom
+  $('.appendix-bottom').appendTo('.d-appendix').children().unwrap();
+  $('.appendix-bottom').remove();
+
+  // remove appendix if it's empty
+  if ($('.d-appendix').children().length === 0)
+    $('.d-appendix').remove();
+
+  // prepend separator above appendix
+  $('.d-appendix').before($('<hr class="section-separator" style="clear: both"/>'));
+
+  // trim code
+  $('pre>code').each(function(i, val) {
+    $(this).html($.trim($(this).html()));
+  });
+
+  // move posts-container right before article
+  $('.posts-container').insertBefore($('.d-article'));
+
+  $('body').addClass('downlevel');
+
+  on_load_complete();
+}
+
+
+function init_common() {
+
+  // jquery plugin to change element types
+  (function($) {
+    $.fn.changeElementType = function(newType) {
+      var attrs = {};
+
+      $.each(this[0].attributes, function(idx, attr) {
+        attrs[attr.nodeName] = attr.nodeValue;
+      });
+
+      this.replaceWith(function() {
+        return $("<" + newType + "/>", attrs).append($(this).contents());
+      });
+    };
+  })(jQuery);
+
+  // prevent underline for linked images
+  $('a > img').parent().css({'border-bottom' : 'none'});
+
+  // mark non-body figures created by knitr chunks as 100% width
+  $('.layout-chunk').each(function(i, val) {
+    var figures = $(this).find('img, .html-widget');
+    if ($(this).attr('data-layout') !== "l-body") {
+      figures.css('width', '100%');
+    } else {
+      figures.css('max-width', '100%');
+      figures.filter("[width]").each(function(i, val) {
+        var fig = $(this);
+        fig.css('width', fig.attr('width') + 'px');
+      });
+
+    }
+  });
+
+  // auto-append index.html to post-preview links in file: protocol
+  // and in rstudio ide preview
+  $('.post-preview').each(function(i, val) {
+    if (window.location.protocol === "file:")
+      $(this).attr('href', $(this).attr('href') + "index.html");
+  });
+
+  // get rid of index.html references in header
+  if (window.location.protocol !== "file:") {
+    $('.distill-site-header a[href]').each(function(i,val) {
+      $(this).attr('href', $(this).attr('href').replace("index.html", "./"));
+    });
+  }
+
+  // add class to pandoc style tables
+  $('tr.header').parent('thead').parent('table').addClass('pandoc-table');
+  $('.kable-table').children('table').addClass('pandoc-table');
+
+  // add figcaption style to table captions
+  $('caption').parent('table').addClass("figcaption");
+
+  // initialize posts list
+  if (window.init_posts_list)
+    window.init_posts_list();
+
+  // implmement disqus comment link
+  $('.disqus-comment-count').click(function() {
+    window.headroom_prevent_pin = true;
+    $('#disqus_thread').toggleClass('hidden');
+    if (!$('#disqus_thread').hasClass('hidden')) {
+      var offset = $(this).offset();
+      $(window).resize();
+      $('html, body').animate({
+        scrollTop: offset.top - 35
+      });
+    }
+  });
+}
+
+document.addEventListener('DOMContentLoaded', function() {
+  if (is_downlevel_browser())
+    init_downlevel();
+  else
+    window.addEventListener('WebComponentsReady', init_distill);
+});
+
+</script>
+
+<!--/radix_placeholder_distill-->
+  <script src="../../site_libs/htmlwidgets-1.5.1/htmlwidgets.js"></script>
+  <script src="../../site_libs/plotly-binding-4.9.1/plotly.js"></script>
+  <script src="../../site_libs/typedarray-0.1/typedarray.min.js"></script>
+  <script src="../../site_libs/jquery-1.12.4/jquery.min.js"></script>
+  <link href="../../site_libs/crosstalk-1.0.0/css/crosstalk.css" rel="stylesheet" />
+  <script src="../../site_libs/crosstalk-1.0.0/js/crosstalk.min.js"></script>
+  <link href="../../site_libs/plotly-htmlwidgets-css-1.49.4/plotly-htmlwidgets.css" rel="stylesheet" />
+  <script src="../../site_libs/plotly-main-1.49.4/plotly-latest.min.js"></script>
+  <link href="../../site_libs/datatables-css-0.0.0/datatables-crosstalk.css" rel="stylesheet" />
+  <script src="../../site_libs/datatables-binding-0.11/datatables.js"></script>
+  <link href="../../site_libs/dt-core-1.10.19/css/jquery.dataTables.min.css" rel="stylesheet" />
+  <link href="../../site_libs/dt-core-1.10.19/css/jquery.dataTables.extra.css" rel="stylesheet" />
+  <script src="../../site_libs/dt-core-1.10.19/js/jquery.dataTables.min.js"></script>
+  <link href="../../site_libs/nouislider-7.0.10/jquery.nouislider.min.css" rel="stylesheet" />
+  <script src="../../site_libs/nouislider-7.0.10/jquery.nouislider.min.js"></script>
+  <link href="../../site_libs/selectize-0.12.0/selectize.bootstrap3.css" rel="stylesheet" />
+  <script src="../../site_libs/selectize-0.12.0/selectize.min.js"></script>
+  <script src="../../site_libs/bowser-1.9.3/bowser.min.js"></script>
+  <script src="../../site_libs/webcomponents-2.0.0/webcomponents.js"></script>
+  <script src="../../site_libs/distill-2.2.21/template.v2.js"></script>
+  <!--radix_placeholder_site_in_header-->
+<!--/radix_placeholder_site_in_header-->
+
+
+</head>
+
+<body>
+
+<!--radix_placeholder_front_matter-->
+
+<script id="distill-front-matter" type="text/json">
+{"title":"Machine learning, shall we?","description":"Why should we use machine learning and what are reasons why we should restrict its use","authors":[{"author":"Uwe Sterr","authorURL":"http://uwesterr.de","affiliation":"&nbsp;","affiliationURL":"#"}],"publishedDate":"2020-01-21T00:00:00.000+01:00","citationText":"Sterr, 2020"}
+</script>
+
+<!--/radix_placeholder_front_matter-->
+<!--radix_placeholder_navigation_before_body-->
+<header class="header header--fixed" role="banner">
+<nav class="distill-site-nav distill-site-header">
+<div class="nav-left">
+<a href="../../index.html" class="title">Uwe's Blog</a>
+</div>
+<div class="nav-right">
+<a href="../../index.html">Home</a>
+<a href="../../about.html">About</a>
+<a href="../../privacy.html">Privacy</a>
+<a href="javascript:void(0);" class="nav-toggle">&#9776;</a>
+</div>
+</nav>
+</header>
+<!--/radix_placeholder_navigation_before_body-->
+<!--radix_placeholder_site_before_body-->
+<!--/radix_placeholder_site_before_body-->
+
+<div class="d-title">
+<h1>Machine learning, shall we?</h1>
+<p>Why should we use machine learning and what are reasons why we should restrict its use</p>
+</div>
+
+<div class="d-byline">
+  Uwe Sterr <a href="http://uwesterr.de" class="uri">http://uwesterr.de</a> 
+  
+<br/>01-21-2020
+</div>
+
+<div class="d-article">
+<h3 class="d-toc-header">Table of Contents</h3>
+<nav class="d-toc" id="TOC">
+<ul>
+<li><a href="#what-is-machine-learning">What is machine learning?</a><ul>
+<li><a href="#what-is-intelligence">What is intelligence?</a></li>
+<li><a href="#is-ai-smarter-than-humans">Is AI smarter than humans?</a></li>
+<li><a href="#comparisons-between-ai-and-humans">Comparisons between AI and humans</a></li>
+<li><a href="#bias">Bias</a></li>
+<li><a href="#attacks">Attacks</a></li>
+</ul></li>
+<li><a href="#outlook">Outlook</a><ul>
+<li><a href="#development-of-life">Development of life</a></li>
+<li><a href="#data-religion-dataism">Data religion: Dataism</a></li>
+<li><a href="#career-oxford-seeks-ai-ethics-professor">Career: Oxford seeks AI ethics professor</a></li>
+</ul></li>
+</ul>
+</nav>
+<hr class="d-toc-separator"/>
+<p>Before we answer the question <strong>Machine learning, shall we?</strong> lets look into what machine learning is</p>
+<h1 id="what-is-machine-learning">What is machine learning?</h1>
+<p>Machine learning is a sub domain of artificial intelligence and is defined:</p>
+<div class="layout-chunk" data-layout="l-body">
+<p><img src="images/MachineLearning.png" width="50%" /></p>
+</div>
+<blockquote>
+<ul>
+<li>Arthur Samuel:<a href="#fn1" class="footnote-ref" id="fnref1"><sup>1</sup></a> “Field of study that gives computers the ability to learn without being explicitly programmed”</li>
+</ul>
+</blockquote>
+<blockquote>
+<ul>
+<li>Tom Mitchell<a href="#fn2" class="footnote-ref" id="fnref2"><sup>2</sup></a> learn from experience E with respect to some task T and some performance measure P, if its performance on T, as measured by P, improves with experience E</li>
+</ul>
+</blockquote>
+<h2 id="what-is-intelligence">What is intelligence?</h2>
+<p>To discuss the question of what is artificial intelligence, the first step is to define what intelligence is.</p>
+<p>A group of 52 psychology researchers published in <span class="citation" data-cites="gottfredson1997mainstream">(Gottfredson <a href="#ref-gottfredson1997mainstream">1997</a>)</span> the following definition:</p>
+<blockquote>
+<p>A very general mental capability that, among other things, involves the ability to reason, plan, solve problems, think abstractly, comprehend complex ideas, learn quickly and learn from experience. It is not merely book learning, a narrow academic skill, or test-taking smarts. Rather, it reflects a broader and deeper capability for comprehending our surroundings—“catching on,” “making sense” of things, or “figuring out” what to do.</p>
+</blockquote>
+<p>Alfred Binet, a french psychologist who invented first practical IQ test defined in 1905 <span class="citation" data-cites="binet1916new">(Binet and Simon <a href="#ref-binet1916new">1916</a>)</span>:</p>
+<blockquote>
+<p>Judgment, otherwise called “good sense”, “practical sense”, “initiative”, the faculty of adapting one’s self to circumstances</p>
+</blockquote>
+<p>And Albert Einstein said</p>
+<blockquote>
+<p>The measure of intelligence is the ability to change.</p>
+</blockquote>
+<p>Tegmark’s summarizes the situation in <span class="citation" data-cites="tegmark2017life">(Tegmark <a href="#ref-tegmark2017life">2017</a>)</span></p>
+<blockquote>
+<p>There’s no agreement on what intelligence is even among intelligent intelligence researchers! So there’s clearly no undisputed “correct” definition of intelligence.</p>
+</blockquote>
+<h3 id="definition-of-artificial-intelligence-sub-domains">Definition of artificial intelligence sub domains</h3>
+<p>Even though there is no undisputed definition of <strong>intelligence</strong> there is a undisputed definition of how machine learning is related to artificial intelligence</p>
+<p>Agreement: <strong>Machine learning is a sub domain of artificial intelligence (AI)</strong></p>
+<hr />
+<p><img src="images/AiMlDeep.png"  align="middle" style="width:100%;"></p>
+<hr />
+<p>The history of those fields goes back to the 1950’s</p>
+<hr />
+<p><img src="images/AiMlDeepTimeLine.png"  align="middle" style="width:100%;"></p>
+<hr />
+<h2 id="is-ai-smarter-than-humans">Is AI smarter than humans?</h2>
+<p>Which of the following questions can a computer answer better?</p>
+<ul>
+<li>17*35<a href="#fn3" class="footnote-ref" id="fnref3"><sup>3</sup></a></li>
+<li>Wie viele Tiere von jeder Art nahm Moses mit auf die Arche?<a href="#fn4" class="footnote-ref" id="fnref4"><sup>4</sup></a></li>
+<li>Wie heißen die drei letzten Bundespräsidenten?<a href="#fn5" class="footnote-ref" id="fnref5"><sup>5</sup></a></li>
+</ul>
+<div class="layout-chunk" data-layout="l-body">
+<p><img src="images/ship.png" width="40%" /></p>
+</div>
+<h3 id="thinking-fast-and-slow-kahneman2011thinking">Thinking, fast and slow <span class="citation" data-cites="kahneman2011thinking">(Kahneman <a href="#ref-kahneman2011thinking">2011</a>)</span></h3>
+<p>In Daniel Kahneman’s <strong>Thinking, fast and slow</strong> <span class="citation" data-cites="kahneman2011thinking">(Kahneman <a href="#ref-kahneman2011thinking">2011</a>)</span> there are plenty of surprising social psychology experiments, on page 166 the following question is posed:</p>
+<blockquote>
+<p>A cab was involved in a hit-and-run accident at night. Two cab companies, the Green and the Blue, operate in the city. You are given the following data:<br />
+- 85% of the cabs in the city are Green and 15% are Blue.<br />
+- A witness identified the cab as Blue. The court tested the reliability of the witness under the circumstances that existed on the night of the accident and concluded that the witness correctly identified each one of the two colors 80% of the time and failed 20% of the time.</p>
+<p><strong>What is the probability that the cab involved in the accident was Blue rather than Green?</strong><a href="#fn6" class="footnote-ref" id="fnref6"><sup>6</sup></a></p>
+</blockquote>
+<div class="layout-chunk" data-layout="l-body">
+<p><img src="images/CabsBlueGreen.png" width="100%" /></p>
+</div>
+<p>Please cast your vote at <a href="https://pingo.coactum.de/157678" class="uri">https://pingo.coactum.de/157678</a><a href="#fn7" class="footnote-ref" id="fnref7"><sup>7</sup></a> or access Pingo webpage scanning QR code below:</p>
+<div class="layout-chunk" data-layout="l-body">
+<p><img src="images/PingoQrCode.png" width="40%" /></p>
+</div>
+<h2 id="comparisons-between-ai-and-humans">Comparisons between AI and humans</h2>
+<h3 id="breast-cancer-detection">Breast cancer detection</h3>
+<p>
+In a Google Health project<a href="#fn8" class="footnote-ref" id="fnref8"><sup>8</sup></a> the following results were achieved: <img src="images/Stetoscope.svg" alt="Smiley face" align="right" style="width:10%;">
+</p>
+<ul>
+<li>Absolute reduction of 5.7% and 1.2% (USA and UK) in false positives</li>
+<li>Absolute reduction 9.4% and 2.7% (USA and UK)in false negatives.</li>
+</ul>
+<p>In an independent study of six radiologists, the AI system outperformed all of the human readers. More on the study at <a href="https://www.nature.com/articles/s41586-019-1799-6" class="uri">https://www.nature.com/articles/s41586-019-1799-6</a></p>
+<h3 id="working-together-lung-cancer-detection">Working together: Lung cancer detection</h3>
+<p>With an estimated 160,000 deaths in 2018, lung cancer is the most common cause of cancer death in the United States</p>
+<div class="layout-chunk" data-layout="l-body">
+<p><img src="images/lung.svg" width="20%" /></p>
+</div>
+<p>A study published in Nature medicine<a href="#fn9" class="footnote-ref" id="fnref9"><sup>9</sup></a> a team of members of Google AI and several hospitals reported</p>
+<p>When prior computed tomography imaging was not available</p>
+<ul>
+<li>Model outperformed all six radiologists</li>
+<li>Absolute reductions of 11% in false positives</li>
+<li>Absolute reductions 5% in false negatives</li>
+</ul>
+<h3 id="imagenet-large-scale-visual-recognition-challenge-ilsvrc">ImageNet Large Scale Visual Recognition Challenge (ILSVRC)</h3>
+<p>The ImageNet Large Scale Visual Recognition Challenge<a href="#fn10" class="footnote-ref" id="fnref10"><sup>10</sup></a> (ILSVRC) <span class="citation" data-cites="ILSVRC15">(Russakovsky et al. <a href="#ref-ILSVRC15">2015</a>)</span> evaluates algorithms for object recognition and image classification on a large scale.</p>
+<p>Facts of ImageNet:<a href="#fn11" class="footnote-ref" id="fnref11"><sup>11</sup></a></p>
+<ul>
+<li>14 million images</li>
+<li>20,000 image categories</li>
+<li>1000 image categories used for ILSVRC</li>
+</ul>
+<p>The development of the results is shown in the graph below. The number of layers is a indication of model complexity</p>
+<hr />
+<div class="layout-chunk" data-layout="l-body">
+<div id="htmlwidget-5b12e7b7c12344c0a46e" style="width:624px;height:384px;" class="plotly html-widget"></div>
+<script type="application/json" data-for="htmlwidget-5b12e7b7c12344c0a46e">{"x":{"data":[{"orientation":"v","width":[0.900000000000091,0.900000000000091],"base":[0,0],"x":[2010,2011],"y":[28.2,25.8],"text":["NumberOfLayers:   1<br />Year: 2010<br />ErrorRate: 28.2","NumberOfLayers:   1<br />Year: 2011<br />ErrorRate: 25.8"],"type":"bar","marker":{"autocolorscale":false,"color":"rgba(19,43,67,1)","line":{"width":1.88976377952756,"color":"transparent"}},"showlegend":false,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"orientation":"v","width":[0.900000000000091,0.900000000000091],"base":[0,0],"x":[2012,2013],"y":[16.4,11.7],"text":["NumberOfLayers:   8<br />Year: 2012<br />ErrorRate: 16.4","NumberOfLayers:   8<br />Year: 2013<br />ErrorRate: 11.7"],"type":"bar","marker":{"autocolorscale":false,"color":"rgba(22,48,74,1)","line":{"width":1.88976377952756,"color":"transparent"}},"showlegend":false,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"orientation":"v","width":0.900000000000091,"base":0,"x":[2014],"y":[7.3],"text":"NumberOfLayers:  19<br />Year: 2014<br />ErrorRate:  7.3","type":"bar","marker":{"autocolorscale":false,"color":"rgba(26,57,86,1)","line":{"width":1.88976377952756,"color":"transparent"}},"showlegend":false,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"orientation":"v","width":0.900000000000091,"base":0,"x":[2015],"y":[3.6],"text":"NumberOfLayers: 152<br />Year: 2015<br />ErrorRate:  3.6","type":"bar","marker":{"autocolorscale":false,"color":"rgba(86,177,247,1)","line":{"width":1.88976377952756,"color":"transparent"}},"showlegend":false,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[2009.255,2015.745],"y":[5,5],"text":"yintercept: 5","type":"scatter","mode":"lines","line":{"width":1.88976377952756,"color":"rgba(255,0,0,1)","dash":"solid"},"hoveron":"points","showlegend":false,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[2010],"y":[0],"name":"99_ed70c628b1aebce1fde2f6a30239c72d","type":"scatter","mode":"markers","opacity":0,"hoverinfo":"skip","showlegend":false,"marker":{"color":[0,1],"colorscale":[[0,"#132B43"],[0.0526315789473684,"#16314B"],[0.105263157894737,"#193754"],[0.157894736842105,"#1D3E5C"],[0.210526315789474,"#204465"],[0.263157894736842,"#234B6E"],[0.315789473684211,"#275277"],[0.368421052631579,"#2A5980"],[0.421052631578947,"#2E608A"],[0.473684210526316,"#316793"],[0.526315789473684,"#356E9D"],[0.578947368421053,"#3875A6"],[0.631578947368421,"#3C7CB0"],[0.684210526315789,"#3F83BA"],[0.736842105263158,"#438BC4"],[0.789473684210526,"#4792CE"],[0.842105263157895,"#4B9AD8"],[0.894736842105263,"#4EA2E2"],[0.947368421052632,"#52A9ED"],[1,"#56B1F7"]],"colorbar":{"bgcolor":"rgba(255,255,255,1)","bordercolor":"transparent","borderwidth":1.88976377952756,"thickness":23.04,"title":"NumberOfLayers","titlefont":{"color":"rgba(0,0,0,1)","family":"","size":14.6118721461187},"tickmode":"array","ticktext":["50","100","150"],"tickvals":[0.324503311258278,0.655629139072848,0.986754966887417],"tickfont":{"color":"rgba(0,0,0,1)","family":"","size":11.689497716895},"ticklen":2,"len":0.5}},"xaxis":"x","yaxis":"y","frame":null}],"layout":{"margin":{"t":45.4063926940639,"r":7.30593607305936,"b":41.8264840182648,"l":37.2602739726027},"plot_bgcolor":"rgba(235,235,235,1)","paper_bgcolor":"rgba(255,255,255,1)","font":{"color":"rgba(0,0,0,1)","family":"","size":14.6118721461187},"title":{"text":"Error rate of ILSVRC, human error rate = 5% (red line)","font":{"color":"rgba(0,0,0,1)","family":"","size":17.5342465753425},"x":0,"xref":"paper"},"xaxis":{"domain":[0,1],"automargin":true,"type":"linear","autorange":false,"range":[2009.255,2015.745],"tickmode":"array","ticktext":["2010","2012","2014"],"tickvals":[2010,2012,2014],"categoryorder":"array","categoryarray":["2010","2012","2014"],"nticks":null,"ticks":"outside","tickcolor":"rgba(51,51,51,1)","ticklen":3.65296803652968,"tickwidth":0.66417600664176,"showticklabels":true,"tickfont":{"color":"rgba(77,77,77,1)","family":"","size":11.689497716895},"tickangle":-0,"showline":false,"linecolor":null,"linewidth":0,"showgrid":true,"gridcolor":"rgba(255,255,255,1)","gridwidth":0.66417600664176,"zeroline":false,"anchor":"y","title":{"text":"Year","font":{"color":"rgba(0,0,0,1)","family":"","size":14.6118721461187}},"hoverformat":".2f"},"yaxis":{"domain":[0,1],"automargin":true,"type":"linear","autorange":false,"range":[-1.41,29.61],"tickmode":"array","ticktext":["0","10","20"],"tickvals":[0,10,20],"categoryorder":"array","categoryarray":["0","10","20"],"nticks":null,"ticks":"outside","tickcolor":"rgba(51,51,51,1)","ticklen":3.65296803652968,"tickwidth":0.66417600664176,"showticklabels":true,"tickfont":{"color":"rgba(77,77,77,1)","family":"","size":11.689497716895},"tickangle":-0,"showline":false,"linecolor":null,"linewidth":0,"showgrid":true,"gridcolor":"rgba(255,255,255,1)","gridwidth":0.66417600664176,"zeroline":false,"anchor":"x","title":{"text":"Error Rate [%]","font":{"color":"rgba(0,0,0,1)","family":"","size":14.6118721461187}},"hoverformat":".2f"},"shapes":[{"type":"rect","fillcolor":null,"line":{"color":null,"width":0,"linetype":[]},"yref":"paper","xref":"paper","x0":0,"x1":1,"y0":0,"y1":1}],"showlegend":false,"legend":{"bgcolor":"rgba(255,255,255,1)","bordercolor":"transparent","borderwidth":1.88976377952756,"font":{"color":"rgba(0,0,0,1)","family":"","size":11.689497716895}},"hovermode":"closest","barmode":"relative"},"config":{"doubleClick":"reset","showSendToCloud":false},"source":"A","attrs":{"10f93463ed853":{"fill":{},"x":{},"y":{},"type":"bar"},"10f9347ec552c":{"yintercept":{}}},"cur_data":"10f93463ed853","visdat":{"10f93463ed853":["function (y) ","x"],"10f9347ec552c":["function (y) ","x"]},"highlight":{"on":"plotly_click","persistent":false,"dynamic":false,"selectize":false,"opacityDim":0.2,"selected":{"opacity":1},"debounce":0},"shinyEvents":["plotly_hover","plotly_click","plotly_selected","plotly_relayout","plotly_brushed","plotly_brushing","plotly_clickannotation","plotly_doubleclick","plotly_deselect","plotly_afterplot","plotly_sunburstclick"],"base_url":"https://plot.ly"},"evals":[],"jsHooks":[]}</script>
+</div>
+<hr />
+<p>In 2017 the problem set to status “solved”<br />
+- 29 of 38 competing teams had an accuracy of more than 95%<br />
+- ImageNet stopped competition</p>
+<h3 id="alphago-zero">AlphaGo Zero</h3>
+<p>Go is a strategy game <strong>invented 2500 years ago</strong> and has an estimated number of <strong>possible board configuration of 10¹⁷⁴</strong> compared to chess which has is 10¹²º. A detailed description is given by DeepMind’s blog post “AlphaGo Zero: Starting from scratch”<a href="#fn12" class="footnote-ref" id="fnref12"><sup>12</sup></a></p>
+<p><strong>AlphaGo Zero</strong> is a version of DeepMind’s<a href="#fn13" class="footnote-ref" id="fnref13"><sup>13</sup></a> Go software AlphaGo</p>
+<ul>
+<li><p>
+No human intervention<img src="images/Chess.svg" alt="Smiley face" align="right" style="width:30%;">
+</p></li>
+<li>No usage of historical data</li>
+<li>After 3 days of training as good as AlphaGo which beat world champion in 4 out of 5</li>
+<li>After 40 days of training becomes best Go player in the world</li>
+</ul>
+<p>AlphaZero learned three games,</p>
+<div class="layout-chunk" data-layout="l-body">
+<p><img src="images/AlphaZeroTrainingTime.png" width="70%" /></p>
+</div>
+<p>The capability progress of Alpha Zero during training is shown below</p>
+<figure>
+<img src="images/AlphaZeroTraining.gif" alt="Figure from https://deepmind.com/blog/article/alphazero-shedding-new-light-grand-games-chess-shogi-and-go" class="external" style="width:100.0%" /><figcaption>Figure from <a href="https://deepmind.com/blog/article/alphazero-shedding-new-light-grand-games-chess-shogi-and-go" class="uri">https://deepmind.com/blog/article/alphazero-shedding-new-light-grand-games-chess-shogi-and-go</a></figcaption>
+</figure>
+<p>NOTE: EACH TRAINING STEP REPRESENTS 4,096 BOARD POSITIONS.</p>
+<p>At the end of the training Alpha Zero achieved the following performance:</p>
+<figure>
+<img src="images/AlphaZeroPerformance.png" alt="Figure from https://deepmind.com/blog/article/alphazero-shedding-new-light-grand-games-chess-shogi-and-go" class="external" style="width:100.0%" /><figcaption>Figure from <a href="https://deepmind.com/blog/article/alphazero-shedding-new-light-grand-games-chess-shogi-and-go" class="uri">https://deepmind.com/blog/article/alphazero-shedding-new-light-grand-games-chess-shogi-and-go</a></figcaption>
+</figure>
+<p>Implications are wider than just playing a game, as Garry Kasparov, a former world chess champion puts it:</p>
+<blockquote>
+<p>The implications go far beyond my beloved chessboard… Not only do these self-taught expert machines perform incredibly well, but we can actually learn from the new knowledge they produce.&quot;</p>
+</blockquote>
+<h2 id="bias">Bias</h2>
+<p>Models might end up biased, why is that?</p>
+<div class="layout-chunk" data-layout="l-body">
+<p><img src="images/FaultyReward.png" width="70%" /></p>
+</div>
+<ul>
+<li><p>
+Framing the problem <img src="images/goal.svg" alt="Smiley face" align="right" style="width:10%;">
+</p>
+<ul>
+<li>Goal is business reason, not fairness or avoidance of discrimination</li>
+<li>Goal might lead to unwanted side effects <a href="https://openai.com/blog/faulty-reward-functions/" class="uri">https://openai.com/blog/faulty-reward-functions/</a></li>
+</ul></li>
+<li><p>
+Collecting data<img src="images/Zebra.svg" alt="Smiley face" align="right" style="width:10%;">
+</p>
+<ul>
+<li>Unrepresentative of reality
+<ul>
+<li>Collecting images of zebras only when sun shines =&gt; model might look for shadow for classifying a zebra</li>
+</ul></li>
+<li>Reflects existing prejudices
+<ul>
+<li>Historical data might lead recruiting tools to dismiss female candidates</li>
+</ul></li>
+</ul></li>
+<li><p>
+Preparing the data<img src="images/Gender.svg" alt="Smiley face" align="right" style="width:10%;">
+</p>
+<ul>
+<li>Selecting attributes to be considered might lead to bias
+<ul>
+<li>Attribute gender might lead to bias</li>
+</ul></li>
+</ul></li>
+</ul>
+<h4 id="how-to-avoid-bias">How to avoid bias</h4>
+<p>Avoiding bias is harder than you might think</p>
+<ul>
+<li><p>
+Unknown unknowns<img src="images/Unknown.svg" alt="Smiley face" align="right" style="width:10%;">
+</p>
+<ul>
+<li>Gender might be deducted by recruiting tool from use of language</li>
+</ul></li>
+<li>Imperfect processes
+<ul>
+<li>Test data has same bias as training data</li>
+<li>Bias not easy to discover</li>
+</ul></li>
+</ul>
+<h4 id="human-bias">Human bias</h4>
+<p>Machine learning model can be biased for several reasons as shown above, how about humans?</p>
+<ul>
+<li><p>
+Study in Germany<img src="images/HumanBias.png" alt="Smiley face" align="right" style="width:40%;">
+</p></li>
+<li>Judges read description of shoplifter</li>
+<li>Rolled a pair of loaded dice</li>
+<li>Dice = <strong>3</strong> =&gt; Average <strong>5</strong> months prison</li>
+<li>Dice = <strong>9</strong> =&gt; Average <strong>8</strong> months prison</li>
+</ul>
+<h2 id="attacks">Attacks</h2>
+<p>Especially image classification models have shown to be susceptible to attacks which leads to wrong classifications. This could lead to</p>
+<ul>
+<li>Traffic sign misclassification</li>
+<li>Avoiding face detection</li>
+</ul>
+<p>How a attack can be performed is described by Goodfellow et al. in <span class="citation" data-cites="goodfellow2014explaining">(Goodfellow, Shlens, and Szegedy <a href="#ref-goodfellow2014explaining">2014</a>)</span></p>
+<ul>
+<li>Adding noise to image leads to misclassification</li>
+</ul>
+<figure>
+<img src="images/GanAttack.png" alt="Figure from Image Credit: Goodfellow et al. (Goodfellow, Shlens, and Szegedy 2014))" class="external" style="width:100.0%" /><figcaption>Figure from Image Credit: Goodfellow et al. <span class="citation" data-cites="goodfellow2014explaining">(Goodfellow, Shlens, and Szegedy <a href="#ref-goodfellow2014explaining">2014</a>)</span>)</figcaption>
+</figure>
+<hr />
+<h3 id="but-what-about-attacks-on-human-perception">But what about attacks on human perception?</h3>
+<p>Which statement is correct?</p>
+<ul>
+<li><p>
+Top line longer<img src="images/LineLengthIllusion.png" alt="Smiley face" align="right" style="width:40%;">
+</p></li>
+<li>Bottom line longer</li>
+<li>Both are same length</li>
+</ul>
+<hr />
+<h4 id="is-this-a-picture-of-a-real-person">Is this a picture of a real person?</h4>
+<p>Look at the picture below, is it a real person or an animation?</p>
+<figure>
+<img src="images/GanWomen.png" alt="Figure from https://commons.wikimedia.org/wiki/File:Woman_1.jpg (Image Credit: Owlsmcgee [Public domain] )" class="external" style="width:60.0%" /><figcaption>Figure from <a href="https://commons.wikimedia.org/wiki/File:Woman_1.jpg" class="uri">https://commons.wikimedia.org/wiki/File:Woman_1.jpg</a> (Image Credit: Owlsmcgee [Public domain] )</figcaption>
+</figure>
+<hr />
+<p>The image is create using a generative adversarial network (GAN), see below for the principle, for detailed description see <a href="https://medium.com/ai-society/gans-from-scratch-1-a-deep-introduction-with-code-in-pytorch-and-tensorflow-cb03cdcdba0f" class="uri">https://medium.com/ai-society/gans-from-scratch-1-a-deep-introduction-with-code-in-pytorch-and-tensorflow-cb03cdcdba0f</a></p>
+<hr />
+<div class="layout-chunk" data-layout="l-screen-inset">
+<p><img src="images/GanPrincipleAndSteps.png" width="948" /></p>
+</div>
+<hr />
+<h1 id="outlook">Outlook</h1>
+<p>What will the future bring for society?</p>
+<blockquote>
+<p>The saddest aspect of life right now is that science gathers knowledge faster than society gathers wisdom.</p>
+</blockquote>
+<p>Isaac Asimov</p>
+<h2 id="development-of-life">Development of life</h2>
+<p>Tegmark in “Life 3.0: Being human in the age of artificial intelligence” <span class="citation" data-cites="tegmark2017life">(Tegmark <a href="#ref-tegmark2017life">2017</a>)</span> p. 23. <strong>classifies life into three stages</strong> and shows the two existing stages of life and the third stage which might be ahead.</p>
+<hr />
+<p><img src="images/threeStagesOfLife.png"  style="width:100%;" ></p>
+<hr />
+<p>The three stages of life have overlapping skills, <strong>but only life 3.0 has all skills</strong> and is able to design its hardware and therefore might be able to have unlimited skills</p>
+<p><img src="images/life3_0ThreeStagesOfLife.png"  style="width:130%;"></p>
+<hr />
+<h3 id="when-will-superhuman-ai-come-and-will-it-be-good">When will superhuman AI come, and will it be good?</h3>
+<p>Several opinions about when and if superhuman AI will appear and if it will be a good thing or not exists. Those opinions can be grouped as shown in the following graph.</p>
+<p><img src="images/WillSuperhumanAi.png"  style="width:130%;"></p>
+<p>Luddite =&gt; A person opposed to new technology or ways of working</p>
+<p>Please cast your vote at <a href="https://pingo.coactum.de/157678" class="uri">https://pingo.coactum.de/157678</a><a href="#fn14" class="footnote-ref" id="fnref14"><sup>14</sup></a></p>
+<h3 id="ai-aftermath-scenario">AI aftermath scenario</h3>
+<p>To be prepared we might want to ask yourselves:</p>
+<ol type="1">
+<li>Do you want there to be superintelligence?<br />
+</li>
+<li>Do you want humans to still exist, be replaced, cyborgized and/or uploaded/simulated?<br />
+</li>
+<li>Do you want humans or machines in control?<br />
+</li>
+<li>Do you want AIs to be conscious or not?<br />
+</li>
+<li>Do you want to maximize positive experiences, minimize suffering or leave this to sort itself out?<br />
+</li>
+<li>Do you want life spreading into the cosmos?<br />
+</li>
+<li>Do you want a civilization striving toward a greater purpose that you sympathize with, or are you OK with future life forms that appear content?</li>
+</ol>
+<p>Depending on your answers this might lead to one of the following scenario</p>
+<hr />
+<div class="layout-chunk" data-layout="l-body">
+<div id="htmlwidget-7dfd2d05cd7cb6ab7d40" style="width:100%;height:auto;" class="datatables html-widget"></div>
+<script type="application/json" data-for="htmlwidget-7dfd2d05cd7cb6ab7d40">{"x":{"filter":"top","filterHTML":"<tr>\n  <td data-type=\"character\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n  <\/td>\n  <td data-type=\"character\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n  <\/td>\n  <td data-type=\"character\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n  <\/td>\n  <td data-type=\"character\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n  <\/td>\n  <td data-type=\"character\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n  <\/td>\n  <td data-type=\"character\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n  <\/td>\n  <td data-type=\"character\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n  <\/td>\n<\/tr>","data":[["Libertarian utopia","Benevolent dictator","Egalitarian utopia","Gatekeeper","Protector god","Enslaved god","Conquerors","Descendants","Zookeeper","1984","Reversion","Self-destruction"],["Yes","Yes","No","Yes","Yes","Yes","Yes","Yes","Yes","No","No","No"],["Yes","Yes","Yes","Yes","Yes","Yes","No","No","Yes","Yes","Yes","No"],["No","No","Yes?","Partially","Partially","Yes","-","-","No","Yes","Yes","-"],["No","Yes","Yes","Potentially","Potentially","Potentially","-","-","Yes","Potentially","No","-"],["Mixed","Mixed","Yes?","Mixed","Mixed","Mixed","-","-","No","Mixed","Mixed","-"],["Yes","Yes","Yes","Yes","Yes","Yes","?","?","Yes","Yes","Yes","No"]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th>Scenario<\/th>\n      <th>Superinteligence exists?<\/th>\n      <th>Humans exist?<\/th>\n      <th>Humans in Control?<\/th>\n      <th>Humans safe?<\/th>\n      <th>Humans happy?<\/th>\n      <th>Consciousness exists?<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"pageLength":12,"autoWidth":false,"order":[],"orderClasses":false,"orderCellsTop":true,"lengthMenu":[10,12,25,50,100],"rowCallback":"function(row, data) {\nvar value=data[2]; $(this.api().cell(row, 2).node()).css({'background-color':value == \"No\" ? \"red\" : value});\n}"}},"evals":["options.rowCallback"],"jsHooks":[]}</script>
+</div>
+<hr />
+<p>A verbal description of the scenarios is given below, type the name of the scenario into the left field, if you want more scenarios to be shown increase the “Show entries” entry</p>
+<hr />
+<div class="layout-chunk" data-layout="l-body">
+<div id="htmlwidget-3d38f884926a1c08b26f" style="width:100%;height:auto;" class="datatables html-widget"></div>
+<script type="application/json" data-for="htmlwidget-3d38f884926a1c08b26f">{"x":{"filter":"top","filterHTML":"<tr>\n  <td data-type=\"character\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n  <\/td>\n  <td data-type=\"character\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n  <\/td>\n<\/tr>","data":[["Conquerors","Libertarian utopia","Benevolent dictator","Egalitarian utopia","Gatekeeper","Protector god","Enslaved god","Descendants","Zookeeper","1984","Reversion","Self-destruction"],[" AI takes control, decides that humans are a threat/nuisance/waste of resources, and gets rid of us by a method that we don’t even understand","Humans, cyborgs, uploads and superintelligences coexist peacefully thanks to property rights"," Everybody knows that the AI runs society and enforces strict rules, but most people view this as a good thing"," Humans, cyborgs and uploads coexist peacefully thanks to property abolition and guaranteed income","A superintelligent AI is created with the goal of interfering as little as necessary to prevent the creation of another superintelligence. As a result, helper robots with slightly subhuman intelligence abound, and human-machine cyborgs exist, but technological progress is forever stymied","Essentially omniscient and omnipotent AI maximizes human happiness by intervening only in ways that preserve our feeling of control of our own destiny and hides well enough that many humans even doubt the AI’s existence"," A superintelligent AI is confined by humans, who use it to produce unimaginable technology and wealth that can be used for good or bad depending on the human controllers","AIs replace humans, but give us a graceful exit, making us view them as our worthy descendants, much as parents feel happy and proud to have a child who’s smarter than them, who learns from them and then accomplishes what they could only dream of—even if they can’t live to see it all","An omnipotent AI keeps some humans around, who feel treated like zoo animals and lament their fate"," Technological progress toward superintelligence is permanently curtailed not by an AI but by a human-led Orwellian surveillance state where certain kinds of AI research are banned"," Technological progress toward superintelligence is prevented by reverting to a pre-technological society in the style of the Amish"," Superintelligence is never created because humanity drives itself extinct by other means (say nuclear and/or biotech)"]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th>Name<\/th>\n      <th>Definition<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"pageLength":1,"autoWidth":false,"order":[],"orderClasses":false,"orderCellsTop":true,"lengthMenu":[1,10,25,50,100]}},"evals":[],"jsHooks":[]}</script>
+</div>
+<h2 id="data-religion-dataism">Data religion: Dataism</h2>
+<p>A data based religion called <strong>Dataism</strong> is a concept described by Harari in Homo Deus: A brief history of tomorrow <span class="citation" data-cites="harari2016homo">(Harari <a href="#ref-harari2016homo">2016</a>)</span> and says:</p>
+<ul>
+<li>Universe consists of data flow</li>
+<li>Value of entity determined by contribution to data processing</li>
+<li>Collapses barrier between animals and machines<a href="#fn15" class="footnote-ref" id="fnref15"><sup>15</sup></a>
+<ul>
+<li>electronic algorithms eventually outperform biochemical algorithms</li>
+</ul></li>
+</ul>
+<hr />
+<p>In data we trust</p>
+<ul>
+<li><p>
+Humans supposed to distill <img src="images/DataToWisdom.png" alt="Smiley face" align="right" style="width:60%;">
+</p>
+<ul>
+<li>data =&gt; information</li>
+<li>information =&gt; knowledge</li>
+<li>knowledge =&gt; wisdom</li>
+</ul></li>
+<li>Dataists
+<ul>
+<li>believe humans can not cope with immense flow of data</li>
+<li>put there trust in Big Data and computer algorithms</li>
+</ul></li>
+</ul>
+<hr />
+<p>Dataism: only wild fantasy?</p>
+<ul>
+<li><p>
+Dataism entrenched in<img src="images/biology.svg" alt="Smiley face" align="right" style="width:20%;">
+</p>
+<ul>
+<li>computer science</li>
+<li>biology
+<ul>
+<li>giraffes, tomatoes and human beings are just different methods for processing data</li>
+<li>that is current scientific dogma</li>
+</ul></li>
+</ul></li>
+</ul>
+<hr />
+<p>Economists interpret economy as data processing system</p>
+<ul>
+<li>Gathering data about desires and abilities</li>
+<li>Turning data into decisions
+<ul>
+<li>Capitalism =&gt; distributed processing</li>
+<li>Communism =&gt; centralized processing</li>
+</ul></li>
+<li>Capitalists against high taxes
+<ul>
+<li>capital accumulates at state</li>
+<li>more decisions by single processor, namely government</li>
+</ul></li>
+</ul>
+<h2 id="career-oxford-seeks-ai-ethics-professor">Career: Oxford seeks AI ethics professor</h2>
+<ul>
+<li>Associate Professorship or Professorship in Philosophy</li>
+<li>Apply for <a href="https://www.jobs.ac.uk/job/BYC826/associate-professorship-or-professorship-in-philosophy">University of Oxford - Faculty of Philosophy (Ethics in AI)</a></li>
+</ul>
+<div id="refs" class="references">
+<div id="ref-binet1916new">
+<p>Binet, Alfred, and Th Simon. 1916. “New Methods for the Diagnosis of the Intellectual Level of Subnormals.(L’Année Psych., 1905, Pp. 191-244).” Williams &amp; Wilkins Co.</p>
+</div>
+<div id="ref-goodfellow2014explaining">
+<p>Goodfellow, Ian J, Jonathon Shlens, and Christian Szegedy. 2014. “Explaining and Harnessing Adversarial Examples.” <em>arXiv Preprint arXiv:1412.6572</em>.</p>
+</div>
+<div id="ref-gottfredson1997mainstream">
+<p>Gottfredson, Linda S. 1997. “Mainstream Science on Intelligence: An Editorial with 52 Signatories, History, and Bibliography.” Citeseer.</p>
+</div>
+<div id="ref-harari2016homo">
+<p>Harari, Yuval Noah. 2016. <em>Homo Deus: A Brief History of Tomorrow</em>. Random House.</p>
+</div>
+<div id="ref-kahneman2011thinking">
+<p>Kahneman, Daniel. 2011. <em>Thinking, Fast and Slow</em>. Macmillan.</p>
+</div>
+<div id="ref-ILSVRC15">
+<p>Russakovsky, Olga, Jia Deng, Hao Su, Jonathan Krause, Sanjeev Satheesh, Sean Ma, Zhiheng Huang, et al. 2015. “ImageNet Large Scale Visual Recognition Challenge.” <em>International Journal of Computer Vision (IJCV)</em> 115 (3): 211–52. <a href="https://doi.org/10.1007/s11263-015-0816-y">https://doi.org/10.1007/s11263-015-0816-y</a>.</p>
+</div>
+<div id="ref-tegmark2017life">
+<p>Tegmark, Max. 2017. <em>Life 3.0: Being Human in the Age of Artificial Intelligence</em>. Knopf.</p>
+</div>
+</div>
+<section class="footnotes">
+<hr />
+<ol>
+<li id="fn1"><p>American pioneer in the field of computer gaming and artificial intelligence <a href="https://en.wikipedia.org/wiki/Arthur_Samuel" class="uri">https://en.wikipedia.org/wiki/Arthur_Samuel</a><a href="#fnref1" class="footnote-back">↩</a></p></li>
+<li id="fn2"><p>professor of Computer Science and Machine Learning at Carnegie Mellon <a href="http://www.cs.cmu.edu/~tom/" class="uri">http://www.cs.cmu.edu/~tom/</a><a href="#fnref2" class="footnote-back">↩</a></p></li>
+<li id="fn3"><p>17*35=595<a href="#fnref3" class="footnote-back">↩</a></p></li>
+<li id="fn4"><p>Knowledge neglect <a href="https://en.wikipedia.org/wiki/Knowledge_neglect" class="uri">https://en.wikipedia.org/wiki/Knowledge_neglect</a><a href="#fnref4" class="footnote-back">↩</a></p></li>
+<li id="fn5"><p>Die drei letzten Bundespräsidenten: Steinmeier, Gauck, Wulf<a href="#fnref5" class="footnote-back">↩</a></p></li>
+<li id="fn6"><p><a href="https://www.anesi.com/bayes.htm" class="uri">https://www.anesi.com/bayes.htm</a><a href="#fnref6" class="footnote-back">↩</a></p></li>
+<li id="fn7"><p>Pingo question: What is the probability that the cab involved in the accident was Blue rather than Green? <a href="https://pingo.coactum.de/questions" class="uri">https://pingo.coactum.de/questions</a><a href="#fnref7" class="footnote-back">↩</a></p></li>
+<li id="fn8"><p>Screening mammography aims to identify breast cancer at earlier stages of the disease, when treatment can be more successful. Despite the existence of screening programmes worldwide, the interpretation of mammograms is affected by high rates of false positives and false negatives. Here we present an artificial intelligence (AI) system that is capable of surpassing human experts in breast cancer prediction. To assess its performance in the clinical setting, we curated a large representative dataset from the UK and a large enriched dataset from the USA. We show an absolute reduction of 5.7% and 1.2% (USA and UK) in false positives and 9.4% and 2.7% in false negatives. We provide evidence of the ability of the system to generalize from the UK to the USA. In an independent study of six radiologists, the AI system outperformed all of the human readers: the area under the receiver operating characteristic curve (AUC-ROC) for the AI system was greater than the AUC-ROC for the average radiologist by an absolute margin of 11.5%. We ran a simulation in which the AI system participated in the double-reading process that is used in the UK, and found that the AI system maintained non-inferior performance and reduced the workload of the second reader by 88%. This robust assessment of the AI system paves the way for clinical trials to improve the accuracy and efficiency of breast cancer screening. <a href="https://www.nature.com/articles/s41586-019-1799-6" class="uri">https://www.nature.com/articles/s41586-019-1799-6</a><a href="#fnref8" class="footnote-back">↩</a></p></li>
+<li id="fn9"><p>Abstract With an estimated 160,000 deaths in 2018, lung cancer is the most common cause of cancer death in the United States1. Lung cancer screening using low-dose computed tomography has been shown to reduce mortality by 20–43% and is now included in US screening guidelines. Existing challenges include inter-grader variability and high false-positive and false-negative rates. We propose a deep learning algorithm that uses a patient’s current and prior computed tomography volumes to predict the risk of lung cancer. Our model achieves a state-of-the-art performance (94.4% area under the curve) on 6,716 National Lung Cancer Screening Trial cases, and performs similarly on an independent clinical validation set of 1,139 cases. We conducted two reader studies. When prior computed tomography imaging was not available, our model outperformed all six radiologists with absolute reductions of 11% in false positives and 5% in false negatives. Where prior computed tomography imaging was available, the model performance was on-par with the same radiologists. This creates an opportunity to optimize the screening process via computer assistance and automation. While the vast majority of patients remain unscreened, we show the potential for deep learning models to increase the accuracy, consistency and adoption of lung cancer screening worldwide. Website: <a href="https://www.nature.com/articles/s41591-019-0447-x" class="uri">https://www.nature.com/articles/s41591-019-0447-x</a> <a href="#fnref9" class="footnote-back">↩</a></p></li>
+<li id="fn10"><p>Homepage of ILSVRC <a href="http://www.image-net.org/challenges/LSVRC/" class="uri">http://www.image-net.org/challenges/LSVRC/</a><a href="#fnref10" class="footnote-back">↩</a></p></li>
+<li id="fn11"><p> Homepage of ImageNet <a href="http://www.image-net.org" class="uri">http://www.image-net.org</a><a href="#fnref11" class="footnote-back">↩</a></p></li>
+<li id="fn12"><p><a href="https://deepmind.com/blog/article/alphago-zero-starting-scratch" class="uri">https://deepmind.com/blog/article/alphago-zero-starting-scratch</a><a href="#fnref12" class="footnote-back">↩</a></p></li>
+<li id="fn13"><p>Homepage of DeepMind <a href="https://deepmind.com" class="uri">https://deepmind.com</a><a href="#fnref13" class="footnote-back">↩</a></p></li>
+<li id="fn14"><p>Pingo question: Ihre Position zur AGI? <a href="https://pingo.coactum.de/questions" class="uri">https://pingo.coactum.de/questions</a><a href="#fnref14" class="footnote-back">↩</a></p></li>
+<li id="fn15"><p>“Dataism was born from the explosive confluence of two scientific tidal waves. In the 150 years since Charles Darwin published On the Origin of Species, the life sciences have come to see organisms as biochemical algorithms. Simultaneously, in the eight decades since Alan Turing formulated the idea of a Turing Machine, computer scientists have learned to engineer increasingly sophisticated electronic algorithms. Dataism puts the two together, pointing out that exactly the same mathematical laws apply to both biochemical and electronic algorithms. Dataism thereby collapses the barrier between animals and machines, and expects electronic algorithms to eventually decipher and outperform biochemical algorithms.” Harari, Yuval Noah. Homo Deus: A Brief History of Tomorrow . HarperCollins. Kindle Edition. <a href="#fnref15" class="footnote-back">↩</a></p></li>
+</ol>
+</section>
+<!--radix_placeholder_article_footer-->
+<div class="article-footer">
+  <p class="social_footer">
+    <span class="article-sharing">
+      Share: &nbsp;
+      <a href="https://twitter.com/share?text=Machine%20learning%2C%20shall%20we%3F&amp;url=http%3A%2F%2Fuwesterr.de%2Fposts%2F2020-01-21-machine-learning-shall-we%2F">
+        <i class="fab fa-twitter"></i>
+      </a>
+      <a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=http%3A%2F%2Fuwesterr.de%2Fposts%2F2020-01-21-machine-learning-shall-we%2F&amp;title=Machine%20learning%2C%20shall%20we%3F">
+        <i class="fab fa-linkedin"></i>
+      </a>
+    </span>
+  </p>
+</div>
+<!--/radix_placeholder_article_footer-->
+</div>
+
+<div class="d-appendix">
+</div>
+
+
+<!--radix_placeholder_site_after_body-->
+<!--/radix_placeholder_site_after_body-->
+<!--radix_placeholder_appendices-->
+<div class="appendix-bottom">
+  <h3 id="reuse">Reuse</h3>
+  <p>Text and figures are licensed under Creative Commons Attribution <a rel="license" href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>. The figures that have been reused from other sources don't fall under this license and can be recognized by a note in their caption: "Figure from ...".</p>
+  <h3 id="citation">Citation</h3>
+  <p>For attribution, please cite this work as</p>
+  <pre class="citation-appendix short">Sterr (2020, Jan. 21). Uwe's Blog: Machine learning, shall we?. Retrieved from http://uwesterr.de/posts/2020-01-21-machine-learning-shall-we/</pre>
+  <p>BibTeX citation</p>
+  <pre class="citation-appendix long">@misc{sterr2020machine,
+  author = {Sterr, Uwe},
+  title = {Uwe's Blog: Machine learning, shall we?},
+  url = {http://uwesterr.de/posts/2020-01-21-machine-learning-shall-we/},
+  year = {2020}
+}</pre>
+</div>
+<script id="distill-bibliography" type="text/bibtex">
+%% This BibTeX bibliography file was created using BibDesk.
+%% https://bibdesk.sourceforge.io/
+
+%% Created for Uwe Sterr at 2020-02-13 16:42:23 +0100 
+
+
+%% Saved with string encoding Unicode (UTF-8) 
+
+
+
+@book{dillon1984multivariate,
+	Author = {Dillon, William R and Goldstein, Matthew},
+	Date-Added = {2020-02-13 16:41:23 +0100},
+	Date-Modified = {2020-02-13 16:41:23 +0100},
+	Number = {519.535 D5},
+	Title = {Multivariate analysismethods and applications},
+	Year = {1984}}
+
+@article{scikit-learn,
+	Author = {Pedregosa, F. and Varoquaux, G. and Gramfort, A. and Michel, V. and Thirion, B. and Grisel, O. and Blondel, M. and Prettenhofer, P. and Weiss, R. and Dubourg, V. and Vanderplas, J. and Passos, A. and Cournapeau, D. and Brucher, M. and Perrot, M. and Duchesnay, E.},
+	Date-Added = {2020-02-12 17:22:14 +0100},
+	Date-Modified = {2020-02-12 17:22:14 +0100},
+	Journal = {Journal of Machine Learning Research},
+	Pages = {2825--2830},
+	Title = {Scikit-learn: Machine Learning in {P}ython},
+	Volume = {12},
+	Year = {2011}}
+
+@article{DBLP:journals/corr/VaswaniSPUJGKP17,
+	Archiveprefix = {arXiv},
+	Author = {Ashish Vaswani and Noam Shazeer and Niki Parmar and Jakob Uszkoreit and Llion Jones and Aidan N. Gomez and Lukasz Kaiser and Illia Polosukhin},
+	Bibsource = {dblp computer science bibliography, https://dblp.org},
+	Biburl = {https://dblp.org/rec/bib/journals/corr/VaswaniSPUJGKP17},
+	Date-Added = {2020-02-08 18:49:06 +0100},
+	Date-Modified = {2020-02-08 18:49:06 +0100},
+	Eprint = {1706.03762},
+	Journal = {CoRR},
+	Timestamp = {Mon, 13 Aug 2018 16:48:37 +0200},
+	Title = {Attention Is All You Need},
+	Url = {http://arxiv.org/abs/1706.03762},
+	Volume = {abs/1706.03762},
+	Year = {2017},
+	Bdsk-Url-1 = {http://arxiv.org/abs/1706.03762},
+	Bdsk-File-1 = {YnBsaXN0MDDSAQIDBFxyZWxhdGl2ZVBhdGhZYWxpYXNEYXRhXxAuTWxWaHMyMDIwL3BhcGVycy9BdHRlbnRpb24gSXMgQWxsIFlvdSBOZWVkLnBkZk8RAeQAAAAAAeQAAgAADE1hY2ludG9zaCBIRAAAAAAAAAAAAAAAAAAAAAAAAABCRAAB/////x1BdHRlbnRpb24gSXMgQWxsIFlvdSBOZWVkLnBkZgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD/////AAAAAAAAAAAAAAAAAAEABAAACiBjdQAAAAAAAAAAAAAAAAAGcGFwZXJzAAIAaC86VXNlcnM6dXdlc3RlcnI6Q2xvdWRQcm9qZWN0c1VuZGVyV29yazpQcm9qZWN0c1VuZGVyV29yazpNbFZoczIwMjA6cGFwZXJzOkF0dGVudGlvbiBJcyBBbGwgWW91IE5lZWQucGRmAA4APAAdAEEAdAB0AGUAbgB0AGkAbwBuACAASQBzACAAQQBsAGwAIABZAG8AdQAgAE4AZQBlAGQALgBwAGQAZgAPABoADABNAGEAYwBpAG4AdABvAHMAaAAgAEgARAASAGZVc2Vycy91d2VzdGVyci9DbG91ZFByb2plY3RzVW5kZXJXb3JrL1Byb2plY3RzVW5kZXJXb3JrL01sVmhzMjAyMC9wYXBlcnMvQXR0ZW50aW9uIElzIEFsbCBZb3UgTmVlZC5wZGYAEwABLwAAFQACAA///wAAAAgADQAaACQAVQAAAAAAAAIBAAAAAAAAAAUAAAAAAAAAAAAAAAAAAAI9}}
+
+@article{zhang2018exploring,
+	Author = {Zhang, Zhongxing and Mayer, Geert and Dauvilliers, Yves and Plazzi, Giuseppe and Pizza, Fabio and Fronczek, Rolf and Santamaria, Joan and Partinen, Markku and Overeem, Sebastiaan and Peraita-Adrados, Rosa and others},
+	Date-Added = {2020-02-06 11:04:22 +0100},
+	Date-Modified = {2020-02-06 11:04:22 +0100},
+	Journal = {Scientific reports},
+	Number = {1},
+	Pages = {1--11},
+	Publisher = {Nature Publishing Group},
+	Title = {Exploring the clinical features of narcolepsy type 1 versus narcolepsy type 2 from European Narcolepsy Network database with machine learning},
+	Volume = {8},
+	Year = {2018},
+	Bdsk-File-1 = {YnBsaXN0MDDSAQIDBFxyZWxhdGl2ZVBhdGhZYWxpYXNEYXRhXxBcTWxWaHMyMDIwL3BhcGVycy9FeHBsb3Jpbmd0aGVjbGluaWNhbGZlYXR1cmVzb2ZOVDF2c05UMmZyb210aGVFVS1OTmRid2l0aG1hY2hpbmVsZWFybmluZy5wZGZPEQKcAAAAAAKcAAIAAAxNYWNpbnRvc2ggSEQAAAAAAAAAAAAAAAAAAAAAAAAAQkQAAf////8fRXhwbG9yaW5ndGhlY2xpbmljI0ZGRkZGRkZGLnBkZgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/////wAAAABQREYgAAAAAAABAAQAAAogY3UAAAAAAAAAAAAAAAAABnBhcGVycwACAJYvOlVzZXJzOnV3ZXN0ZXJyOkNsb3VkUHJvamVjdHNVbmRlcldvcms6UHJvamVjdHNVbmRlcldvcms6TWxWaHMyMDIwOnBhcGVyczpFeHBsb3Jpbmd0aGVjbGluaWNhbGZlYXR1cmVzb2ZOVDF2c05UMmZyb210aGVFVS1OTmRid2l0aG1hY2hpbmVsZWFybmluZy5wZGYADgCYAEsARQB4AHAAbABvAHIAaQBuAGcAdABoAGUAYwBsAGkAbgBpAGMAYQBsAGYAZQBhAHQAdQByAGUAcwBvAGYATgBUADEAdgBzAE4AVAAyAGYAcgBvAG0AdABoAGUARQBVAC0ATgBOAGQAYgB3AGkAdABoAG0AYQBjAGgAaQBuAGUAbABlAGEAcgBuAGkAbgBnAC4AcABkAGYADwAaAAwATQBhAGMAaQBuAHQAbwBzAGgAIABIAEQAEgCUVXNlcnMvdXdlc3RlcnIvQ2xvdWRQcm9qZWN0c1VuZGVyV29yay9Qcm9qZWN0c1VuZGVyV29yay9NbFZoczIwMjAvcGFwZXJzL0V4cGxvcmluZ3RoZWNsaW5pY2FsZmVhdHVyZXNvZk5UMXZzTlQyZnJvbXRoZUVVLU5OZGJ3aXRobWFjaGluZWxlYXJuaW5nLnBkZgATAAEvAAAVAAIAD///AAAACAANABoAJACDAAAAAAAAAgEAAAAAAAAABQAAAAAAAAAAAAAAAAAAAyM=}}
+
+@book{ayres2007super,
+	Author = {Ayres, Ian},
+	Date-Added = {2020-02-05 13:06:17 +0100},
+	Date-Modified = {2020-02-05 13:06:17 +0100},
+	Publisher = {Bantam Books},
+	Title = {Super crunchers: Why thinking-by-numbers is the new way to be smart},
+	Year = {2007}}
+
+@article{temko2011performance,
+	Author = {Temko, A and Thomas, E and Marnane, W and Lightbody, G and Boylan, GB},
+	Date-Added = {2020-02-04 12:58:05 +0100},
+	Date-Modified = {2020-02-04 12:58:05 +0100},
+	Journal = {Clinical Neurophysiology},
+	Number = {3},
+	Pages = {474--482},
+	Publisher = {Elsevier},
+	Title = {Performance assessment for EEG-based neonatal seizure detectors},
+	Volume = {122},
+	Year = {2011}}
+
+@article{temko2011eeg,
+	Author = {Temko, A and Thomas, E and Marnane, W and Lightbody, G and Boylan, G},
+	Date-Added = {2020-02-04 12:57:03 +0100},
+	Date-Modified = {2020-02-04 12:57:03 +0100},
+	Journal = {Clinical Neurophysiology},
+	Number = {3},
+	Pages = {464--473},
+	Publisher = {Elsevier},
+	Title = {EEG-based neonatal seizure detection with support vector machines},
+	Volume = {122},
+	Year = {2011}}
+
+@article{barachant2013classification,
+	Author = {Barachant, Alexandre and Bonnet, St{\'e}phane and Congedo, Marco and Jutten, Christian},
+	Date-Added = {2020-02-04 11:28:29 +0100},
+	Date-Modified = {2020-02-04 11:28:29 +0100},
+	Journal = {Neurocomputing},
+	Pages = {172--178},
+	Publisher = {Elsevier},
+	Title = {Classification of covariance matrices using a Riemannian-based kernel for BCI applications},
+	Volume = {112},
+	Year = {2013}}
+
+@article{bojarski2016visualbackprop,
+	Author = {Bojarski, Mariusz and Choromanska, Anna and Choromanski, Krzysztof and Firner, Bernhard and Jackel, Larry and Muller, Urs and Zieba, Karol},
+	Date-Added = {2020-01-31 18:09:57 +0100},
+	Date-Modified = {2020-01-31 18:09:57 +0100},
+	Journal = {arXiv preprint arXiv:1611.05418},
+	Title = {Visualbackprop: efficient visualization of cnns},
+	Year = {2016},
+	Bdsk-File-1 = {YnBsaXN0MDDSAQIDBFxyZWxhdGl2ZVBhdGhZYWxpYXNEYXRhXxBDTWxWaHMyMDIwL3BhcGVycy9WaXN1YWxCYWNrUHJvcF9lZmZpY2llbnQgdmlzdWFsaXphdGlvbiBvZiBDTk5zLnBkZk8RAjoAAAAAAjoAAgAADE1hY2ludG9zaCBIRAAAAAAAAAAAAAAAAAAAAAAAAABCRAAB/////x9WaXN1YWxCYWNrUHJvcF9lZmYjRkZGRkZGRkYucGRmAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD/////AAAAAAAAAAAAAAAAAAEABAAACiBjdQAAAAAAAAAAAAAAAAAGcGFwZXJzAAIAfS86VXNlcnM6dXdlc3RlcnI6Q2xvdWRQcm9qZWN0c1VuZGVyV29yazpQcm9qZWN0c1VuZGVyV29yazpNbFZoczIwMjA6cGFwZXJzOlZpc3VhbEJhY2tQcm9wX2VmZmljaWVudCB2aXN1YWxpemF0aW9uIG9mIENOTnMucGRmAAAOAGYAMgBWAGkAcwB1AGEAbABCAGEAYwBrAFAAcgBvAHAAXwBlAGYAZgBpAGMAaQBlAG4AdAAgAHYAaQBzAHUAYQBsAGkAegBhAHQAaQBvAG4AIABvAGYAIABDAE4ATgBzAC4AcABkAGYADwAaAAwATQBhAGMAaQBuAHQAbwBzAGgAIABIAEQAEgB7VXNlcnMvdXdlc3RlcnIvQ2xvdWRQcm9qZWN0c1VuZGVyV29yay9Qcm9qZWN0c1VuZGVyV29yay9NbFZoczIwMjAvcGFwZXJzL1Zpc3VhbEJhY2tQcm9wX2VmZmljaWVudCB2aXN1YWxpemF0aW9uIG9mIENOTnMucGRmAAATAAEvAAAVAAIAD///AAAACAANABoAJABqAAAAAAAAAgEAAAAAAAAABQAAAAAAAAAAAAAAAAAAAqg=}}
+
+@article{binet1916new,
+	Author = {Binet, Alfred and Simon, Th},
+	Date-Added = {2020-01-30 20:16:14 +0100},
+	Date-Modified = {2020-01-30 20:16:14 +0100},
+	Publisher = {Williams \& Wilkins Co},
+	Title = {New methods for the diagnosis of the intellectual level of subnormals.(L'Ann{\'e}e Psych., 1905, pp. 191-244).},
+	Year = {1916}}
+
+@article{tulio2016should,
+	Author = {Tulio Ribeiro, Marco and Singh, Sameer and Guestrin, Carlos},
+	Date-Added = {2020-01-29 16:35:32 +0100},
+	Date-Modified = {2020-01-29 16:35:32 +0100},
+	Journal = {arXiv preprint arXiv:1602.04938},
+	Title = {" Why Should I Trust You?": Explaining the Predictions of Any Classifier},
+	Year = {2016}}
+
+@misc{gottfredson1997mainstream,
+	Author = {Gottfredson, Linda S},
+	Date-Added = {2020-01-28 09:49:43 +0100},
+	Date-Modified = {2020-01-28 09:49:43 +0100},
+	Publisher = {Citeseer},
+	Title = {Mainstream science on intelligence: An editorial with 52 signatories, history, and bibliography},
+	Year = {1997}}
+
+@inproceedings{widmaier2019towards,
+	Author = {Widmaier, Mark and Arnold, Maximilian and Dorner, Sebastian and Cammerer, Sebastian and ten Brink, Stephan},
+	Booktitle = {2019 IEEE 90th Vehicular Technology Conference (VTC2019-Fall)},
+	Date-Added = {2020-01-25 10:55:53 +0100},
+	Date-Modified = {2020-01-25 10:55:53 +0100},
+	Organization = {IEEE},
+	Pages = {1--6},
+	Title = {Towards Practical Indoor Positioning Based on Massive MIMO Systems},
+	Year = {2019}}
+
+@inproceedings{CycleGAN2017,
+	Author = {Zhu, Jun-Yan and Park, Taesung and Isola, Phillip and Efros, Alexei A},
+	Booktitle = {Computer Vision (ICCV), 2017 IEEE International Conference on},
+	Date-Added = {2020-01-23 09:20:55 +0100},
+	Date-Modified = {2020-01-23 09:20:55 +0100},
+	Title = {Unpaired Image-to-Image Translation using Cycle-Consistent Adversarial Networks},
+	Year = {2017}}
+
+@article{goodfellow2014explaining,
+	Author = {Goodfellow, Ian J and Shlens, Jonathon and Szegedy, Christian},
+	Date-Added = {2020-01-22 14:34:56 +0100},
+	Date-Modified = {2020-01-22 14:34:56 +0100},
+	Journal = {arXiv preprint arXiv:1412.6572},
+	Title = {Explaining and harnessing adversarial examples},
+	Year = {2014},
+	Bdsk-File-1 = {YnBsaXN0MDDSAQIDBFxyZWxhdGl2ZVBhdGhZYWxpYXNEYXRhXxBDTWxWaHMyMDIwL3BhcGVycy9FWFBMQUlOSU5HIEFORCBIQVJORVNTSU5HIEFEVkVSU0FSSUFMIEVYQU1QTEVTLnBkZk8RAjoAAAAAAjoAAgAADE1hY2ludG9zaCBIRAAAAAAAAAAAAAAAAAAAAAAAAABCRAAB/////x9FWFBMQUlOSU5HIEFORCBIQVIjRkZGRkZGRkYucGRmAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD/////AAAAAAAAAAAAAAAAAAEABAAACiBjdQAAAAAAAAAAAAAAAAAGcGFwZXJzAAIAfS86VXNlcnM6dXdlc3RlcnI6Q2xvdWRQcm9qZWN0c1VuZGVyV29yazpQcm9qZWN0c1VuZGVyV29yazpNbFZoczIwMjA6cGFwZXJzOkVYUExBSU5JTkcgQU5EIEhBUk5FU1NJTkcgQURWRVJTQVJJQUwgRVhBTVBMRVMucGRmAAAOAGYAMgBFAFgAUABMAEEASQBOAEkATgBHACAAQQBOAEQAIABIAEEAUgBOAEUAUwBTAEkATgBHACAAQQBEAFYARQBSAFMAQQBSAEkAQQBMACAARQBYAEEATQBQAEwARQBTAC4AcABkAGYADwAaAAwATQBhAGMAaQBuAHQAbwBzAGgAIABIAEQAEgB7VXNlcnMvdXdlc3RlcnIvQ2xvdWRQcm9qZWN0c1VuZGVyV29yay9Qcm9qZWN0c1VuZGVyV29yay9NbFZoczIwMjAvcGFwZXJzL0VYUExBSU5JTkcgQU5EIEhBUk5FU1NJTkcgQURWRVJTQVJJQUwgRVhBTVBMRVMucGRmAAATAAEvAAAVAAIAD///AAAACAANABoAJABqAAAAAAAAAgEAAAAAAAAABQAAAAAAAAAAAAAAAAAAAqg=}}
+
+@article{ILSVRC15,
+	Author = {Olga Russakovsky and Jia Deng and Hao Su and Jonathan Krause and Sanjeev Satheesh and Sean Ma and Zhiheng Huang and Andrej Karpathy and Aditya Khosla and Michael Bernstein and Alexander C. Berg and Li Fei-Fei},
+	Date-Added = {2020-01-21 13:25:16 +0100},
+	Date-Modified = {2020-01-21 13:25:16 +0100},
+	Doi = {10.1007/s11263-015-0816-y},
+	Journal = {International Journal of Computer Vision (IJCV)},
+	Number = {3},
+	Pages = {211-252},
+	Title = {{ImageNet Large Scale Visual Recognition Challenge}},
+	Volume = {115},
+	Year = {2015},
+	Bdsk-Url-1 = {https://doi.org/10.1007/s11263-015-0816-y}}
+
+@book{kuipers1999quaternions,
+	Author = {Kuipers, Jack B and others},
+	Date-Added = {2020-01-20 14:27:08 +0100},
+	Date-Modified = {2020-01-20 14:27:08 +0100},
+	Publisher = {Princeton university press Princeton},
+	Title = {Quaternions and rotation sequences},
+	Volume = {66},
+	Year = {1999}}
+
+@book{wendel2009integrierte,
+	Author = {Wendel, Jan},
+	Date-Added = {2020-01-20 14:26:20 +0100},
+	Date-Modified = {2020-01-20 14:26:20 +0100},
+	Publisher = {Oldenbourg Verlag},
+	Title = {Integrierte Navigationssysteme: Sensordatenfusion, GPS und Inertiale Navigation},
+	Year = {2009}}
+
+@book{james2013introduction,
+	Author = {James, Gareth and Witten, Daniela and Hastie, Trevor and Tibshirani, Robert},
+	Date-Added = {2020-01-20 13:43:57 +0100},
+	Date-Modified = {2020-01-20 13:43:57 +0100},
+	Publisher = {Springer},
+	Title = {An introduction to statistical learning},
+	Volume = {112},
+	Year = {2013}}
+
+@book{kuhn2013applied,
+	Author = {Kuhn, Max and Johnson, Kjell},
+	Date-Added = {2020-01-20 13:43:17 +0100},
+	Date-Modified = {2020-01-20 13:43:17 +0100},
+	Publisher = {Springer},
+	Title = {Applied predictive modeling},
+	Volume = {26},
+	Year = {2013}}
+
+@book{curtis2013orbital,
+	Author = {Curtis, Howard D},
+	Date-Added = {2020-01-20 13:42:41 +0100},
+	Date-Modified = {2020-01-20 13:42:41 +0100},
+	Publisher = {Butterworth-Heinemann},
+	Title = {Orbital mechanics for engineering students},
+	Year = {2013}}
+
+@book{murphy2012machine,
+	Author = {Murphy, Kevin P},
+	Date-Added = {2020-01-20 13:41:56 +0100},
+	Date-Modified = {2020-01-20 13:41:56 +0100},
+	Publisher = {MIT press},
+	Title = {Machine learning: a probabilistic perspective},
+	Year = {2012}}
+
+@book{newland2012introduction,
+	Author = {Newland, David Edward},
+	Date-Added = {2020-01-20 13:41:21 +0100},
+	Date-Modified = {2020-01-20 13:41:21 +0100},
+	Publisher = {Courier Corporation},
+	Title = {An introduction to random vibrations, spectral \& wavelet analysis},
+	Year = {2012}}
+
+@book{gosavi2015simulation,
+	Author = {Gosavi, Abhijit and others},
+	Date-Added = {2020-01-20 13:40:22 +0100},
+	Date-Modified = {2020-01-20 13:40:22 +0100},
+	Publisher = {Springer},
+	Title = {Simulation-based optimization},
+	Year = {2015}}
+
+@book{Wickham:2017ab,
+	Abstract = {Learn how to use R to turn raw data into insight, knowledge, and understanding. This book introduces you to R, RStudio, and the tidyverse, a collection of R packages designed to work together to make data science fast, fluent, and fun. Suitable for readers with no previous programming experience, R for Data Science is designed to get you doing data science as quickly as possible.
+
+Authors Hadley Wickham and Garrett Grolemund guide you through the steps of importing, wrangling, exploring, and modeling your data and communicating the results. You'll get a complete, big-picture understanding of the data science cycle, along with basic tools you need to manage the details. Each section of the book is paired with exercises to help you practice what you've learned along the way.
+
+You'll learn how to:
+
+    Wrangle---transform your datasets into a form convenient for analysis
+    Program---learn powerful R tools for solving data problems with greater clarity and ease
+    Explore---examine your data, generate hypotheses, and quickly test them
+    Model---provide a low-dimensional summary that captures true "signals" in your dataset
+    Communicate---learn R Markdown for integrating prose, code, and results},
+	Added-At = {2018-06-18T21:23:34.000+0200},
+	Author = {Wickham, Hadley and Grolemund, Garrett},
+	Biburl = {https://www.bibsonomy.org/bibtex/22e6e5a8bda4b8020e3b4e90c5accf9a8/pbett},
+	Citeulike-Article-Id = {14263839},
+	Citeulike-Linkout-0 = {http://r4ds.had.co.nz/},
+	Citeulike-Linkout-1 = {http://www.amazon.ca/exec/obidos/redirect?tag=citeulike09-20&amp;path=ASIN/1491910399},
+	Citeulike-Linkout-10 = {http://www.librarything.com/isbn/1491910399},
+	Citeulike-Linkout-11 = {http://www.worldcat.org/oclc/979415716},
+	Citeulike-Linkout-2 = {http://www.amazon.de/exec/obidos/redirect?tag=citeulike01-21&amp;path=ASIN/1491910399},
+	Citeulike-Linkout-3 = {http://www.amazon.fr/exec/obidos/redirect?tag=citeulike06-21&amp;path=ASIN/1491910399},
+	Citeulike-Linkout-4 = {http://www.amazon.jp/exec/obidos/ASIN/1491910399},
+	Citeulike-Linkout-5 = {http://www.amazon.co.uk/exec/obidos/ASIN/1491910399/citeulike00-21},
+	Citeulike-Linkout-6 = {http://www.amazon.com/exec/obidos/redirect?tag=citeulike07-20&path=ASIN/1491910399},
+	Citeulike-Linkout-7 = {http://www.worldcat.org/isbn/1491910399},
+	Citeulike-Linkout-8 = {http://books.google.com/books?vid=ISBN1491910399},
+	Citeulike-Linkout-9 = {http://www.amazon.com/gp/search?keywords=1491910399&index=books&linkCode=qs},
+	Comment = {Available (section-by-section) online from http://r4ds.had.co.nz/},
+	Date-Added = {2020-01-20 13:38:00 +0100},
+	Date-Modified = {2020-01-20 13:38:00 +0100},
+	Day = 05,
+	Edition = 1,
+	Howpublished = {Paperback},
+	Interhash = {660059a5b6b582a913488afb63e66907},
+	Intrahash = {2e6e5a8bda4b8020e3b4e90c5accf9a8},
+	Isbn = {1491910399},
+	Keywords = {visualisation textbook computing rpackage},
+	Month = jan,
+	Posted-At = {2017-04-03 14:44:51},
+	Priority = {2},
+	Publisher = {O'Reilly Media},
+	Timestamp = {2018-06-22T18:36:55.000+0200},
+	Title = {R for Data Science: Import, Tidy, Transform, Visualize, and Model Data},
+	Url = {http://r4ds.had.co.nz/},
+	Year = 2017,
+	Bdsk-Url-1 = {http://r4ds.had.co.nz/}}
+
+@book{hemmati2006deep,
+	Author = {Hemmati, Hamid},
+	Date-Added = {2020-01-20 13:31:30 +0100},
+	Date-Modified = {2020-01-20 13:31:30 +0100},
+	Publisher = {John Wiley \& Sons},
+	Title = {Deep space optical communications},
+	Volume = {11},
+	Year = {2006}}
+
+@book{bani2009wavelets,
+	Author = {B{\"a}ni, Werner},
+	Date-Added = {2020-01-20 13:30:41 +0100},
+	Date-Modified = {2020-01-20 13:30:41 +0100},
+	Publisher = {Oldenbourg Verlag},
+	Title = {Wavelets: Eine Einf{\"u}hrung f{\"u}r Ingenieure},
+	Year = {2009}}
+
+@book{davenport1958introduction,
+	Author = {Davenport, Wilbur B and Root, William L and others},
+	Date-Added = {2020-01-20 13:29:54 +0100},
+	Date-Modified = {2020-01-20 13:29:54 +0100},
+	Publisher = {McGraw-Hill New York},
+	Title = {An introduction to the theory of random signals and noise},
+	Volume = {159},
+	Year = {1958}}
+
+@incollection{matlin2012pollyanna,
+	Author = {Matlin, Margaret W},
+	Booktitle = {Cognitive illusions},
+	Date-Added = {2020-01-20 11:40:12 +0100},
+	Date-Modified = {2020-01-20 11:40:12 +0100},
+	Pages = {267--284},
+	Publisher = {Psychology Press},
+	Title = {Pollyanna principle},
+	Year = {2012}}
+
+@article{diamond2000guns,
+	Author = {Diamond, Jared and Ford, Lincoln E},
+	Date-Added = {2020-01-20 10:44:17 +0100},
+	Date-Modified = {2020-01-20 10:44:17 +0100},
+	Journal = {Perspectives in Biology and Medicine},
+	Number = {4},
+	Pages = {609},
+	Publisher = {[Chicago] University of Chicago Press.},
+	Title = {Guns, germs, and steel: the fates of human societies},
+	Volume = {43},
+	Year = {2000}}
+
+@book{schmidt2009ausser,
+	Author = {Schmidt, Helmut},
+	Date-Added = {2020-01-20 10:21:39 +0100},
+	Date-Modified = {2020-01-20 10:21:39 +0100},
+	Publisher = {Siedler Verlag},
+	Title = {Au{\ss}er Dienst: Eine Bilanz},
+	Year = {2009}}
+
+@book{kahneman2011thinking,
+	Author = {Kahneman, Daniel},
+	Date-Added = {2020-01-20 10:20:55 +0100},
+	Date-Modified = {2020-01-20 10:20:55 +0100},
+	Publisher = {Macmillan},
+	Title = {Thinking, fast and slow},
+	Year = {2011}}
+
+@book{krone2015russland,
+	Author = {Krone-Schmalz, Gabriele},
+	Date-Added = {2020-01-20 10:19:25 +0100},
+	Date-Modified = {2020-01-20 10:19:25 +0100},
+	Publisher = {CH Beck},
+	Title = {Russland verstehen: der Kampf um die Ukraine und die Arroganz des Westens},
+	Volume = {6195},
+	Year = {2015}}
+
+@book{anderson2012makers,
+	Author = {Anderson, C.},
+	Date-Added = {2020-01-20 10:15:01 +0100},
+	Date-Modified = {2020-01-20 10:15:01 +0100},
+	Isbn = {9780307720979},
+	Lccn = {2012014398},
+	Publisher = {Crown/Archetype},
+	Title = {Makers: The New Industrial Revolution},
+	Url = {https://books.google.de/books?id=2PQFNrG9n-oC},
+	Year = {2012},
+	Bdsk-Url-1 = {https://books.google.de/books?id=2PQFNrG9n-oC}}
+
+@book{rifkin2014zero,
+	Author = {Rifkin, Jeremy},
+	Date-Added = {2020-01-20 10:12:40 +0100},
+	Date-Modified = {2020-01-20 10:12:40 +0100},
+	Publisher = {St. Martin's Press},
+	Title = {The zero marginal cost society: The internet of things, the collaborative commons, and the eclipse of capitalism},
+	Year = {2014}}
+
+@book{brzezinski2016grand,
+	Author = {Brzezinski, Zbigniew},
+	Date-Added = {2020-01-20 10:11:11 +0100},
+	Date-Modified = {2020-01-20 10:11:11 +0100},
+	Publisher = {Basic books},
+	Title = {The grand chessboard: American primacy and its geostrategic imperatives},
+	Year = {2016}}
+
+@book{wagenknecht2018reichtum,
+	Author = {Wagenknecht, Sahra},
+	Date-Added = {2020-01-20 10:10:27 +0100},
+	Date-Modified = {2020-01-20 10:10:27 +0100},
+	Publisher = {Campus Verlag},
+	Title = {Reichtum ohne Gier: wie wir uns vor dem Kapitalismus retten},
+	Year = {2018}}
+
+@book{harari2016homo,
+	Author = {Harari, Yuval Noah},
+	Date-Added = {2020-01-20 10:06:11 +0100},
+	Date-Modified = {2020-01-20 10:06:11 +0100},
+	Publisher = {Random House},
+	Title = {Homo Deus: A brief history of tomorrow},
+	Year = {2016}}
+
+@book{harari2014sapiens,
+	Author = {Harari, Yuval Noah},
+	Date-Added = {2020-01-20 10:05:08 +0100},
+	Date-Modified = {2020-01-20 10:05:08 +0100},
+	Publisher = {Random House},
+	Title = {Sapiens: A brief history of humankind},
+	Year = {2014}}
+
+@misc{roslingrosling,
+	Author = {Rosling, H},
+	Date-Added = {2020-01-20 10:02:17 +0100},
+	Date-Modified = {2020-01-20 11:44:55 +0100},
+	Publisher = {New York: Flatiron Books},
+	Read = {1},
+	Title = {Factfulness: Ten Reasons We're Wrong about the World---and Why Things Are Better than You Think},
+	Year = {2018}}
+
+@article{stepper2016working,
+	Author = {Stepper, John and others},
+	Date-Added = {2020-01-20 09:56:53 +0100},
+	Date-Modified = {2020-01-20 09:56:53 +0100},
+	Journal = {Training \& Development},
+	Number = {1},
+	Pages = {6},
+	Publisher = {Australian Institute of Training and Development},
+	Title = {Working out loud},
+	Volume = {43},
+	Year = {2016}}
+
+@book{mcafee2017machine,
+	Author = {McAfee, Andrew and Brynjolfsson, Erik},
+	Date-Added = {2020-01-20 09:52:04 +0100},
+	Date-Modified = {2020-01-20 09:52:04 +0100},
+	Publisher = {WW Norton \& Company},
+	Title = {Machine, platform, crowd: Harnessing our digital future},
+	Year = {2017}}
+
+@book{harari201821,
+	Author = {Harari, Yuval Noah},
+	Date-Added = {2020-01-20 09:30:58 +0100},
+	Date-Modified = {2020-01-20 09:30:58 +0100},
+	Publisher = {Random House},
+	Title = {21 Lessons for the 21st Century},
+	Year = {2018}}
+
+@book{tegmark2017life,
+	Author = {Tegmark, Max},
+	Date-Added = {2020-01-16 20:32:00 +0100},
+	Date-Modified = {2020-01-16 20:32:00 +0100},
+	Publisher = {Knopf},
+	Title = {Life 3.0: Being human in the age of artificial intelligence},
+	Year = {2017}}
+
+@article{wei2019benchmarking,
+	Author = {Wei, Gu-Yeon and Brooks, David and others},
+	Date-Added = {2020-01-15 14:35:58 +0100},
+	Date-Modified = {2020-01-15 14:35:58 +0100},
+	Journal = {arXiv preprint arXiv:1907.10701},
+	Title = {Benchmarking tpu, gpu, and cpu platforms for deep learning},
+	Year = {2019},
+	Bdsk-File-1 = {YnBsaXN0MDDSAQIDBFxyZWxhdGl2ZVBhdGhZYWxpYXNEYXRhXxBPTWxWaHMyMDIwL3BhcGVycy9CZW5jaG1hcmtpbmcgVFBVLCBHUFUsIGFuZCBDUFUgUGxhdGZvcm1zIGZvciBEZWVwIExlYXJuaW5nLnBkZk8RAmoAAAAAAmoAAgAADE1hY2ludG9zaCBIRAAAAAAAAAAAAAAAAAAAAAAAAABCRAAB/////x9CZW5jaG1hcmtpbmcgVFBVLCAjRkZGRkZGRkYucGRmAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD/////AAAAAFBERiAAAAAAAAEABAAACiBjdQAAAAAAAAAAAAAAAAAGcGFwZXJzAAIAiS86VXNlcnM6dXdlc3RlcnI6Q2xvdWRQcm9qZWN0c1VuZGVyV29yazpQcm9qZWN0c1VuZGVyV29yazpNbFZoczIwMjA6cGFwZXJzOkJlbmNobWFya2luZyBUUFUsIEdQVSwgYW5kIENQVSBQbGF0Zm9ybXMgZm9yIERlZXAgTGVhcm5pbmcucGRmAAAOAH4APgBCAGUAbgBjAGgAbQBhAHIAawBpAG4AZwAgAFQAUABVACwAIABHAFAAVQAsACAAYQBuAGQAIABDAFAAVQAgAFAAbABhAHQAZgBvAHIAbQBzACAAZgBvAHIAIABEAGUAZQBwACAATABlAGEAcgBuAGkAbgBnAC4AcABkAGYADwAaAAwATQBhAGMAaQBuAHQAbwBzAGgAIABIAEQAEgCHVXNlcnMvdXdlc3RlcnIvQ2xvdWRQcm9qZWN0c1VuZGVyV29yay9Qcm9qZWN0c1VuZGVyV29yay9NbFZoczIwMjAvcGFwZXJzL0JlbmNobWFya2luZyBUUFUsIEdQVSwgYW5kIENQVSBQbGF0Zm9ybXMgZm9yIERlZXAgTGVhcm5pbmcucGRmAAATAAEvAAAVAAIAD///AAAACAANABoAJAB2AAAAAAAAAgEAAAAAAAAABQAAAAAAAAAAAAAAAAAAAuQ=}}
+
+@inproceedings{li2019making,
+	Author = {Li, Tianhong and Fan, Lijie and Zhao, Mingmin and Liu, Yingcheng and Katabi, Dina},
+	Booktitle = {Proceedings of the IEEE International Conference on Computer Vision},
+	Date-Added = {2019-12-18 09:44:53 +0100},
+	Date-Modified = {2019-12-18 09:44:53 +0100},
+	Pages = {872--881},
+	Title = {Making the Invisible Visible: Action Recognition Through Walls and Occlusions},
+	Year = {2019},
+	Bdsk-File-1 = {YnBsaXN0MDDSAQIDBFxyZWxhdGl2ZVBhdGhZYWxpYXNEYXRhXxBhTWxWaHMyMDIwL3BhcGVycy9NYWtpbmcgdGhlIEludmlzaWJsZSBWaXNpYmxlIEFjdGlvbiBSZWNvZ25pdGlvbiBUaHJvdWdoIFdhbGxzIGFuZCBPY2NsdXNpb25zLnBkZk8RArIAAAAAArIAAgAADE1hY2ludG9zaCBIRAAAAAAAAAAAAAAAAAAAAAAAAABCRAAB/////x9NYWtpbmcgdGhlIEludmlzaWIjRkZGRkZGRkYucGRmAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD/////AAAAAAAAAAAAAAAAAAEABAAACiBjdQAAAAAAAAAAAAAAAAAGcGFwZXJzAAIAmy86VXNlcnM6dXdlc3RlcnI6Q2xvdWRQcm9qZWN0c1VuZGVyV29yazpQcm9qZWN0c1VuZGVyV29yazpNbFZoczIwMjA6cGFwZXJzOk1ha2luZyB0aGUgSW52aXNpYmxlIFZpc2libGUgQWN0aW9uIFJlY29nbml0aW9uIFRocm91Z2ggV2FsbHMgYW5kIE9jY2x1c2lvbnMucGRmAAAOAKIAUABNAGEAawBpAG4AZwAgAHQAaABlACAASQBuAHYAaQBzAGkAYgBsAGUAIABWAGkAcwBpAGIAbABlACAAQQBjAHQAaQBvAG4AIABSAGUAYwBvAGcAbgBpAHQAaQBvAG4AIABUAGgAcgBvAHUAZwBoACAAVwBhAGwAbABzACAAYQBuAGQAIABPAGMAYwBsAHUAcwBpAG8AbgBzAC4AcABkAGYADwAaAAwATQBhAGMAaQBuAHQAbwBzAGgAIABIAEQAEgCZVXNlcnMvdXdlc3RlcnIvQ2xvdWRQcm9qZWN0c1VuZGVyV29yay9Qcm9qZWN0c1VuZGVyV29yay9NbFZoczIwMjAvcGFwZXJzL01ha2luZyB0aGUgSW52aXNpYmxlIFZpc2libGUgQWN0aW9uIFJlY29nbml0aW9uIFRocm91Z2ggV2FsbHMgYW5kIE9jY2x1c2lvbnMucGRmAAATAAEvAAAVAAIAD///AAAACAANABoAJACIAAAAAAAAAgEAAAAAAAAABQAAAAAAAAAAAAAAAAAAAz4=}}
+
+@article{bojarski2017explaining,
+	Author = {Bojarski, Mariusz and Yeres, Philip and Choromanska, Anna and Choromanski, Krzysztof and Firner, Bernhard and Jackel, Lawrence and Muller, Urs},
+	Date-Added = {2019-06-20 09:10:07 +0200},
+	Date-Modified = {2019-06-20 09:10:07 +0200},
+	Journal = {arXiv preprint arXiv:1704.07911},
+	Title = {Explaining how a deep neural network trained with end-to-end learning steers a car},
+	Year = {2017},
+	Bdsk-File-1 = {YnBsaXN0MDDSAQIDBFxyZWxhdGl2ZVBhdGhZYWxpYXNEYXRhXxBrVm9ybGVzdW5nRGlzY3JldGVTaW0vRXhwbGFpbmluZyBIb3cgYSBEZWVwIE5ldXJhbCBOZXR3b3JrIFRyYWluZWQgd2l0aCBFbmQtdG8tRW5kIExlYXJuaW5nIFN0ZWVycyBhIENhci5wZGZPEQLgAAAAAALgAAIAAAxNYWNpbnRvc2ggSEQAAAAAAAAAAAAAAAAAAAAAAAAAQkQAAf////8fRXhwbGFpbmluZyBIb3cgYSBEI0ZGRkZGRkZGLnBkZgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/////wAAAABQREYgAAAAAAABAAMAAAogY3UAAAAAAAAAAAAAAAAAFFZvcmxlc3VuZ0Rpc2NyZXRlU2ltAAIApS86VXNlcnM6dXdlc3RlcnI6Q2xvdWRQcm9qZWN0c1VuZGVyV29yazpQcm9qZWN0c1VuZGVyV29yazpWb3JsZXN1bmdEaXNjcmV0ZVNpbTpFeHBsYWluaW5nIEhvdyBhIERlZXAgTmV1cmFsIE5ldHdvcmsgVHJhaW5lZCB3aXRoIEVuZC10by1FbmQgTGVhcm5pbmcgU3RlZXJzIGEgQ2FyLnBkZgAADgCuAFYARQB4AHAAbABhAGkAbgBpAG4AZwAgAEgAbwB3ACAAYQAgAEQAZQBlAHAAIABOAGUAdQByAGEAbAAgAE4AZQB0AHcAbwByAGsAIABUAHIAYQBpAG4AZQBkACAAdwBpAHQAaAAgAEUAbgBkAC0AdABvAC0ARQBuAGQAIABMAGUAYQByAG4AaQBuAGcAIABTAHQAZQBlAHIAcwAgAGEAIABDAGEAcgAuAHAAZABmAA8AGgAMAE0AYQBjAGkAbgB0AG8AcwBoACAASABEABIAo1VzZXJzL3V3ZXN0ZXJyL0Nsb3VkUHJvamVjdHNVbmRlcldvcmsvUHJvamVjdHNVbmRlcldvcmsvVm9ybGVzdW5nRGlzY3JldGVTaW0vRXhwbGFpbmluZyBIb3cgYSBEZWVwIE5ldXJhbCBOZXR3b3JrIFRyYWluZWQgd2l0aCBFbmQtdG8tRW5kIExlYXJuaW5nIFN0ZWVycyBhIENhci5wZGYAABMAAS8AABUAAgAP//8AAAAIAA0AGgAkAJIAAAAAAAACAQAAAAAAAAAFAAAAAAAAAAAAAAAAAAADdg==}}
+
+@inproceedings{van2016deep,
+	Author = {Van Hasselt, Hado and Guez, Arthur and Silver, David},
+	Booktitle = {Thirtieth AAAI Conference on Artificial Intelligence},
+	Date-Added = {2019-06-12 18:00:00 +0200},
+	Date-Modified = {2019-06-12 18:00:00 +0200},
+	Title = {Deep reinforcement learning with double q-learning},
+	Year = {2016},
+	Bdsk-File-1 = {YnBsaXN0MDDSAQIDBFxyZWxhdGl2ZVBhdGhZYWxpYXNEYXRhXxBaUHJlc2VudGF0aW9uQ29ubmVjdGVkRHJpdmluZ0ZlYjIwMTgvRGVlcCBSZWluZm9yY2VtZW50IExlYXJuaW5nIHdpdGggRG91YmxlIFEtbGVhcm5pbmcucGRmTxECiAAAAAACiAACAAAMTWFjaW50b3NoIEhEAAAAAAAAAAAAAAAAAAAAAAAAAEJEAAH/////H0RlZXAgUmVpbmZvcmNlbWVudCNGRkZGRkZGRi5wZGYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP////8AAAAAUERGIAAAAAAAAQADAAAKIGN1AAAAAAAAAAAAAAAAAB9QcmVzZW50YXRpb25Db25uZWN0ZWREcml2aSMyQjkyAAACAJQvOlVzZXJzOnV3ZXN0ZXJyOkNsb3VkUHJvamVjdHNVbmRlcldvcms6UHJvamVjdHNVbmRlcldvcms6UHJlc2VudGF0aW9uQ29ubmVjdGVkRHJpdmluZ0ZlYjIwMTg6RGVlcCBSZWluZm9yY2VtZW50IExlYXJuaW5nIHdpdGggRG91YmxlIFEtbGVhcm5pbmcucGRmAA4AbgA2AEQAZQBlAHAAIABSAGUAaQBuAGYAbwByAGMAZQBtAGUAbgB0ACAATABlAGEAcgBuAGkAbgBnACAAdwBpAHQAaAAgAEQAbwB1AGIAbABlACAAUQAtAGwAZQBhAHIAbgBpAG4AZwAuAHAAZABmAA8AGgAMAE0AYQBjAGkAbgB0AG8AcwBoACAASABEABIAklVzZXJzL3V3ZXN0ZXJyL0Nsb3VkUHJvamVjdHNVbmRlcldvcmsvUHJvamVjdHNVbmRlcldvcmsvUHJlc2VudGF0aW9uQ29ubmVjdGVkRHJpdmluZ0ZlYjIwMTgvRGVlcCBSZWluZm9yY2VtZW50IExlYXJuaW5nIHdpdGggRG91YmxlIFEtbGVhcm5pbmcucGRmABMAAS8AABUAAgAP//8AAAAIAA0AGgAkAIEAAAAAAAACAQAAAAAAAAAFAAAAAAAAAAAAAAAAAAADDQ==}}
+
+@article{fridman2018deeptraffic,
+	Author = {Fridman, Lex and Terwilliger, Jack and Jenik, Benedikt},
+	Date-Added = {2019-06-10 11:23:50 +0200},
+	Date-Modified = {2019-06-10 11:23:50 +0200},
+	Journal = {arXiv preprint arXiv:1801.02805},
+	Title = {DeepTraffic: Crowdsourced Hyperparameter Tuning of Deep Reinforcement Learning Systems for Multi-Agent Dense Traffic Navigation},
+	Year = {2018},
+	Bdsk-File-1 = {YnBsaXN0MDDSAQIDBFxyZWxhdGl2ZVBhdGhZYWxpYXNEYXRhXxCXVm9ybGVzdW5nRGlzY3JldGVTaW0vRGVlcFRyYWZmaWMgQ3Jvd2Rzb3VyY2VkIEh5cGVycGFyYW1ldGVyIFR1bmluZyBvZiBEZWVwIFJlaW5mb3JjZW1lbnQgTGVhcm5pbmcgU3lzdGVtcyBmb3IgTXVsdGktQWdlbnQgRGVuc2UgVHJhZmZpYyBOYXZpZ2F0aW9uLnBkZk8RA5AAAAAAA5AAAgAADE1hY2ludG9zaCBIRAAAAAAAAAAAAAAAAAAAAAAAAABCRAAB/////x9EZWVwVHJhZmZpYyBDcm93ZHMjRkZGRkZGRkYucGRmAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD/////AAAAAFBERiAAAAAAAAEAAwAACiBjdQAAAAAAAAAAAAAAAAAUVm9ybGVzdW5nRGlzY3JldGVTaW0AAgDRLzpVc2Vyczp1d2VzdGVycjpDbG91ZFByb2plY3RzVW5kZXJXb3JrOlByb2plY3RzVW5kZXJXb3JrOlZvcmxlc3VuZ0Rpc2NyZXRlU2ltOkRlZXBUcmFmZmljIENyb3dkc291cmNlZCBIeXBlcnBhcmFtZXRlciBUdW5pbmcgb2YgRGVlcCBSZWluZm9yY2VtZW50IExlYXJuaW5nIFN5c3RlbXMgZm9yIE11bHRpLUFnZW50IERlbnNlIFRyYWZmaWMgTmF2aWdhdGlvbi5wZGYAAA4BBgCCAEQAZQBlAHAAVAByAGEAZgBmAGkAYwAgAEMAcgBvAHcAZABzAG8AdQByAGMAZQBkACAASAB5AHAAZQByAHAAYQByAGEAbQBlAHQAZQByACAAVAB1AG4AaQBuAGcAIABvAGYAIABEAGUAZQBwACAAUgBlAGkAbgBmAG8AcgBjAGUAbQBlAG4AdAAgAEwAZQBhAHIAbgBpAG4AZwAgAFMAeQBzAHQAZQBtAHMAIABmAG8AcgAgAE0AdQBsAHQAaQAtAEEAZwBlAG4AdAAgAEQAZQBuAHMAZQAgAFQAcgBhAGYAZgBpAGMAIABOAGEAdgBpAGcAYQB0AGkAbwBuAC4AcABkAGYADwAaAAwATQBhAGMAaQBuAHQAbwBzAGgAIABIAEQAEgDPVXNlcnMvdXdlc3RlcnIvQ2xvdWRQcm9qZWN0c1VuZGVyV29yay9Qcm9qZWN0c1VuZGVyV29yay9Wb3JsZXN1bmdEaXNjcmV0ZVNpbS9EZWVwVHJhZmZpYyBDcm93ZHNvdXJjZWQgSHlwZXJwYXJhbWV0ZXIgVHVuaW5nIG9mIERlZXAgUmVpbmZvcmNlbWVudCBMZWFybmluZyBTeXN0ZW1zIGZvciBNdWx0aS1BZ2VudCBEZW5zZSBUcmFmZmljIE5hdmlnYXRpb24ucGRmAAATAAEvAAAVAAIAD///AAAACAANABoAJAC+AAAAAAAAAgEAAAAAAAAABQAAAAAAAAAAAAAAAAAABFI=}}
+
+@article{kheterpal2018flow,
+	Author = {Kheterpal, Nishant and Parvate, Kanaad and Wu, Cathy and Kreidieh, Aboudy and Vinitsky, Eugene and Bayen, Alexandre},
+	Date-Added = {2019-06-10 11:12:22 +0200},
+	Date-Modified = {2019-06-10 11:12:22 +0200},
+	Journal = {SUMO},
+	Pages = {134--151},
+	Title = {Flow: Deep reinforcement learning for control in sumo},
+	Year = {2018},
+	Bdsk-File-1 = {YnBsaXN0MDDSAQIDBFxyZWxhdGl2ZVBhdGhZYWxpYXNEYXRhXxBNVm9ybGVzdW5nRGlzY3JldGVTaW0vRmxvd19EZWVwX1JlaW5mb3JjZW1lbnRfTGVhcm5pbmdfZm9yX0NvbnRyb2xfaW5fU1VNTy5wZGZPEQJoAAAAAAJoAAIAAAxNYWNpbnRvc2ggSEQAAAAAAAAAAAAAAAAAAAAAAAAAQkQAAf////8fRmxvd19EZWVwX1JlaW5mb3JjI0ZGRkZGRkZGLnBkZgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/////wAAAABQREYgAAAAAAABAAMAAAogY3UAAAAAAAAAAAAAAAAAFFZvcmxlc3VuZ0Rpc2NyZXRlU2ltAAIAhy86VXNlcnM6dXdlc3RlcnI6Q2xvdWRQcm9qZWN0c1VuZGVyV29yazpQcm9qZWN0c1VuZGVyV29yazpWb3JsZXN1bmdEaXNjcmV0ZVNpbTpGbG93X0RlZXBfUmVpbmZvcmNlbWVudF9MZWFybmluZ19mb3JfQ29udHJvbF9pbl9TVU1PLnBkZgAADgByADgARgBsAG8AdwBfAEQAZQBlAHAAXwBSAGUAaQBuAGYAbwByAGMAZQBtAGUAbgB0AF8ATABlAGEAcgBuAGkAbgBnAF8AZgBvAHIAXwBDAG8AbgB0AHIAbwBsAF8AaQBuAF8AUwBVAE0ATwAuAHAAZABmAA8AGgAMAE0AYQBjAGkAbgB0AG8AcwBoACAASABEABIAhVVzZXJzL3V3ZXN0ZXJyL0Nsb3VkUHJvamVjdHNVbmRlcldvcmsvUHJvamVjdHNVbmRlcldvcmsvVm9ybGVzdW5nRGlzY3JldGVTaW0vRmxvd19EZWVwX1JlaW5mb3JjZW1lbnRfTGVhcm5pbmdfZm9yX0NvbnRyb2xfaW5fU1VNTy5wZGYAABMAAS8AABUAAgAP//8AAAAIAA0AGgAkAHQAAAAAAAACAQAAAAAAAAAFAAAAAAAAAAAAAAAAAAAC4A==}}
+
+@article{neukart2017traffic,
+	Author = {Neukart, Florian and Compostella, Gabriele and Seidel, Christian and Von Dollen, David and Yarkoni, Sheir and Parney, Bob},
+	Date-Added = {2019-06-08 14:51:26 +0200},
+	Date-Modified = {2019-06-08 14:51:26 +0200},
+	Journal = {Frontiers in ICT},
+	Pages = {29},
+	Publisher = {Frontiers},
+	Title = {Traffic flow optimization using a quantum annealer},
+	Volume = {4},
+	Year = {2017},
+	Bdsk-File-1 = {YnBsaXN0MDDSAQIDBFxyZWxhdGl2ZVBhdGhZYWxpYXNEYXRhXxBLVm9ybGVzdW5nRGlzY3JldGVTaW0vVHJhZmZpYyBGbG93IG9wdGltaXphdGlvbiBVc2luZyBhIFF1YW50dW0gQW5uZWFsZXIucGRmTxECYAAAAAACYAACAAAMTWFjaW50b3NoIEhEAAAAAAAAAAAAAAAAAAAAAAAAAEJEAAH/////H1RyYWZmaWMgRmxvdyBvcHRpbSNGRkZGRkZGRi5wZGYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP////8AAAAAUERGIAAAAAAAAQADAAAKIGN1AAAAAAAAAAAAAAAAABRWb3JsZXN1bmdEaXNjcmV0ZVNpbQACAIUvOlVzZXJzOnV3ZXN0ZXJyOkNsb3VkUHJvamVjdHNVbmRlcldvcms6UHJvamVjdHNVbmRlcldvcms6Vm9ybGVzdW5nRGlzY3JldGVTaW06VHJhZmZpYyBGbG93IG9wdGltaXphdGlvbiBVc2luZyBhIFF1YW50dW0gQW5uZWFsZXIucGRmAAAOAG4ANgBUAHIAYQBmAGYAaQBjACAARgBsAG8AdwAgAG8AcAB0AGkAbQBpAHoAYQB0AGkAbwBuACAAVQBzAGkAbgBnACAAYQAgAFEAdQBhAG4AdAB1AG0AIABBAG4AbgBlAGEAbABlAHIALgBwAGQAZgAPABoADABNAGEAYwBpAG4AdABvAHMAaAAgAEgARAASAINVc2Vycy91d2VzdGVyci9DbG91ZFByb2plY3RzVW5kZXJXb3JrL1Byb2plY3RzVW5kZXJXb3JrL1Zvcmxlc3VuZ0Rpc2NyZXRlU2ltL1RyYWZmaWMgRmxvdyBvcHRpbWl6YXRpb24gVXNpbmcgYSBRdWFudHVtIEFubmVhbGVyLnBkZgAAEwABLwAAFQACAA///wAAAAgADQAaACQAcgAAAAAAAAIBAAAAAAAAAAUAAAAAAAAAAAAAAAAAAALW}}
+
+@inproceedings{kreidieh2018dissipating,
+	Author = {Kreidieh, Abdul Rahman and Wu, Cathy and Bayen, Alexandre M},
+	Booktitle = {2018 21st International Conference on Intelligent Transportation Systems (ITSC)},
+	Date-Added = {2019-06-05 11:51:16 +0200},
+	Date-Modified = {2019-06-05 11:51:16 +0200},
+	Organization = {IEEE},
+	Pages = {1475--1480},
+	Title = {Dissipating stop-and-go waves in closed and open networks via deep reinforcement learning},
+	Year = {2018},
+	Bdsk-File-1 = {YnBsaXN0MDDSAQIDBFxyZWxhdGl2ZVBhdGhZYWxpYXNEYXRhXxByVm9ybGVzdW5nRGlzY3JldGVTaW0vRGlzc2lwYXRpbmcgc3RvcC1hbmQtZ28gd2F2ZXMgaW4gY2xvc2VkIGFuZCBvcGVuIG5ldHdvcmtzIHZpYSBkZWVwIHJlaW5mb3JjZW1lbnQgbGVhcm5pbmcucGRmTxEC+gAAAAAC+gACAAAMTWFjaW50b3NoIEhEAAAAAAAAAAAAAAAAAAAAAAAAAEJEAAH/////H0Rpc3NpcGF0aW5nIHN0b3AtYSNGRkZGRkZGRi5wZGYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP////8AAAAAUERGIAAAAAAAAQADAAAKIGN1AAAAAAAAAAAAAAAAABRWb3JsZXN1bmdEaXNjcmV0ZVNpbQACAKwvOlVzZXJzOnV3ZXN0ZXJyOkNsb3VkUHJvamVjdHNVbmRlcldvcms6UHJvamVjdHNVbmRlcldvcms6Vm9ybGVzdW5nRGlzY3JldGVTaW06RGlzc2lwYXRpbmcgc3RvcC1hbmQtZ28gd2F2ZXMgaW4gY2xvc2VkIGFuZCBvcGVuIG5ldHdvcmtzIHZpYSBkZWVwIHJlaW5mb3JjZW1lbnQgbGVhcm5pbmcucGRmAA4AvABdAEQAaQBzAHMAaQBwAGEAdABpAG4AZwAgAHMAdABvAHAALQBhAG4AZAAtAGcAbwAgAHcAYQB2AGUAcwAgAGkAbgAgAGMAbABvAHMAZQBkACAAYQBuAGQAIABvAHAAZQBuACAAbgBlAHQAdwBvAHIAawBzACAAdgBpAGEAIABkAGUAZQBwACAAcgBlAGkAbgBmAG8AcgBjAGUAbQBlAG4AdAAgAGwAZQBhAHIAbgBpAG4AZwAuAHAAZABmAA8AGgAMAE0AYQBjAGkAbgB0AG8AcwBoACAASABEABIAqlVzZXJzL3V3ZXN0ZXJyL0Nsb3VkUHJvamVjdHNVbmRlcldvcmsvUHJvamVjdHNVbmRlcldvcmsvVm9ybGVzdW5nRGlzY3JldGVTaW0vRGlzc2lwYXRpbmcgc3RvcC1hbmQtZ28gd2F2ZXMgaW4gY2xvc2VkIGFuZCBvcGVuIG5ldHdvcmtzIHZpYSBkZWVwIHJlaW5mb3JjZW1lbnQgbGVhcm5pbmcucGRmABMAAS8AABUAAgAP//8AAAAIAA0AGgAkAJkAAAAAAAACAQAAAAAAAAAFAAAAAAAAAAAAAAAAAAADlw==}}
+
+@article{dadovacellular,
+	Author = {Dadov{\'a}, Jana and Ferko, Andrej},
+	Date-Added = {2019-06-03 20:11:36 +0200},
+	Date-Modified = {2019-06-03 20:11:36 +0200},
+	Title = {Cellular Automata based Crowd Simulation of Mexican Wave},
+	Bdsk-File-1 = {YnBsaXN0MDDSAQIDBFxyZWxhdGl2ZVBhdGhZYWxpYXNEYXRhXxBRVm9ybGVzdW5nRGlzY3JldGVTaW0vQ2VsbHVsYXIgQXV0b21hdGEgYmFzZWQgQ3Jvd2QgU2ltdWxhdGlvbiBvZiBNZXhpY2FuIFdhdmUucGRmTxECeAAAAAACeAACAAAMTWFjaW50b3NoIEhEAAAAAAAAAAAAAAAAAAAAAAAAAEJEAAH/////H0NlbGx1bGFyIEF1dG9tYXRhICNGRkZGRkZGRi5wZGYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP////8AAAAAAAAAAAAAAAAAAQADAAAKIGN1AAAAAAAAAAAAAAAAABRWb3JsZXN1bmdEaXNjcmV0ZVNpbQACAIsvOlVzZXJzOnV3ZXN0ZXJyOkNsb3VkUHJvamVjdHNVbmRlcldvcms6UHJvamVjdHNVbmRlcldvcms6Vm9ybGVzdW5nRGlzY3JldGVTaW06Q2VsbHVsYXIgQXV0b21hdGEgYmFzZWQgQ3Jvd2QgU2ltdWxhdGlvbiBvZiBNZXhpY2FuIFdhdmUucGRmAAAOAHoAPABDAGUAbABsAHUAbABhAHIAIABBAHUAdABvAG0AYQB0AGEAIABiAGEAcwBlAGQAIABDAHIAbwB3AGQAIABTAGkAbQB1AGwAYQB0AGkAbwBuACAAbwBmACAATQBlAHgAaQBjAGEAbgAgAFcAYQB2AGUALgBwAGQAZgAPABoADABNAGEAYwBpAG4AdABvAHMAaAAgAEgARAASAIlVc2Vycy91d2VzdGVyci9DbG91ZFByb2plY3RzVW5kZXJXb3JrL1Byb2plY3RzVW5kZXJXb3JrL1Zvcmxlc3VuZ0Rpc2NyZXRlU2ltL0NlbGx1bGFyIEF1dG9tYXRhIGJhc2VkIENyb3dkIFNpbXVsYXRpb24gb2YgTWV4aWNhbiBXYXZlLnBkZgAAEwABLwAAFQACAA///wAAAAgADQAaACQAeAAAAAAAAAIBAAAAAAAAAAUAAAAAAAAAAAAAAAAAAAL0}}
+
+@inproceedings{blue2000cellular,
+	Author = {Blue, Victor and Adler, Jeffrey},
+	Booktitle = {Proc. Artificial Life VII},
+	Date-Added = {2019-06-03 20:07:07 +0200},
+	Date-Modified = {2019-06-03 20:07:07 +0200},
+	Pages = {437--445},
+	Title = {Cellular automata model of emergent collective bi-directional pedestrian dynamics},
+	Year = {2000},
+	Bdsk-File-1 = {YnBsaXN0MDDSAQIDBFxyZWxhdGl2ZVBhdGhZYWxpYXNEYXRhXxBRVm9ybGVzdW5nRGlzY3JldGVTaW0vQ2VsbHVsYXIgQXV0b21hdGEgYmFzZWQgQ3Jvd2QgU2ltdWxhdGlvbiBvZiBNZXhpY2FuIFdhdmUucGRmTxECeAAAAAACeAACAAAMTWFjaW50b3NoIEhEAAAAAAAAAAAAAAAAAAAAAAAAAEJEAAH/////H0NlbGx1bGFyIEF1dG9tYXRhICNGRkZGRkZGRi5wZGYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP////8AAAAAAAAAAAAAAAAAAQADAAAKIGN1AAAAAAAAAAAAAAAAABRWb3JsZXN1bmdEaXNjcmV0ZVNpbQACAIsvOlVzZXJzOnV3ZXN0ZXJyOkNsb3VkUHJvamVjdHNVbmRlcldvcms6UHJvamVjdHNVbmRlcldvcms6Vm9ybGVzdW5nRGlzY3JldGVTaW06Q2VsbHVsYXIgQXV0b21hdGEgYmFzZWQgQ3Jvd2QgU2ltdWxhdGlvbiBvZiBNZXhpY2FuIFdhdmUucGRmAAAOAHoAPABDAGUAbABsAHUAbABhAHIAIABBAHUAdABvAG0AYQB0AGEAIABiAGEAcwBlAGQAIABDAHIAbwB3AGQAIABTAGkAbQB1AGwAYQB0AGkAbwBuACAAbwBmACAATQBlAHgAaQBjAGEAbgAgAFcAYQB2AGUALgBwAGQAZgAPABoADABNAGEAYwBpAG4AdABvAHMAaAAgAEgARAASAIlVc2Vycy91d2VzdGVyci9DbG91ZFByb2plY3RzVW5kZXJXb3JrL1Byb2plY3RzVW5kZXJXb3JrL1Zvcmxlc3VuZ0Rpc2NyZXRlU2ltL0NlbGx1bGFyIEF1dG9tYXRhIGJhc2VkIENyb3dkIFNpbXVsYXRpb24gb2YgTWV4aWNhbiBXYXZlLnBkZgAAEwABLwAAFQACAA///wAAAAgADQAaACQAeAAAAAAAAAIBAAAAAAAAAAUAAAAAAAAAAAAAAAAAAAL0}}
+
+@article{nagel1992cellular,
+	Author = {Nagel, Kai and Schreckenberg, Michael},
+	Date-Added = {2019-06-03 13:19:35 +0200},
+	Date-Modified = {2019-06-03 13:19:35 +0200},
+	Journal = {Journal de physique I},
+	Number = {12},
+	Pages = {2221--2229},
+	Publisher = {EDP Sciences},
+	Title = {A cellular automaton model for freeway traffic},
+	Volume = {2},
+	Year = {1992},
+	Bdsk-File-1 = {YnBsaXN0MDDSAQIDBFxyZWxhdGl2ZVBhdGhZYWxpYXNEYXRhXxBHVm9ybGVzdW5nRGlzY3JldGVTaW0vQSBjZWxsdWxhciBhdXRvbWF0b24gbW9kZWwgZm9yIGZyZWV3YXkgdHJhZmZpYy5wZGZPEQJQAAAAAAJQAAIAAAxNYWNpbnRvc2ggSEQAAAAAAAAAAAAAAAAAAAAAAAAAQkQAAf////8fQSBjZWxsdWxhciBhdXRvbWF0I0ZGRkZGRkZGLnBkZgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/////wAAAABQREYgAAAAAAABAAMAAAogY3UAAAAAAAAAAAAAAAAAFFZvcmxlc3VuZ0Rpc2NyZXRlU2ltAAIAgS86VXNlcnM6dXdlc3RlcnI6Q2xvdWRQcm9qZWN0c1VuZGVyV29yazpQcm9qZWN0c1VuZGVyV29yazpWb3JsZXN1bmdEaXNjcmV0ZVNpbTpBIGNlbGx1bGFyIGF1dG9tYXRvbiBtb2RlbCBmb3IgZnJlZXdheSB0cmFmZmljLnBkZgAADgBmADIAQQAgAGMAZQBsAGwAdQBsAGEAcgAgAGEAdQB0AG8AbQBhAHQAbwBuACAAbQBvAGQAZQBsACAAZgBvAHIAIABmAHIAZQBlAHcAYQB5ACAAdAByAGEAZgBmAGkAYwAuAHAAZABmAA8AGgAMAE0AYQBjAGkAbgB0AG8AcwBoACAASABEABIAf1VzZXJzL3V3ZXN0ZXJyL0Nsb3VkUHJvamVjdHNVbmRlcldvcmsvUHJvamVjdHNVbmRlcldvcmsvVm9ybGVzdW5nRGlzY3JldGVTaW0vQSBjZWxsdWxhciBhdXRvbWF0b24gbW9kZWwgZm9yIGZyZWV3YXkgdHJhZmZpYy5wZGYAABMAAS8AABUAAgAP//8AAAAIAA0AGgAkAG4AAAAAAAACAQAAAAAAAAAFAAAAAAAAAAAAAAAAAAACwg==}}
+
+@article{knospe2000towards,
+	Author = {Knospe, Wolfgang and Santen, Ludger and Schadschneider, Andreas and Schreckenberg, Michael},
+	Date-Added = {2019-06-03 13:03:39 +0200},
+	Date-Modified = {2019-06-03 13:03:39 +0200},
+	Journal = {Journal of Physics A: Mathematical and general},
+	Number = {48},
+	Pages = {L477},
+	Publisher = {IOP Publishing},
+	Title = {Towards a realistic microscopic description of highway traffic},
+	Volume = {33},
+	Year = {2000},
+	Bdsk-File-1 = {YnBsaXN0MDDSAQIDBFxyZWxhdGl2ZVBhdGhZYWxpYXNEYXRhXxBXVm9ybGVzdW5nRGlzY3JldGVTaW0vVG93YXJkcyBhIHJlYWxpc3RpYyBtaWNyb3Njb3BpYyBkZXNjcmlwdGlvbiBvZiBoaWdod2F5IHRyYWZmaWMucGRmTxECkAAAAAACkAACAAAMTWFjaW50b3NoIEhEAAAAAAAAAAAAAAAAAAAAAAAAAEJEAAH/////H1Rvd2FyZHMgYSByZWFsaXN0aSNGRkZGRkZGRi5wZGYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP////8AAAAAUERGIAAAAAAAAQADAAAKIGN1AAAAAAAAAAAAAAAAABRWb3JsZXN1bmdEaXNjcmV0ZVNpbQACAJEvOlVzZXJzOnV3ZXN0ZXJyOkNsb3VkUHJvamVjdHNVbmRlcldvcms6UHJvamVjdHNVbmRlcldvcms6Vm9ybGVzdW5nRGlzY3JldGVTaW06VG93YXJkcyBhIHJlYWxpc3RpYyBtaWNyb3Njb3BpYyBkZXNjcmlwdGlvbiBvZiBoaWdod2F5IHRyYWZmaWMucGRmAAAOAIYAQgBUAG8AdwBhAHIAZABzACAAYQAgAHIAZQBhAGwAaQBzAHQAaQBjACAAbQBpAGMAcgBvAHMAYwBvAHAAaQBjACAAZABlAHMAYwByAGkAcAB0AGkAbwBuACAAbwBmACAAaABpAGcAaAB3AGEAeQAgAHQAcgBhAGYAZgBpAGMALgBwAGQAZgAPABoADABNAGEAYwBpAG4AdABvAHMAaAAgAEgARAASAI9Vc2Vycy91d2VzdGVyci9DbG91ZFByb2plY3RzVW5kZXJXb3JrL1Byb2plY3RzVW5kZXJXb3JrL1Zvcmxlc3VuZ0Rpc2NyZXRlU2ltL1Rvd2FyZHMgYSByZWFsaXN0aWMgbWljcm9zY29waWMgZGVzY3JpcHRpb24gb2YgaGlnaHdheSB0cmFmZmljLnBkZgAAEwABLwAAFQACAA///wAAAAgADQAaACQAfgAAAAAAAAIBAAAAAAAAAAUAAAAAAAAAAAAAAAAAAAMS}}
+
+@article{lukovsevivcius2009reservoir,
+	Author = {Luko{\v{s}}evi{\v{c}}ius, Mantas and Jaeger, Herbert},
+	Date-Added = {2019-05-17 15:44:20 +0200},
+	Date-Modified = {2019-05-17 15:44:20 +0200},
+	Journal = {Computer Science Review},
+	Number = {3},
+	Pages = {127--149},
+	Publisher = {Elsevier},
+	Title = {Reservoir computing approaches to recurrent neural network training},
+	Volume = {3},
+	Year = {2009},
+	Bdsk-File-1 = {YnBsaXN0MDDSAQIDBFxyZWxhdGl2ZVBhdGhZYWxpYXNEYXRhXxBcVm9ybGVzdW5nRGlzY3JldGVTaW0vUmVzZXJ2b2lyIENvbXB1dGluZyBBcHByb2FjaGVzIHRvIFJlY3VycmVudCBOZXVyYWwgTmV0d29yayBUcmFpbmluZy5wZGZPEQKiAAAAAAKiAAIAAAxNYWNpbnRvc2ggSEQAAAAAAAAAAAAAAAAAAAAAAAAAQkQAAf////8fUmVzZXJ2b2lyIENvbXB1dGluI0ZGRkZGRkZGLnBkZgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/////wAAAAAAAAAAAAAAAAABAAMAAAogY3UAAAAAAAAAAAAAAAAAFFZvcmxlc3VuZ0Rpc2NyZXRlU2ltAAIAli86VXNlcnM6dXdlc3RlcnI6Q2xvdWRQcm9qZWN0c1VuZGVyV29yazpQcm9qZWN0c1VuZGVyV29yazpWb3JsZXN1bmdEaXNjcmV0ZVNpbTpSZXNlcnZvaXIgQ29tcHV0aW5nIEFwcHJvYWNoZXMgdG8gUmVjdXJyZW50IE5ldXJhbCBOZXR3b3JrIFRyYWluaW5nLnBkZgAOAJAARwBSAGUAcwBlAHIAdgBvAGkAcgAgAEMAbwBtAHAAdQB0AGkAbgBnACAAQQBwAHAAcgBvAGEAYwBoAGUAcwAgAHQAbwAgAFIAZQBjAHUAcgByAGUAbgB0ACAATgBlAHUAcgBhAGwAIABOAGUAdAB3AG8AcgBrACAAVAByAGEAaQBuAGkAbgBnAC4AcABkAGYADwAaAAwATQBhAGMAaQBuAHQAbwBzAGgAIABIAEQAEgCUVXNlcnMvdXdlc3RlcnIvQ2xvdWRQcm9qZWN0c1VuZGVyV29yay9Qcm9qZWN0c1VuZGVyV29yay9Wb3JsZXN1bmdEaXNjcmV0ZVNpbS9SZXNlcnZvaXIgQ29tcHV0aW5nIEFwcHJvYWNoZXMgdG8gUmVjdXJyZW50IE5ldXJhbCBOZXR3b3JrIFRyYWluaW5nLnBkZgATAAEvAAAVAAIAD///AAAACAANABoAJACDAAAAAAAAAgEAAAAAAAAABQAAAAAAAAAAAAAAAAAAAyk=}}
+
+@article{yilmaz2014reservoir,
+	Author = {Yilmaz, Ozgur},
+	Date-Added = {2019-05-17 15:30:00 +0200},
+	Date-Modified = {2019-05-17 15:30:00 +0200},
+	Journal = {arXiv preprint arXiv:1410.0162},
+	Title = {Reservoir computing using cellular automata},
+	Year = {2014},
+	Bdsk-File-1 = {YnBsaXN0MDDSAQIDBFxyZWxhdGl2ZVBhdGhZYWxpYXNEYXRhXxBEVm9ybGVzdW5nRGlzY3JldGVTaW0vUmVzZXJ2b2lyIENvbXB1dGluZyB1c2luZyBDZWxsdWxhciBBdXRvbWF0YS5wZGZPEQJCAAAAAAJCAAIAAAxNYWNpbnRvc2ggSEQAAAAAAAAAAAAAAAAAAAAAAAAAQkQAAf////8fUmVzZXJ2b2lyIENvbXB1dGluI0ZGRkZGRkZGLnBkZgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/////wAAAAAAAAAAAAAAAAABAAMAAAogY3UAAAAAAAAAAAAAAAAAFFZvcmxlc3VuZ0Rpc2NyZXRlU2ltAAIAfi86VXNlcnM6dXdlc3RlcnI6Q2xvdWRQcm9qZWN0c1VuZGVyV29yazpQcm9qZWN0c1VuZGVyV29yazpWb3JsZXN1bmdEaXNjcmV0ZVNpbTpSZXNlcnZvaXIgQ29tcHV0aW5nIHVzaW5nIENlbGx1bGFyIEF1dG9tYXRhLnBkZgAOAGAALwBSAGUAcwBlAHIAdgBvAGkAcgAgAEMAbwBtAHAAdQB0AGkAbgBnACAAdQBzAGkAbgBnACAAQwBlAGwAbAB1AGwAYQByACAAQQB1AHQAbwBtAGEAdABhAC4AcABkAGYADwAaAAwATQBhAGMAaQBuAHQAbwBzAGgAIABIAEQAEgB8VXNlcnMvdXdlc3RlcnIvQ2xvdWRQcm9qZWN0c1VuZGVyV29yay9Qcm9qZWN0c1VuZGVyV29yay9Wb3JsZXN1bmdEaXNjcmV0ZVNpbS9SZXNlcnZvaXIgQ29tcHV0aW5nIHVzaW5nIENlbGx1bGFyIEF1dG9tYXRhLnBkZgATAAEvAAAVAAIAD///AAAACAANABoAJABrAAAAAAAAAgEAAAAAAAAABQAAAAAAAAAAAAAAAAAAArE=}}
+
+@article{tanaka2019recent,
+	Author = {Tanaka, Gouhei and Yamane, Toshiyuki and H{\'e}roux, Jean Benoit and Nakane, Ryosho and Kanazawa, Naoki and Takeda, Seiji and Numata, Hidetoshi and Nakano, Daiju and Hirose, Akira},
+	Date-Added = {2019-05-17 15:23:38 +0200},
+	Date-Modified = {2019-05-17 15:23:38 +0200},
+	Journal = {Neural Networks},
+	Publisher = {Elsevier},
+	Title = {Recent advances in physical reservoir computing: a review},
+	Year = {2019},
+	Bdsk-File-1 = {YnBsaXN0MDDSAQIDBFxyZWxhdGl2ZVBhdGhZYWxpYXNEYXRhXxBRVm9ybGVzdW5nRGlzY3JldGVTaW0vUmVjZW50IEFkdmFuY2VzIGluIFBoeXNpY2FsIFJlc2Vydm9pciBDb21wdXRpbmcgQSBSZXZpZXcucGRmTxECeAAAAAACeAACAAAMTWFjaW50b3NoIEhEAAAAAAAAAAAAAAAAAAAAAAAAAEJEAAH/////H1JlY2VudCBBZHZhbmNlcyBpbiNGRkZGRkZGRi5wZGYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP////8AAAAAAAAAAAAAAAAAAQADAAAKIGN1AAAAAAAAAAAAAAAAABRWb3JsZXN1bmdEaXNjcmV0ZVNpbQACAIsvOlVzZXJzOnV3ZXN0ZXJyOkNsb3VkUHJvamVjdHNVbmRlcldvcms6UHJvamVjdHNVbmRlcldvcms6Vm9ybGVzdW5nRGlzY3JldGVTaW06UmVjZW50IEFkdmFuY2VzIGluIFBoeXNpY2FsIFJlc2Vydm9pciBDb21wdXRpbmcgQSBSZXZpZXcucGRmAAAOAHoAPABSAGUAYwBlAG4AdAAgAEEAZAB2AGEAbgBjAGUAcwAgAGkAbgAgAFAAaAB5AHMAaQBjAGEAbAAgAFIAZQBzAGUAcgB2AG8AaQByACAAQwBvAG0AcAB1AHQAaQBuAGcAIABBACAAUgBlAHYAaQBlAHcALgBwAGQAZgAPABoADABNAGEAYwBpAG4AdABvAHMAaAAgAEgARAASAIlVc2Vycy91d2VzdGVyci9DbG91ZFByb2plY3RzVW5kZXJXb3JrL1Byb2plY3RzVW5kZXJXb3JrL1Zvcmxlc3VuZ0Rpc2NyZXRlU2ltL1JlY2VudCBBZHZhbmNlcyBpbiBQaHlzaWNhbCBSZXNlcnZvaXIgQ29tcHV0aW5nIEEgUmV2aWV3LnBkZgAAEwABLwAAFQACAA///wAAAAgADQAaACQAeAAAAAAAAAIBAAAAAAAAAAUAAAAAAAAAAAAAAAAAAAL0}}
+
+@inproceedings{patel2013edge,
+	Author = {Patel, Dhiraj Kumar and More, Sagar A},
+	Booktitle = {2013 International Conference on Computer Communication and Informatics},
+	Date-Added = {2019-05-17 12:56:47 +0200},
+	Date-Modified = {2019-05-17 12:56:47 +0200},
+	Organization = {IEEE},
+	Pages = {1--6},
+	Title = {Edge detection technique by fuzzy logic and cellular learning automata using fuzzy image processing},
+	Year = {2013},
+	Bdsk-File-1 = {YnBsaXN0MDDSAQIDBFxyZWxhdGl2ZVBhdGhZYWxpYXNEYXRhXxAxLi4vLi4vLi4vLi4vLlRyYXNoLzUtRWRnZS1EZXRlY3Rpb24tVGVjaG5pcXVlLnBkZk8RAYIAAAAAAYIAAgAADE1hY2ludG9zaCBIRAAAAAAAAAAAAAAAAAAAAAAAAABCRAAB/////x41LUVkZ2UtRGV0ZWN0aW9uLVRlY2huaXF1ZS5wZGYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD/////AAAAAFBERiAAAAAAAAQAAgAACiBjdQAAAAAAAAAAAAAAAAAGLlRyYXNoAAIANi86VXNlcnM6dXdlc3RlcnI6LlRyYXNoOjUtRWRnZS1EZXRlY3Rpb24tVGVjaG5pcXVlLnBkZgAOAD4AHgA1AC0ARQBkAGcAZQAtAEQAZQB0AGUAYwB0AGkAbwBuAC0AVABlAGMAaABuAGkAcQB1AGUALgBwAGQAZgAPABoADABNAGEAYwBpAG4AdABvAHMAaAAgAEgARAASADRVc2Vycy91d2VzdGVyci8uVHJhc2gvNS1FZGdlLURldGVjdGlvbi1UZWNobmlxdWUucGRmABMAAS8AABUAAgAP//8AAAAIAA0AGgAkAFgAAAAAAAACAQAAAAAAAAAFAAAAAAAAAAAAAAAAAAAB3g==}}
+
+@article{qian2001learning,
+	Author = {Qian, Fei and Zhao, Yue and Hirata, Hironori},
+	Date-Added = {2019-05-17 11:01:42 +0200},
+	Date-Modified = {2019-05-17 11:01:42 +0200},
+	Journal = {IEEJ Transactions on Electronics, Information and Systems},
+	Number = {1},
+	Pages = {261--268},
+	Publisher = {The Institute of Electrical Engineers of Japan},
+	Title = {Learning Cellular Automata for Function Optimization Problems},
+	Volume = {121},
+	Year = {2001},
+	Bdsk-File-1 = {YnBsaXN0MDDSAQIDBFxyZWxhdGl2ZVBhdGhZYWxpYXNEYXRhXxBWVm9ybGVzdW5nRGlzY3JldGVTaW0vTGVhcm5pbmcgQ2VsbHVsYXIgQXV0b21hdGEgZm9yIEZ1bmN0aW9uIE9wdGltaXphdGlvbiBQcm9ibGVtcy5wZGZPEQKKAAAAAAKKAAIAAAxNYWNpbnRvc2ggSEQAAAAAAAAAAAAAAAAAAAAAAAAAQkQAAf////8fTGVhcm5pbmcgQ2VsbHVsYXIgI0ZGRkZGRkZGLnBkZgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/////wAAAABQREYgAAAAAAABAAMAAAogY3UAAAAAAAAAAAAAAAAAFFZvcmxlc3VuZ0Rpc2NyZXRlU2ltAAIAkC86VXNlcnM6dXdlc3RlcnI6Q2xvdWRQcm9qZWN0c1VuZGVyV29yazpQcm9qZWN0c1VuZGVyV29yazpWb3JsZXN1bmdEaXNjcmV0ZVNpbTpMZWFybmluZyBDZWxsdWxhciBBdXRvbWF0YSBmb3IgRnVuY3Rpb24gT3B0aW1pemF0aW9uIFByb2JsZW1zLnBkZgAOAIQAQQBMAGUAYQByAG4AaQBuAGcAIABDAGUAbABsAHUAbABhAHIAIABBAHUAdABvAG0AYQB0AGEAIABmAG8AcgAgAEYAdQBuAGMAdABpAG8AbgAgAE8AcAB0AGkAbQBpAHoAYQB0AGkAbwBuACAAUAByAG8AYgBsAGUAbQBzAC4AcABkAGYADwAaAAwATQBhAGMAaQBuAHQAbwBzAGgAIABIAEQAEgCOVXNlcnMvdXdlc3RlcnIvQ2xvdWRQcm9qZWN0c1VuZGVyV29yay9Qcm9qZWN0c1VuZGVyV29yay9Wb3JsZXN1bmdEaXNjcmV0ZVNpbS9MZWFybmluZyBDZWxsdWxhciBBdXRvbWF0YSBmb3IgRnVuY3Rpb24gT3B0aW1pemF0aW9uIFByb2JsZW1zLnBkZgATAAEvAAAVAAIAD///AAAACAANABoAJAB9AAAAAAAAAgEAAAAAAAAABQAAAAAAAAAAAAAAAAAAAws=}}
+
+@article{gilpin2018cellular,
+	Author = {Gilpin, William},
+	Date-Added = {2019-05-17 09:25:31 +0200},
+	Date-Modified = {2019-05-17 09:25:31 +0200},
+	Journal = {arXiv preprint arXiv:1809.02942},
+	Title = {Cellular automata as convolutional neural networks},
+	Year = {2018},
+	Bdsk-File-1 = {YnBsaXN0MDDSAQIDBFxyZWxhdGl2ZVBhdGhZYWxpYXNEYXRhXxBLVm9ybGVzdW5nRGlzY3JldGVTaW0vQ2VsbHVsYXIgYXV0b21hdGEgYXMgY29udm9sdXRpb25hbCBuZXVyYWwgbmV0d29ya3MucGRmTxECYAAAAAACYAACAAAMTWFjaW50b3NoIEhEAAAAAAAAAAAAAAAAAAAAAAAAAEJEAAH/////H0NlbGx1bGFyIGF1dG9tYXRhICNGRkZGRkZGRi5wZGYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP////8AAAAAUERGIAAAAAAAAQADAAAKIGN1AAAAAAAAAAAAAAAAABRWb3JsZXN1bmdEaXNjcmV0ZVNpbQACAIUvOlVzZXJzOnV3ZXN0ZXJyOkNsb3VkUHJvamVjdHNVbmRlcldvcms6UHJvamVjdHNVbmRlcldvcms6Vm9ybGVzdW5nRGlzY3JldGVTaW06Q2VsbHVsYXIgYXV0b21hdGEgYXMgY29udm9sdXRpb25hbCBuZXVyYWwgbmV0d29ya3MucGRmAAAOAG4ANgBDAGUAbABsAHUAbABhAHIAIABhAHUAdABvAG0AYQB0AGEAIABhAHMAIABjAG8AbgB2AG8AbAB1AHQAaQBvAG4AYQBsACAAbgBlAHUAcgBhAGwAIABuAGUAdAB3AG8AcgBrAHMALgBwAGQAZgAPABoADABNAGEAYwBpAG4AdABvAHMAaAAgAEgARAASAINVc2Vycy91d2VzdGVyci9DbG91ZFByb2plY3RzVW5kZXJXb3JrL1Byb2plY3RzVW5kZXJXb3JrL1Zvcmxlc3VuZ0Rpc2NyZXRlU2ltL0NlbGx1bGFyIGF1dG9tYXRhIGFzIGNvbnZvbHV0aW9uYWwgbmV1cmFsIG5ldHdvcmtzLnBkZgAAEwABLwAAFQACAA///wAAAAgADQAaACQAcgAAAAAAAAIBAAAAAAAAAAUAAAAAAAAAAAAAAAAAAALW}}
+
+@article{nayak2014survey,
+	Author = {Nayak, Deepak Ranjan and Patra, Prashanta Kumar and Mahapatra, Amitav},
+	Date-Added = {2019-05-17 09:13:20 +0200},
+	Date-Modified = {2019-05-17 09:13:20 +0200},
+	Journal = {arXiv preprint arXiv:1407.7626},
+	Title = {A survey on two dimensional cellular automata and its application in image processing},
+	Year = {2014},
+	Bdsk-File-1 = {YnBsaXN0MDDSAQIDBFxyZWxhdGl2ZVBhdGhZYWxpYXNEYXRhXxBuVm9ybGVzdW5nRGlzY3JldGVTaW0vQSBTdXJ2ZXkgb24gVHdvIERpbWVuc2lvbmFsIENlbGx1bGFyIEF1dG9tYXRhIGFuZCBJdHMgQXBwbGljYXRpb24gaW4gSW1hZ2UgUHJvY2Vzc2luZy5wZGZPEQLqAAAAAALqAAIAAAxNYWNpbnRvc2ggSEQAAAAAAAAAAAAAAAAAAAAAAAAAQkQAAf////8fQSBTdXJ2ZXkgb24gVHdvIERpI0ZGRkZGRkZGLnBkZgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/////wAAAAAAAAAAAAAAAAABAAMAAAogY3UAAAAAAAAAAAAAAAAAFFZvcmxlc3VuZ0Rpc2NyZXRlU2ltAAIAqC86VXNlcnM6dXdlc3RlcnI6Q2xvdWRQcm9qZWN0c1VuZGVyV29yazpQcm9qZWN0c1VuZGVyV29yazpWb3JsZXN1bmdEaXNjcmV0ZVNpbTpBIFN1cnZleSBvbiBUd28gRGltZW5zaW9uYWwgQ2VsbHVsYXIgQXV0b21hdGEgYW5kIEl0cyBBcHBsaWNhdGlvbiBpbiBJbWFnZSBQcm9jZXNzaW5nLnBkZgAOALQAWQBBACAAUwB1AHIAdgBlAHkAIABvAG4AIABUAHcAbwAgAEQAaQBtAGUAbgBzAGkAbwBuAGEAbAAgAEMAZQBsAGwAdQBsAGEAcgAgAEEAdQB0AG8AbQBhAHQAYQAgAGEAbgBkACAASQB0AHMAIABBAHAAcABsAGkAYwBhAHQAaQBvAG4AIABpAG4AIABJAG0AYQBnAGUAIABQAHIAbwBjAGUAcwBzAGkAbgBnAC4AcABkAGYADwAaAAwATQBhAGMAaQBuAHQAbwBzAGgAIABIAEQAEgCmVXNlcnMvdXdlc3RlcnIvQ2xvdWRQcm9qZWN0c1VuZGVyV29yay9Qcm9qZWN0c1VuZGVyV29yay9Wb3JsZXN1bmdEaXNjcmV0ZVNpbS9BIFN1cnZleSBvbiBUd28gRGltZW5zaW9uYWwgQ2VsbHVsYXIgQXV0b21hdGEgYW5kIEl0cyBBcHBsaWNhdGlvbiBpbiBJbWFnZSBQcm9jZXNzaW5nLnBkZgATAAEvAAAVAAIAD///AAAACAANABoAJACVAAAAAAAAAgEAAAAAAAAABQAAAAAAAAAAAAAAAAAAA4M=}}
+
+@article{guisado2003cellular,
+	Author = {Guisado, JL and Jim{\'e}nez-Morales, F and Guerra, JM},
+	Date-Added = {2019-05-16 17:53:18 +0200},
+	Date-Modified = {2019-05-16 17:53:18 +0200},
+	Journal = {Physical Review E},
+	Number = {6},
+	Pages = {066708},
+	Publisher = {APS},
+	Title = {Cellular automaton model for the simulation of laser dynamics},
+	Volume = {67},
+	Year = {2003},
+	Bdsk-File-1 = {YnBsaXN0MDDSAQIDBFxyZWxhdGl2ZVBhdGhZYWxpYXNEYXRhXxBWVm9ybGVzdW5nRGlzY3JldGVTaW0vQ2VsbHVsYXIgYXV0b21hdG9uIG1vZGVsIGZvciB0aGUgc2ltdWxhdGlvbiBvZiBsYXNlciBkeW5hbWljcy5wZGZPEQKKAAAAAAKKAAIAAAxNYWNpbnRvc2ggSEQAAAAAAAAAAAAAAAAAAAAAAAAAQkQAAf////8fQ2VsbHVsYXIgYXV0b21hdG9uI0ZGRkZGRkZGLnBkZgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/////wAAAAAAAAAAAAAAAAABAAMAAAogY3UAAAAAAAAAAAAAAAAAFFZvcmxlc3VuZ0Rpc2NyZXRlU2ltAAIAkC86VXNlcnM6dXdlc3RlcnI6Q2xvdWRQcm9qZWN0c1VuZGVyV29yazpQcm9qZWN0c1VuZGVyV29yazpWb3JsZXN1bmdEaXNjcmV0ZVNpbTpDZWxsdWxhciBhdXRvbWF0b24gbW9kZWwgZm9yIHRoZSBzaW11bGF0aW9uIG9mIGxhc2VyIGR5bmFtaWNzLnBkZgAOAIQAQQBDAGUAbABsAHUAbABhAHIAIABhAHUAdABvAG0AYQB0AG8AbgAgAG0AbwBkAGUAbAAgAGYAbwByACAAdABoAGUAIABzAGkAbQB1AGwAYQB0AGkAbwBuACAAbwBmACAAbABhAHMAZQByACAAZAB5AG4AYQBtAGkAYwBzAC4AcABkAGYADwAaAAwATQBhAGMAaQBuAHQAbwBzAGgAIABIAEQAEgCOVXNlcnMvdXdlc3RlcnIvQ2xvdWRQcm9qZWN0c1VuZGVyV29yay9Qcm9qZWN0c1VuZGVyV29yay9Wb3JsZXN1bmdEaXNjcmV0ZVNpbS9DZWxsdWxhciBhdXRvbWF0b24gbW9kZWwgZm9yIHRoZSBzaW11bGF0aW9uIG9mIGxhc2VyIGR5bmFtaWNzLnBkZgATAAEvAAAVAAIAD///AAAACAANABoAJAB9AAAAAAAAAgEAAAAAAAAABQAAAAAAAAAAAAAAAAAAAws=}}
+
+@inproceedings{jang2019simulation,
+	Author = {Jang, Kathy and Vinitsky, Eugene and Chalaki, Behdad and Remer, Ben and Beaver, Logan and Malikopoulos, Andreas A and Bayen, Alexandre},
+	Booktitle = {Proceedings of the 10th ACM/IEEE International Conference on Cyber-Physical Systems},
+	Date-Added = {2019-04-24 09:14:18 +0200},
+	Date-Modified = {2019-04-24 09:14:18 +0200},
+	Organization = {ACM},
+	Pages = {291--300},
+	Title = {Simulation to scaled city: zero-shot policy transfer for traffic control via autonomous vehicles},
+	Year = {2019},
+	Bdsk-File-1 = {YnBsaXN0MDDSAQIDBFxyZWxhdGl2ZVBhdGhZYWxpYXNEYXRhXxAyVm9ybGVzdW5nRGlzY3JldGVTaW0vU2ltdWxhdGlvbiB0byBTY2FsZWQgQ2l0eS5wZGZPEQH6AAAAAAH6AAIAAAxNYWNpbnRvc2ggSEQAAAAAAAAAAAAAAAAAAAAAAAAAQkQAAf////8dU2ltdWxhdGlvbiB0byBTY2FsZWQgQ2l0eS5wZGYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/////wAAAAAAAAAAAAAAAAABAAMAAAogY3UAAAAAAAAAAAAAAAAAFFZvcmxlc3VuZ0Rpc2NyZXRlU2ltAAIAbC86VXNlcnM6dXdlc3RlcnI6Q2xvdWRQcm9qZWN0c1VuZGVyV29yazpQcm9qZWN0c1VuZGVyV29yazpWb3JsZXN1bmdEaXNjcmV0ZVNpbTpTaW11bGF0aW9uIHRvIFNjYWxlZCBDaXR5LnBkZgAOADwAHQBTAGkAbQB1AGwAYQB0AGkAbwBuACAAdABvACAAUwBjAGEAbABlAGQAIABDAGkAdAB5AC4AcABkAGYADwAaAAwATQBhAGMAaQBuAHQAbwBzAGgAIABIAEQAEgBqVXNlcnMvdXdlc3RlcnIvQ2xvdWRQcm9qZWN0c1VuZGVyV29yay9Qcm9qZWN0c1VuZGVyV29yay9Wb3JsZXN1bmdEaXNjcmV0ZVNpbS9TaW11bGF0aW9uIHRvIFNjYWxlZCBDaXR5LnBkZgATAAEvAAAVAAIAD///AAAACAANABoAJABZAAAAAAAAAgEAAAAAAAAABQAAAAAAAAAAAAAAAAAAAlc=}}
+
+@article{article,
+	Author = {Tian, Kun and Jiang, Shuping},
+	Date-Added = {2019-03-05 15:51:49 +0100},
+	Date-Modified = {2019-03-05 15:51:49 +0100},
+	Doi = {10.1080/21642583.2018.1509746},
+	Journal = {Systems Science & Control Engineering},
+	Month = {07},
+	Pages = {45-56},
+	Title = {Reinforcement learning for safe evacuation time of fire in Hong Kong-Zhuhai-Macau immersed tube tunnel},
+	Volume = {6},
+	Year = {2018},
+	Bdsk-Url-1 = {https://doi.org/10.1080/21642583.2018.1509746}}
+
+@article{kirkpatrick1983optimization,
+	Author = {Kirkpatrick, Scott and Gelatt, C Daniel and Vecchi, Mario P},
+	Date-Added = {2019-02-26 15:57:05 +0100},
+	Date-Modified = {2019-02-26 15:57:05 +0100},
+	Journal = {science},
+	Number = {4598},
+	Pages = {671--680},
+	Publisher = {American Association for the Advancement of Science},
+	Title = {Optimization by simulated annealing},
+	Volume = {220},
+	Year = {1983}}
+
+@incollection{van1987simulated,
+	Author = {Van Laarhoven, Peter JM and Aarts, Emile HL},
+	Booktitle = {Simulated annealing: Theory and applications},
+	Date-Added = {2019-02-26 15:55:51 +0100},
+	Date-Modified = {2019-02-26 15:55:51 +0100},
+	Pages = {7--15},
+	Publisher = {Springer},
+	Title = {Simulated annealing},
+	Year = {1987}}
+
+@article{holland1992genetic,
+	Author = {Holland, J},
+	Date-Added = {2019-02-26 15:52:36 +0100},
+	Date-Modified = {2019-02-26 15:52:36 +0100},
+	Publisher = {July},
+	Title = {Genetic Algorithms Scientific American},
+	Year = {1992}}
+
+@article{mandal2006selc,
+	Author = {Mandal, Abhyuday and Jeff Wu, CF and Johnson, Kjell},
+	Date-Added = {2019-02-26 15:50:52 +0100},
+	Date-Modified = {2019-02-26 15:50:52 +0100},
+	Journal = {Technometrics},
+	Number = {2},
+	Pages = {273--283},
+	Publisher = {Taylor \& Francis},
+	Title = {SELC: Sequential elimination of level combinations by means of modified genetic algorithms},
+	Volume = {48},
+	Year = {2006}}
+
+@book{mitchell1998introduction,
+	Author = {Mitchell, Melanie},
+	Date-Added = {2019-02-26 15:49:17 +0100},
+	Date-Modified = {2019-02-26 15:49:17 +0100},
+	Publisher = {MIT press},
+	Title = {An introduction to genetic algorithms},
+	Year = {1998}}
+
+@book{haupt2004practical,
+	Author = {Haupt, Randy L and Haupt, Sue Ellen},
+	Date-Added = {2019-02-26 15:44:51 +0100},
+	Date-Modified = {2019-02-26 15:44:51 +0100},
+	Publisher = {John Wiley \& Sons},
+	Title = {Practical genetic algorithms},
+	Year = {2004}}
+
+@article{simpraga2017eeg,
+	Author = {Simpraga, Sonja and Alvarez-Jimenez, Ricardo and Mansvelder, Huibert D and Gerven, Joop MA and Groeneveld, Geert Jan and Poil, Simon-Shlomo and Linkenkaer-Hansen, Klaus},
+	Date-Added = {2018-12-19 13:03:50 +0100},
+	Date-Modified = {2018-12-19 13:03:50 +0100},
+	Journal = {Scientific reports},
+	Number = {1},
+	Pages = {5775},
+	Publisher = {Nature Publishing Group},
+	Title = {EEG machine learning for accurate detection of cholinergic intervention and Alzheimer's disease},
+	Volume = {7},
+	Year = {2017},
+	Bdsk-File-1 = {YnBsaXN0MDDSAQIDBFxyZWxhdGl2ZVBhdGhZYWxpYXNEYXRhXxAncGFwZXJzQ29sbGVjdGlvbi9zNDE1OTgtMDE3LTA2MTY1LTQucGRmTxEB1AAAAAAB1AACAAAMTWFjaW50b3NoIEhEAAAAAAAAAAAAAAAAAAAAAAAAAEJEAAH/////FnM0MTU5OC0wMTctMDYxNjUtNC5wZGYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP////8AAAAAUERGIAAAAAAAAQADAAAKIGN1AAAAAAAAAAAAAAAAABBwYXBlcnNDb2xsZWN0aW9uAAIAYS86VXNlcnM6dXdlc3RlcnI6Q2xvdWRQcm9qZWN0c1VuZGVyV29yazpQcm9qZWN0c1VuZGVyV29yazpwYXBlcnNDb2xsZWN0aW9uOnM0MTU5OC0wMTctMDYxNjUtNC5wZGYAAA4ALgAWAHMANAAxADUAOQA4AC0AMAAxADcALQAwADYAMQA2ADUALQA0AC4AcABkAGYADwAaAAwATQBhAGMAaQBuAHQAbwBzAGgAIABIAEQAEgBfVXNlcnMvdXdlc3RlcnIvQ2xvdWRQcm9qZWN0c1VuZGVyV29yay9Qcm9qZWN0c1VuZGVyV29yay9wYXBlcnNDb2xsZWN0aW9uL3M0MTU5OC0wMTctMDYxNjUtNC5wZGYAABMAAS8AABUAAgAP//8AAAAIAA0AGgAkAE4AAAAAAAACAQAAAAAAAAAFAAAAAAAAAAAAAAAAAAACJg==}}
+
+@article{gauci2018horizon,
+	Author = {Gauci, Jason and Conti, Edoardo and Liang, Yitao and Virochsiri, Kittipat and He, Yuchen and Kaden, Zachary and Narayanan, Vivek and Ye, Xiaohui},
+	Date-Added = {2018-12-17 15:05:02 +0100},
+	Date-Modified = {2018-12-17 15:05:02 +0100},
+	Journal = {arXiv preprint arXiv:1811.00260},
+	Title = {Horizon: Facebook's Open Source Applied Reinforcement Learning Platform},
+	Year = {2018},
+	Bdsk-File-1 = {YnBsaXN0MDDSAQIDBFxyZWxhdGl2ZVBhdGhZYWxpYXNEYXRhXxBacGFwZXJzQ29sbGVjdGlvbi9Ib3Jpem9uLUZhY2Vib29rcy1PcGVuLVNvdXJjZS1BcHBsaWVkLVJlaW5mb3JjZW1lbnQtTGVhcm5pbmctUGxhdGZvcm0ucGRmTxECngAAAAACngACAAAMTWFjaW50b3NoIEhEAAAAAAAAAAAAAAAAAAAAAAAAAEJEAAH/////H0hvcml6b24tRmFjZWJvb2tzLSNGRkZGRkZGRi5wZGYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP////8AAAAAAAAAAAAAAAAAAQADAAAKIGN1AAAAAAAAAAAAAAAAABBwYXBlcnNDb2xsZWN0aW9uAAIAlC86VXNlcnM6dXdlc3RlcnI6Q2xvdWRQcm9qZWN0c1VuZGVyV29yazpQcm9qZWN0c1VuZGVyV29yazpwYXBlcnNDb2xsZWN0aW9uOkhvcml6b24tRmFjZWJvb2tzLU9wZW4tU291cmNlLUFwcGxpZWQtUmVpbmZvcmNlbWVudC1MZWFybmluZy1QbGF0Zm9ybS5wZGYADgCUAEkASABvAHIAaQB6AG8AbgAtAEYAYQBjAGUAYgBvAG8AawBzAC0ATwBwAGUAbgAtAFMAbwB1AHIAYwBlAC0AQQBwAHAAbABpAGUAZAAtAFIAZQBpAG4AZgBvAHIAYwBlAG0AZQBuAHQALQBMAGUAYQByAG4AaQBuAGcALQBQAGwAYQB0AGYAbwByAG0ALgBwAGQAZgAPABoADABNAGEAYwBpAG4AdABvAHMAaAAgAEgARAASAJJVc2Vycy91d2VzdGVyci9DbG91ZFByb2plY3RzVW5kZXJXb3JrL1Byb2plY3RzVW5kZXJXb3JrL3BhcGVyc0NvbGxlY3Rpb24vSG9yaXpvbi1GYWNlYm9va3MtT3Blbi1Tb3VyY2UtQXBwbGllZC1SZWluZm9yY2VtZW50LUxlYXJuaW5nLVBsYXRmb3JtLnBkZgATAAEvAAAVAAIAD///AAAACAANABoAJACBAAAAAAAAAgEAAAAAAAAABQAAAAAAAAAAAAAAAAAAAyM=}}
+
+@inproceedings{sabour2017dynamic,
+	Author = {Sabour, Sara and Frosst, Nicholas and Hinton, Geoffrey E},
+	Booktitle = {Advances in Neural Information Processing Systems},
+	Date-Added = {2018-11-22 21:18:44 +0100},
+	Date-Modified = {2018-11-22 21:18:44 +0100},
+	Pages = {3856--3866},
+	Title = {Dynamic routing between capsules},
+	Year = {2017},
+	Bdsk-File-1 = {YnBsaXN0MDDSAQIDBFxyZWxhdGl2ZVBhdGhZYWxpYXNEYXRhXxA1cGFwZXJzQ29sbGVjdGlvbi9EeW5hbWljIFJvdXRpbmcgQmV0d2VlbiBDYXBzdWxlcy5wZGZPEQIMAAAAAAIMAAIAAAxNYWNpbnRvc2ggSEQAAAAAAAAAAAAAAAAAAAAAAAAAQkQAAf////8fRHluYW1pYyBSb3V0aW5nIEJlI0ZGRkZGRkZGLnBkZgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/////wAAAAAAAAAAAAAAAAABAAMAAAogY3UAAAAAAAAAAAAAAAAAEHBhcGVyc0NvbGxlY3Rpb24AAgBvLzpVc2Vyczp1d2VzdGVycjpDbG91ZFByb2plY3RzVW5kZXJXb3JrOlByb2plY3RzVW5kZXJXb3JrOnBhcGVyc0NvbGxlY3Rpb246RHluYW1pYyBSb3V0aW5nIEJldHdlZW4gQ2Fwc3VsZXMucGRmAAAOAEoAJABEAHkAbgBhAG0AaQBjACAAUgBvAHUAdABpAG4AZwAgAEIAZQB0AHcAZQBlAG4AIABDAGEAcABzAHUAbABlAHMALgBwAGQAZgAPABoADABNAGEAYwBpAG4AdABvAHMAaAAgAEgARAASAG1Vc2Vycy91d2VzdGVyci9DbG91ZFByb2plY3RzVW5kZXJXb3JrL1Byb2plY3RzVW5kZXJXb3JrL3BhcGVyc0NvbGxlY3Rpb24vRHluYW1pYyBSb3V0aW5nIEJldHdlZW4gQ2Fwc3VsZXMucGRmAAATAAEvAAAVAAIAD///AAAACAANABoAJABcAAAAAAAAAgEAAAAAAAAABQAAAAAAAAAAAAAAAAAAAmw=}}
+
+@inproceedings{sutton2000policy,
+	Author = {Sutton, Richard S and McAllester, David A and Singh, Satinder P and Mansour, Yishay},
+	Booktitle = {Advances in neural information processing systems},
+	Date-Added = {2018-11-20 10:33:41 +0100},
+	Date-Modified = {2018-11-20 10:33:41 +0100},
+	Pages = {1057--1063},
+	Title = {Policy gradient methods for reinforcement learning with function approximation},
+	Year = {2000},
+	Bdsk-File-1 = {YnBsaXN0MDDSAQIDBFxyZWxhdGl2ZVBhdGhZYWxpYXNEYXRhXxBocGFwZXJzQ29sbGVjdGlvbi8xNzEzLXBvbGljeS1ncmFkaWVudC1tZXRob2RzLWZvci1yZWluZm9yY2VtZW50LWxlYXJuaW5nLXdpdGgtZnVuY3Rpb24tYXBwcm94aW1hdGlvbi5wZGZPEQLWAAAAAALWAAIAAAxNYWNpbnRvc2ggSEQAAAAAAAAAAAAAAAAAAAAAAAAAQkQAAf////8fMTcxMy1wb2xpY3ktZ3JhZGllI0ZGRkZGRkZGLnBkZgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/////wAAAAAAAAAAAAAAAAABAAMAAAogY3UAAAAAAAAAAAAAAAAAEHBhcGVyc0NvbGxlY3Rpb24AAgCiLzpVc2Vyczp1d2VzdGVycjpDbG91ZFByb2plY3RzVW5kZXJXb3JrOlByb2plY3RzVW5kZXJXb3JrOnBhcGVyc0NvbGxlY3Rpb246MTcxMy1wb2xpY3ktZ3JhZGllbnQtbWV0aG9kcy1mb3ItcmVpbmZvcmNlbWVudC1sZWFybmluZy13aXRoLWZ1bmN0aW9uLWFwcHJveGltYXRpb24ucGRmAA4AsABXADEANwAxADMALQBwAG8AbABpAGMAeQAtAGcAcgBhAGQAaQBlAG4AdAAtAG0AZQB0AGgAbwBkAHMALQBmAG8AcgAtAHIAZQBpAG4AZgBvAHIAYwBlAG0AZQBuAHQALQBsAGUAYQByAG4AaQBuAGcALQB3AGkAdABoAC0AZgB1AG4AYwB0AGkAbwBuAC0AYQBwAHAAcgBvAHgAaQBtAGEAdABpAG8AbgAuAHAAZABmAA8AGgAMAE0AYQBjAGkAbgB0AG8AcwBoACAASABEABIAoFVzZXJzL3V3ZXN0ZXJyL0Nsb3VkUHJvamVjdHNVbmRlcldvcmsvUHJvamVjdHNVbmRlcldvcmsvcGFwZXJzQ29sbGVjdGlvbi8xNzEzLXBvbGljeS1ncmFkaWVudC1tZXRob2RzLWZvci1yZWluZm9yY2VtZW50LWxlYXJuaW5nLXdpdGgtZnVuY3Rpb24tYXBwcm94aW1hdGlvbi5wZGYAEwABLwAAFQACAA///wAAAAgADQAaACQAjwAAAAAAAAIBAAAAAAAAAAUAAAAAAAAAAAAAAAAAAANp}}
+
+@article{wu2017flow,
+	Author = {Wu, Cathy and Kreidieh, Aboudy and Parvate, Kanaad and Vinitsky, Eugene and Bayen, Alexandre M},
+	Date-Added = {2018-11-20 08:44:25 +0100},
+	Date-Modified = {2018-11-20 08:44:25 +0100},
+	Journal = {arXiv preprint arXiv:1710.05465},
+	Title = {Flow: Architecture and benchmarking for reinforcement learning in traffic control},
+	Year = {2017},
+	Bdsk-File-1 = {YnBsaXN0MDDSAQIDBFxyZWxhdGl2ZVBhdGhZYWxpYXNEYXRhXxBlcGFwZXJzQ29sbGVjdGlvbi9GbG93IEFyY2hpdGVjdHVyZSBhbmQgQmVuY2htYXJraW5nIGZvciBSZWluZm9yY2VtZW50IExlYXJuaW5nIGluIFRyYWZmaWMgQ29udHJvbC5wZGZPEQLMAAAAAALMAAIAAAxNYWNpbnRvc2ggSEQAAAAAAAAAAAAAAAAAAAAAAAAAQkQAAf////8fRmxvdyBBcmNoaXRlY3R1cmUgI0ZGRkZGRkZGLnBkZgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/////wAAAABQREYgAAAAAAABAAMAAAogY3UAAAAAAAAAAAAAAAAAEHBhcGVyc0NvbGxlY3Rpb24AAgCfLzpVc2Vyczp1d2VzdGVycjpDbG91ZFByb2plY3RzVW5kZXJXb3JrOlByb2plY3RzVW5kZXJXb3JrOnBhcGVyc0NvbGxlY3Rpb246RmxvdyBBcmNoaXRlY3R1cmUgYW5kIEJlbmNobWFya2luZyBmb3IgUmVpbmZvcmNlbWVudCBMZWFybmluZyBpbiBUcmFmZmljIENvbnRyb2wucGRmAAAOAKoAVABGAGwAbwB3ACAAQQByAGMAaABpAHQAZQBjAHQAdQByAGUAIABhAG4AZAAgAEIAZQBuAGMAaABtAGEAcgBrAGkAbgBnACAAZgBvAHIAIABSAGUAaQBuAGYAbwByAGMAZQBtAGUAbgB0ACAATABlAGEAcgBuAGkAbgBnACAAaQBuACAAVAByAGEAZgBmAGkAYwAgAEMAbwBuAHQAcgBvAGwALgBwAGQAZgAPABoADABNAGEAYwBpAG4AdABvAHMAaAAgAEgARAASAJ1Vc2Vycy91d2VzdGVyci9DbG91ZFByb2plY3RzVW5kZXJXb3JrL1Byb2plY3RzVW5kZXJXb3JrL3BhcGVyc0NvbGxlY3Rpb24vRmxvdyBBcmNoaXRlY3R1cmUgYW5kIEJlbmNobWFya2luZyBmb3IgUmVpbmZvcmNlbWVudCBMZWFybmluZyBpbiBUcmFmZmljIENvbnRyb2wucGRmAAATAAEvAAAVAAIAD///AAAACAANABoAJACMAAAAAAAAAgEAAAAAAAAABQAAAAAAAAAAAAAAAAAAA1w=}}
+
+@article{cui2018multi,
+	Author = {Cui, Jingjing and Liu, Yuanwei and Nallanathan, Arumugam},
+	Date-Added = {2018-11-13 15:30:41 +0100},
+	Date-Modified = {2018-11-13 15:30:41 +0100},
+	Journal = {arXiv preprint arXiv:1810.10408},
+	Title = {Multi-Agent Reinforcement Learning Based Resource Allocation for UAV Networks},
+	Year = {2018},
+	Bdsk-File-1 = {YnBsaXN0MDDSAQIDBFxyZWxhdGl2ZVBhdGhZYWxpYXNEYXRhXxCjLi4vLi4vLi4vLi4vQ2xvdWRQcm9qZWN0c1VuZGVyV29yay9Qcm9qZWN0c1VuZGVyV29yay9Wb3JsZXN1bmdSTFByb2R1Y3Rpb25Db250cm9sL011bHRpLUFnZW50IFJlaW5mb3JjZW1lbnQgTGVhcm5pbmcgQmFzZWQgUmVzb3VyY2UgQWxsb2NhdGlvbiBmb3IgVUFWIE5ldHdvcmtzLnBkZk8RAuIAAAAAAuIAAgAADE1hY2ludG9zaCBIRAAAAAAAAAAAAAAAAAAAAAAAAABCRAAB/////x9NdWx0aS1BZ2VudCBSZWluZm8jRkZGRkZGRkYucGRmAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD/////AAAAAFBERiAAAAAAAAQABAAACiBjdQAAAAAAAAAAAAAAAAAcVm9ybGVzdW5nUkxQcm9kdWN0aW9uQ29udHJvbAACAKgvOlVzZXJzOnV3ZXN0ZXJyOkNsb3VkUHJvamVjdHNVbmRlcldvcms6UHJvamVjdHNVbmRlcldvcms6Vm9ybGVzdW5nUkxQcm9kdWN0aW9uQ29udHJvbDpNdWx0aS1BZ2VudCBSZWluZm9yY2VtZW50IExlYXJuaW5nIEJhc2VkIFJlc291cmNlIEFsbG9jYXRpb24gZm9yIFVBViBOZXR3b3Jrcy5wZGYADgCkAFEATQB1AGwAdABpAC0AQQBnAGUAbgB0ACAAUgBlAGkAbgBmAG8AcgBjAGUAbQBlAG4AdAAgAEwAZQBhAHIAbgBpAG4AZwAgAEIAYQBzAGUAZAAgAFIAZQBzAG8AdQByAGMAZQAgAEEAbABsAG8AYwBhAHQAaQBvAG4AIABmAG8AcgAgAFUAQQBWACAATgBlAHQAdwBvAHIAawBzAC4AcABkAGYADwAaAAwATQBhAGMAaQBuAHQAbwBzAGgAIABIAEQAEgCmVXNlcnMvdXdlc3RlcnIvQ2xvdWRQcm9qZWN0c1VuZGVyV29yay9Qcm9qZWN0c1VuZGVyV29yay9Wb3JsZXN1bmdSTFByb2R1Y3Rpb25Db250cm9sL011bHRpLUFnZW50IFJlaW5mb3JjZW1lbnQgTGVhcm5pbmcgQmFzZWQgUmVzb3VyY2UgQWxsb2NhdGlvbiBmb3IgVUFWIE5ldHdvcmtzLnBkZgATAAEvAAAVAAIAD///AAAACAANABoAJADKAAAAAAAAAgEAAAAAAAAABQAAAAAAAAAAAAAAAAAAA7A=}}
+
+@article{sallab2017deep,
+	Author = {Sallab, Ahmad EL and Abdou, Mohammed and Perot, Etienne and Yogamani, Senthil},
+	Date-Added = {2018-11-13 15:30:01 +0100},
+	Date-Modified = {2018-11-13 15:30:01 +0100},
+	Journal = {Electronic Imaging},
+	Number = {19},
+	Pages = {70--76},
+	Publisher = {Society for Imaging Science and Technology},
+	Title = {Deep reinforcement learning framework for autonomous driving},
+	Volume = {2017},
+	Year = {2017},
+	Bdsk-File-1 = {YnBsaXN0MDDSAQIDBFxyZWxhdGl2ZVBhdGhZYWxpYXNEYXRhXxCULi4vLi4vLi4vLi4vQ2xvdWRQcm9qZWN0c1VuZGVyV29yay9Qcm9qZWN0c1VuZGVyV29yay9Wb3JsZXN1bmdSTFByb2R1Y3Rpb25Db250cm9sL0RlZXAgUmVpbmZvcmNlbWVudCBMZWFybmluZyBmcmFtZXdvcmsgZm9yIEF1dG9ub21vdXMgRHJpdi0gaW5nLnBkZk8RAqgAAAAAAqgAAgAADE1hY2ludG9zaCBIRAAAAAAAAAAAAAAAAAAAAAAAAABCRAAB/////x9EZWVwIFJlaW5mb3JjZW1lbnQjRkZGRkZGRkYucGRmAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD/////AAAAAAAAAAAAAAAAAAQABAAACiBjdQAAAAAAAAAAAAAAAAAcVm9ybGVzdW5nUkxQcm9kdWN0aW9uQ29udHJvbAACAJkvOlVzZXJzOnV3ZXN0ZXJyOkNsb3VkUHJvamVjdHNVbmRlcldvcms6UHJvamVjdHNVbmRlcldvcms6Vm9ybGVzdW5nUkxQcm9kdWN0aW9uQ29udHJvbDpEZWVwIFJlaW5mb3JjZW1lbnQgTGVhcm5pbmcgZnJhbWV3b3JrIGZvciBBdXRvbm9tb3VzIERyaXYtIGluZy5wZGYAAA4AhgBCAEQAZQBlAHAAIABSAGUAaQBuAGYAbwByAGMAZQBtAGUAbgB0ACAATABlAGEAcgBuAGkAbgBnACAAZgByAGEAbQBlAHcAbwByAGsAIABmAG8AcgAgAEEAdQB0AG8AbgBvAG0AbwB1AHMAIABEAHIAaQB2AC0AIABpAG4AZwAuAHAAZABmAA8AGgAMAE0AYQBjAGkAbgB0AG8AcwBoACAASABEABIAl1VzZXJzL3V3ZXN0ZXJyL0Nsb3VkUHJvamVjdHNVbmRlcldvcmsvUHJvamVjdHNVbmRlcldvcmsvVm9ybGVzdW5nUkxQcm9kdWN0aW9uQ29udHJvbC9EZWVwIFJlaW5mb3JjZW1lbnQgTGVhcm5pbmcgZnJhbWV3b3JrIGZvciBBdXRvbm9tb3VzIERyaXYtIGluZy5wZGYAABMAAS8AABUAAgAP//8AAAAIAA0AGgAkALsAAAAAAAACAQAAAAAAAAAFAAAAAAAAAAAAAAAAAAADZw==}}
+
+@article{andriotis2018managing,
+	Author = {Andriotis, CP and Papakonstantinou, KG},
+	Date-Added = {2018-11-13 15:29:02 +0100},
+	Date-Modified = {2018-11-13 15:29:02 +0100},
+	Journal = {arXiv preprint arXiv:1811.02052},
+	Title = {Managing engineering systems with large state and action spaces through deep reinforcement learning},
+	Year = {2018},
+	Bdsk-File-1 = {YnBsaXN0MDDSAQIDBFxyZWxhdGl2ZVBhdGhZYWxpYXNEYXRhXxC5Li4vLi4vLi4vLi4vQ2xvdWRQcm9qZWN0c1VuZGVyV29yay9Qcm9qZWN0c1VuZGVyV29yay9Wb3JsZXN1bmdSTFByb2R1Y3Rpb25Db250cm9sL01hbmFnaW5nIGVuZ2luZWVyaW5nIHN5c3RlbXMgd2l0aCBsYXJnZSBzdGF0ZSBhbmQgYWN0aW9uIHNwYWNlcyB0aHJvdWdoIGRlZXAgcmVpbmZvcmNlbWVudCBsZWFybmluZy5wZGZPEQM6AAAAAAM6AAIAAAxNYWNpbnRvc2ggSEQAAAAAAAAAAAAAAAAAAAAAAAAAQkQAAf////8fTWFuYWdpbmcgZW5naW5lZXJpI0ZGRkZGRkZGLnBkZgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/////wAAAAAAAAAAAAAAAAAEAAQAAAogY3UAAAAAAAAAAAAAAAAAHFZvcmxlc3VuZ1JMUHJvZHVjdGlvbkNvbnRyb2wAAgC+LzpVc2Vyczp1d2VzdGVycjpDbG91ZFByb2plY3RzVW5kZXJXb3JrOlByb2plY3RzVW5kZXJXb3JrOlZvcmxlc3VuZ1JMUHJvZHVjdGlvbkNvbnRyb2w6TWFuYWdpbmcgZW5naW5lZXJpbmcgc3lzdGVtcyB3aXRoIGxhcmdlIHN0YXRlIGFuZCBhY3Rpb24gc3BhY2VzIHRocm91Z2ggZGVlcCByZWluZm9yY2VtZW50IGxlYXJuaW5nLnBkZgAOANAAZwBNAGEAbgBhAGcAaQBuAGcAIABlAG4AZwBpAG4AZQBlAHIAaQBuAGcAIABzAHkAcwB0AGUAbQBzACAAdwBpAHQAaAAgAGwAYQByAGcAZQAgAHMAdABhAHQAZQAgAGEAbgBkACAAYQBjAHQAaQBvAG4AIABzAHAAYQBjAGUAcwAgAHQAaAByAG8AdQBnAGgAIABkAGUAZQBwACAAcgBlAGkAbgBmAG8AcgBjAGUAbQBlAG4AdAAgAGwAZQBhAHIAbgBpAG4AZwAuAHAAZABmAA8AGgAMAE0AYQBjAGkAbgB0AG8AcwBoACAASABEABIAvFVzZXJzL3V3ZXN0ZXJyL0Nsb3VkUHJvamVjdHNVbmRlcldvcmsvUHJvamVjdHNVbmRlcldvcmsvVm9ybGVzdW5nUkxQcm9kdWN0aW9uQ29udHJvbC9NYW5hZ2luZyBlbmdpbmVlcmluZyBzeXN0ZW1zIHdpdGggbGFyZ2Ugc3RhdGUgYW5kIGFjdGlvbiBzcGFjZXMgdGhyb3VnaCBkZWVwIHJlaW5mb3JjZW1lbnQgbGVhcm5pbmcucGRmABMAAS8AABUAAgAP//8AAAAIAA0AGgAkAOAAAAAAAAACAQAAAAAAAAAFAAAAAAAAAAAAAAAAAAAEHg==}}
+
+@article{ridgeway2007generalized,
+	Author = {Ridgeway, Greg},
+	Date-Added = {2018-07-17 09:00:06 +0000},
+	Date-Modified = {2018-07-17 09:00:06 +0000},
+	Journal = {Update},
+	Number = {1},
+	Pages = {2007},
+	Title = {Generalized Boosted Models: A guide to the gbm package},
+	Volume = {1},
+	Year = {2007},
+	Bdsk-File-1 = {YnBsaXN0MDDSAQIDBFxyZWxhdGl2ZVBhdGhZYWxpYXNEYXRhXxBHLi4vLi4vRGVza3RvcC9NaXNjL0RhdGFTY2llbmNlRXhwZXJpbWVudC9DYXNTZWxmYmxpbmRpbmcvcGFwZXIvZ2JtMi5wZGZPEQGOAAAAAAGOAAIAAAxNYWNpbnRvc2ggSEQAAAAAAAAAAAAAAAAAAAAAAAAAQkQAAf////8IZ2JtMi5wZGYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/////wAAAABQREYgAAAAAAACAAYAAAogY3UAAAAAAAAAAAAAAAAABXBhcGVyAAACAFIvOlVzZXJzOnV3ZXN0ZXJyOkRlc2t0b3A6TWlzYzpEYXRhU2NpZW5jZUV4cGVyaW1lbnQ6Q2FzU2VsZmJsaW5kaW5nOnBhcGVyOmdibTIucGRmAA4AEgAIAGcAYgBtADIALgBwAGQAZgAPABoADABNAGEAYwBpAG4AdABvAHMAaAAgAEgARAASAFBVc2Vycy91d2VzdGVyci9EZXNrdG9wL01pc2MvRGF0YVNjaWVuY2VFeHBlcmltZW50L0Nhc1NlbGZibGluZGluZy9wYXBlci9nYm0yLnBkZgATAAEvAAAVAAIAD///AAAACAANABoAJABuAAAAAAAAAgEAAAAAAAAABQAAAAAAAAAAAAAAAAAAAgA=}}
+
+@article{maaten2008visualizing,
+	Added-At = {2010-02-21T07:58:39.000+0100},
+	Author = {van der Maaten, L.J.P. and Hinton, G.E.},
+	Biburl = {https://www.bibsonomy.org/bibtex/2d721e0c952141718d2e8cf658ffe9a3f/ds9},
+	Date-Added = {2018-07-10 06:52:40 +0000},
+	Date-Modified = {2018-07-10 06:52:40 +0000},
+	Interhash = {d3658497eff9fea21e66bb43320a822a},
+	Intrahash = {d721e0c952141718d2e8cf658ffe9a3f},
+	Keywords = {da mds projection visualization},
+	Timestamp = {2010-02-21T07:58:39.000+0100},
+	Title = {Visualizing High-Dimensional Data Using t-SNE},
+	Year = 2008}
+
+@inproceedings{ali2015keystroke,
+	Author = {Ali, Kamran and Liu, Alex X and Wang, Wei and Shahzad, Muhammad},
+	Booktitle = {Proceedings of the 21st Annual International Conference on Mobile Computing and Networking},
+	Date-Added = {2018-07-06 06:23:30 +0000},
+	Date-Modified = {2018-07-06 06:23:30 +0000},
+	Organization = {ACM},
+	Pages = {90--102},
+	Title = {Keystroke recognition using wifi signals},
+	Year = {2015},
+	Bdsk-File-1 = {YnBsaXN0MDDSAQIDBFxyZWxhdGl2ZVBhdGhZYWxpYXNEYXRhXxBLLi4vLi4vRGVza3RvcC9NaXNjL0RhdGFTY2llbmNlRXhwZXJpbWVudC9DYXNTZWxmYmxpbmRpbmcvcGFwZXIvcDkwLWFsaUEucGRmTxEBngAAAAABngACAAAMTWFjaW50b3NoIEhEAAAAAAAAAAAAAAAAAAAAAAAAAEJEAAH/////DHA5MC1hbGlBLnBkZgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP////8AAAAAUERGIAAAAAAAAgAGAAAKIGN1AAAAAAAAAAAAAAAAAAVwYXBlcgAAAgBWLzpVc2Vyczp1d2VzdGVycjpEZXNrdG9wOk1pc2M6RGF0YVNjaWVuY2VFeHBlcmltZW50OkNhc1NlbGZibGluZGluZzpwYXBlcjpwOTAtYWxpQS5wZGYADgAaAAwAcAA5ADAALQBhAGwAaQBBAC4AcABkAGYADwAaAAwATQBhAGMAaQBuAHQAbwBzAGgAIABIAEQAEgBUVXNlcnMvdXdlc3RlcnIvRGVza3RvcC9NaXNjL0RhdGFTY2llbmNlRXhwZXJpbWVudC9DYXNTZWxmYmxpbmRpbmcvcGFwZXIvcDkwLWFsaUEucGRmABMAAS8AABUAAgAP//8AAAAIAA0AGgAkAHIAAAAAAAACAQAAAAAAAAAFAAAAAAAAAAAAAAAAAAACFA==}}
+
+@article{rakotomamonjy2003variable,
+	Author = {Rakotomamonjy, Alain},
+	Date-Added = {2018-06-21 06:07:05 +0000},
+	Date-Modified = {2018-06-21 06:07:05 +0000},
+	Journal = {Journal of machine learning research},
+	Number = {Mar},
+	Pages = {1357--1370},
+	Title = {Variable selection using SVM-based criteria},
+	Volume = {3},
+	Year = {2003},
+	Bdsk-File-1 = {YnBsaXN0MDDSAQIDBFxyZWxhdGl2ZVBhdGhZYWxpYXNEYXRhXxAqLi4vLi4vLi4vLi4vRG93bmxvYWRzL3Jha290b21hbW9uankwM2EucGRmTxEBZgAAAAABZgACAAAMTWFjaW50b3NoIEhEAAAAAAAAAAAAAAAAAAAAAAAAAEJEAAH/////FHJha290b21hbW9uankwM2EucGRmAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP////8AAAAAAAAAAAAAAAAABAACAAAKIGN1AAAAAAAAAAAAAAAAAAlEb3dubG9hZHMAAAIALy86VXNlcnM6dXdlc3RlcnI6RG93bmxvYWRzOnJha290b21hbW9uankwM2EucGRmAAAOACoAFAByAGEAawBvAHQAbwBtAGEAbQBvAG4AagB5ADAAMwBhAC4AcABkAGYADwAaAAwATQBhAGMAaQBuAHQAbwBzAGgAIABIAEQAEgAtVXNlcnMvdXdlc3RlcnIvRG93bmxvYWRzL3Jha290b21hbW9uankwM2EucGRmAAATAAEvAAAVAAIAD///AAAACAANABoAJABRAAAAAAAAAgEAAAAAAAAABQAAAAAAAAAAAAAAAAAAAbs=}}
+
+@article{Maaten:2008aa,
+	Author = {Maaten, Laurens van der and Hinton, Geoffrey},
+	Date-Added = {2018-06-16 09:42:38 +0000},
+	Date-Modified = {2018-06-21 06:03:35 +0000},
+	Journal = {Journal of machine learning research},
+	Number = {Nov},
+	Pages = {2579--2605},
+	Title = {Visualizing data using t-SNE},
+	Url = {http://www.jmlr.org/papers/volume9/vandermaaten08a/vandermaaten08a.pdf},
+	Volume = {9},
+	Year = {2008},
+	Bdsk-File-1 = {YnBsaXN0MDDSAQIDBFxyZWxhdGl2ZVBhdGhZYWxpYXNEYXRhXxArLi4vLi4vRG9jdW1lbnRzL1BhcGVycy9yYWtvdG9tYW1vbmp5MDNhLnBkZk8RAW4AAAAAAW4AAgAADE1hY2ludG9zaCBIRAAAAAAAAAAAAAAAAAAAAAAAAABCRAAB/////xRyYWtvdG9tYW1vbmp5MDNhLnBkZgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD/////AAAAAAAAAAAAAAAAAAIAAwAACiBjdQAAAAAAAAAAAAAAAAAGUGFwZXJzAAIANi86VXNlcnM6dXdlc3RlcnI6RG9jdW1lbnRzOlBhcGVyczpyYWtvdG9tYW1vbmp5MDNhLnBkZgAOACoAFAByAGEAawBvAHQAbwBtAGEAbQBvAG4AagB5ADAAMwBhAC4AcABkAGYADwAaAAwATQBhAGMAaQBuAHQAbwBzAGgAIABIAEQAEgA0VXNlcnMvdXdlc3RlcnIvRG9jdW1lbnRzL1BhcGVycy9yYWtvdG9tYW1vbmp5MDNhLnBkZgATAAEvAAAVAAIAD///AAAACAANABoAJABSAAAAAAAAAgEAAAAAAAAABQAAAAAAAAAAAAAAAAAAAcQ=}}
+
+@article{jia2014pulse,
+	Author = {Jia, Danbing and Zhang, Dongyu and Li, Naimin},
+	Date-Added = {2018-06-15 07:44:46 +0000},
+	Date-Modified = {2018-06-15 07:44:46 +0000},
+	Journal = {Computational and mathematical methods in medicine},
+	Publisher = {Hindawi},
+	Title = {Pulse waveform classification using support vector machine with gaussian time warp edit distance kernel},
+	Volume = {2014},
+	Year = {2014}}
+
+@inproceedings{quinlan1992learning,
+	Author = {Quinlan, John R and others},
+	Booktitle = {5th Australian joint conference on artificial intelligence},
+	Date-Added = {2018-06-12 09:07:22 +0000},
+	Date-Modified = {2018-06-12 09:07:22 +0000},
+	Organization = {Singapore},
+	Pages = {343--348},
+	Title = {Learning with continuous classes},
+	Volume = {92},
+	Year = {1992}}
+
+@article{eugster2011exploratory,
+	Author = {Eugster, Manuel JA and Leisch, Friedrich},
+	Date-Added = {2018-06-12 07:59:41 +0000},
+	Date-Modified = {2018-06-12 07:59:41 +0000},
+	Journal = {Computational Statistics},
+	Number = {4},
+	Pages = {699--710},
+	Publisher = {Springer},
+	Title = {Exploratory analysis of benchmark experiments an interactive approach},
+	Volume = {26},
+	Year = {2011}}
+
+@article{hothorn2005design,
+	Author = {Hothorn, Torsten and Leisch, Friedrich and Zeileis, Achim and Hornik, Kurt},
+	Date-Added = {2018-06-12 07:58:23 +0000},
+	Date-Modified = {2018-06-12 07:58:23 +0000},
+	Journal = {Journal of Computational and Graphical Statistics},
+	Number = {3},
+	Pages = {675--699},
+	Publisher = {Taylor \& Francis},
+	Title = {The design and analysis of benchmark experiments},
+	Volume = {14},
+	Year = {2005}}
+
+@book{breiman1984classification,
+	Author = {Breiman, L. and Friedman, J. and Stone, C.J. and Olshen, R.A.},
+	Date-Added = {2018-06-12 07:27:39 +0000},
+	Date-Modified = {2018-06-12 07:27:39 +0000},
+	Isbn = {9780412048418},
+	Lccn = {83019708},
+	Publisher = {Taylor \& Francis},
+	Series = {The Wadsworth and Brooks-Cole statistics-probability series},
+	Title = {Classification and Regression Trees},
+	Url = {https://books.google.de/books?id=JwQx-WOmSyQC},
+	Year = {1984},
+	Bdsk-Url-1 = {https://books.google.de/books?id=JwQx-WOmSyQC}}
+
+@manual{caretPackage,
+	Author = {Max Kuhn. Contributions from Jed Wing and Steve Weston and Andre Williams and Chris Keefer and Allan Engelhardt and Tony Cooper and Zachary Mayer and Brenton Kenkel and the R Core Team and Michael Benesty and Reynald Lescarbeau and Andrew Ziem and Luca Scrucca and Yuan Tang and Can Candan and Tyler Hunt.},
+	Date-Added = {2018-06-11 09:45:02 +0000},
+	Date-Modified = {2018-06-11 09:45:02 +0000},
+	Note = {R package version 6.0-80},
+	Title = {caret: Classification and Regression Training},
+	Url = {https://CRAN.R-project.org/package=caret},
+	Year = {2018},
+	Bdsk-Url-1 = {https://CRAN.R-project.org/package=caret}}
+
+@manual{SimilarityMeasuresPackage,
+	Author = {Kevin Toohey},
+	Date-Added = {2018-06-07 09:34:50 +0000},
+	Date-Modified = {2018-06-07 09:34:50 +0000},
+	Note = {R package version 1.4},
+	Title = {SimilarityMeasures: Trajectory Similarity Measures},
+	Url = {https://CRAN.R-project.org/package=SimilarityMeasures},
+	Year = {2015},
+	Bdsk-Url-1 = {https://CRAN.R-project.org/package=SimilarityMeasures}}
+
+@manual{Wickham:2017aa,
+	Author = {Hadley Wickham},
+	Date-Added = {2018-06-07 09:32:39 +0000},
+	Date-Modified = {2018-06-07 09:33:05 +0000},
+	Note = {R package version 1.2.1},
+	Title = {tidyverse: Easily Install and Load the 'Tidyverse'},
+	Url = {https://CRAN.R-project.org/package=tidyverse},
+	Year = {2017},
+	Bdsk-Url-1 = {https://CRAN.R-project.org/package=tidyverse}}
+
+@article{sakoe1978dynamic,
+	Author = {Sakoe, Hiroaki and Chiba, Seibi},
+	Date-Added = {2018-06-07 08:10:12 +0000},
+	Date-Modified = {2018-06-07 08:10:12 +0000},
+	Journal = {IEEE transactions on acoustics, speech, and signal processing},
+	Number = {1},
+	Pages = {43--49},
+	Publisher = {IEEE},
+	Title = {Dynamic programming algorithm optimization for spoken word recognition},
+	Volume = {26},
+	Year = {1978}}
+
+@inproceedings{o2016convolutional,
+	Author = {O'Shea, Timothy J and Corgan, Johnathan and Clancy, T Charles},
+	Booktitle = {International Conference on Engineering Applications of Neural Networks},
+	Date-Added = {2018-06-07 07:38:05 +0000},
+	Date-Modified = {2018-06-07 07:38:05 +0000},
+	Organization = {Springer},
+	Pages = {213--226},
+	Title = {Convolutional radio modulation recognition networks},
+	Year = {2016},
+	Bdsk-File-1 = {YnBsaXN0MDDSAQIDBFxyZWxhdGl2ZVBhdGhZYWxpYXNEYXRhXxBOLi4vLi4vRG9jdW1lbnRzL1BhcGVycy9Db252b2x1dGlvbmFsIFJhZGlvIE1vZHVsYXRpb24gUmVjb2duaXRpb24gTmV0d29ya3MucGRmTxEB/AAAAAAB/AACAAAMTWFjaW50b3NoIEhEAAAAAAAAAAAAAAAAAAAAAAAAAEJEAAH/////H0NvbnZvbHV0aW9uYWwgUmFkaSNGRkZGRkZGRi5wZGYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP////8AAAAAUERGIAAAAAAAAgADAAAKIGN1AAAAAAAAAAAAAAAAAAZQYXBlcnMAAgBZLzpVc2Vyczp1d2VzdGVycjpEb2N1bWVudHM6UGFwZXJzOkNvbnZvbHV0aW9uYWwgUmFkaW8gTW9kdWxhdGlvbiBSZWNvZ25pdGlvbiBOZXR3b3Jrcy5wZGYAAA4AcAA3AEMAbwBuAHYAbwBsAHUAdABpAG8AbgBhAGwAIABSAGEAZABpAG8AIABNAG8AZAB1AGwAYQB0AGkAbwBuACAAUgBlAGMAbwBnAG4AaQB0AGkAbwBuACAATgBlAHQAdwBvAHIAawBzAC4AcABkAGYADwAaAAwATQBhAGMAaQBuAHQAbwBzAGgAIABIAEQAEgBXVXNlcnMvdXdlc3RlcnIvRG9jdW1lbnRzL1BhcGVycy9Db252b2x1dGlvbmFsIFJhZGlvIE1vZHVsYXRpb24gUmVjb2duaXRpb24gTmV0d29ya3MucGRmAAATAAEvAAAVAAIAD///AAAACAANABoAJAB1AAAAAAAAAgEAAAAAAAAABQAAAAAAAAAAAAAAAAAAAnU=}}
+
+@webpage{dtwVideo,
+	Author = {Thales Sehn K{\"o}rting},
+	Date-Added = {2018-06-07 07:26:44 +0000},
+	Date-Modified = {2018-06-07 08:00:21 +0000},
+	Description = {In this video we describe the DTW algorithm, which is used to measure the distance between two time series. It was originally proposed in 1978 by Sakoe and C...},
+	Keywords = {dtw, time series, DTW, remote sensing, speech recognition, music recognition, pattern recognition, time series analysis, remote sensing image time series, ti...},
+	Month = {June},
+	Rating = {5},
+	Theme-Color = {#ff0000},
+	Title = {How DTW (Dynamic Time Warping) algorithm works},
+	Twitter:App:Id:Googleplay = {com.google.android.youtube},
+	Twitter:App:Id:Ipad = {544007664},
+	Twitter:App:Id:Iphone = {544007664},
+	Twitter:App:Name:Googleplay = {YouTube},
+	Twitter:App:Name:Ipad = {YouTube},
+	Twitter:App:Name:Iphone = {YouTube},
+	Twitter:App:Url:Googleplay = {https://www.youtube.com/watch?v=_K1OsqCicBY},
+	Twitter:App:Url:Ipad = {vnd.youtube://www.youtube.com/watch?v=_K1OsqCicBY&feature=applinks},
+	Twitter:App:Url:Iphone = {vnd.youtube://www.youtube.com/watch?v=_K1OsqCicBY&feature=applinks},
+	Twitter:Card = {player},
+	Twitter:Description = {In this video we describe the DTW algorithm, which is used to measure the distance between two time series. It was originally proposed in 1978 by Sakoe and C...},
+	Twitter:Image = {https://i.ytimg.com/vi/_K1OsqCicBY/maxresdefault.jpg},
+	Twitter:Player = {https://www.youtube.com/embed/_K1OsqCicBY},
+	Twitter:Player:Height = {720},
+	Twitter:Player:Width = {1280},
+	Twitter:Site = {@youtube},
+	Twitter:Title = {How DTW (Dynamic Time Warping) algorithm works},
+	Twitter:Url = {https://www.youtube.com/watch?v=_K1OsqCicBY},
+	Url = {https://www.youtube.com/watch?v=_K1OsqCicBY},
+	Year = {2018},
+	Bdsk-Url-1 = {https://www.youtube.com/watch?v=_K1OsqCicBY}}
+
+@inproceedings{keogh2001derivative,
+	Author = {Keogh, Eamonn J and Pazzani, Michael J},
+	Booktitle = {Proceedings of the 2001 SIAM International Conference on Data Mining},
+	Date-Added = {2018-06-07 07:12:29 +0000},
+	Date-Modified = {2018-06-07 07:12:29 +0000},
+	Organization = {SIAM},
+	Pages = {1--11},
+	Title = {Derivative dynamic time warping},
+	Year = {2001}}
+
+@book{9781461471370,
+	Author = {Tibshirani, Robert and James, G and Witten, D and Hastie, T},
+	Isbn = {1461471370},
+	Publisher = {New York, NY: Springer},
+	Title = {An introduction to statistical learning-with applications in R},
+	Year = {2013},
+	Bdsk-File-1 = {YnBsaXN0MDDSAQIDBFxyZWxhdGl2ZVBhdGhZYWxpYXNEYXRhXxAqcGFwZXJzQ29sbGVjdGlvbi9JU0xSIFNldmVudGggUHJpbnRpbmcucGRmTxEB3gAAAAAB3gACAAAMTWFjaW50b3NoIEhEAAAAAAAAAAAAAAAAAAAAAAAAAEJEAAH/////GUlTTFIgU2V2ZW50aCBQcmludGluZy5wZGYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP////8AAAAAUERGIAAAAAAAAQADAAAKIGN1AAAAAAAAAAAAAAAAABBwYXBlcnNDb2xsZWN0aW9uAAIAZC86VXNlcnM6dXdlc3RlcnI6Q2xvdWRQcm9qZWN0c1VuZGVyV29yazpQcm9qZWN0c1VuZGVyV29yazpwYXBlcnNDb2xsZWN0aW9uOklTTFIgU2V2ZW50aCBQcmludGluZy5wZGYADgA0ABkASQBTAEwAUgAgAFMAZQB2AGUAbgB0AGgAIABQAHIAaQBuAHQAaQBuAGcALgBwAGQAZgAPABoADABNAGEAYwBpAG4AdABvAHMAaAAgAEgARAASAGJVc2Vycy91d2VzdGVyci9DbG91ZFByb2plY3RzVW5kZXJXb3JrL1Byb2plY3RzVW5kZXJXb3JrL3BhcGVyc0NvbGxlY3Rpb24vSVNMUiBTZXZlbnRoIFByaW50aW5nLnBkZgATAAEvAAAVAAIAD///AAAACAANABoAJABRAAAAAAAAAgEAAAAAAAAABQAAAAAAAAAAAAAAAAAAAjM=}}
+
+@misc{FeatureEngineeringKuhnWebsite,
+	Author = {Max Kuhn and Kjell Johnson},
+	Howpublished = {\url{http://www.feat.engineering/index.html}},
+	Note = {Accessed: 2018-06-06},
+	Title = {Feature Engineering and Selection: A Practical Approach for Predictive Models},
+	Year = {2018}}
+
+@book{9781461468486,
+	Author = {Max Kuhn and Kjell Johnson},
+	Isbn = {1461468485},
+	Publisher = {Springer},
+	Title = {Applied Predictive Modeling},
+	Year = {2018}}
+
+@book{1491910399,
+	Author = {Hadley Wickham and Garrett Grolemund},
+	Isbn = {1491910399},
+	Publisher = {O'Reilly Media},
+	Title = {R for Data Science: Import, Tidy, Transform, Visualize, and Model Data},
+	Url = {https://www.amazon.com/Data-Science-Transform-Visualize-Model/dp/1491910399?SubscriptionId=0JYN1NVW651KCA56C102&tag=techkie-20&linkCode=xm2&camp=2025&creative=165953&creativeASIN=1491910399},
+	Year = {2017},
+	Bdsk-Url-1 = {https://www.amazon.com/Data-Science-Transform-Visualize-Model/dp/1491910399?SubscriptionId=0JYN1NVW651KCA56C102&tag=techkie-20&linkCode=xm2&camp=2025&creative=165953&creativeASIN=1491910399}}
+
+@inproceedings{berndt1994using,
+	Author = {Berndt, Donald J and Clifford, James},
+	Booktitle = {KDD workshop},
+	Number = {16},
+	Organization = {Seattle, WA},
+	Pages = {359--370},
+	Title = {Using dynamic time warping to find patterns in time series.},
+	Volume = {10},
+	Year = {1994}}
+
+@misc{wiki:Dtw,
+	Author = {{Wikipedia contributors}},
+	Note = {[Online; accessed 6-June-2018]},
+	Title = {Dynamic time warping --- {Wikipedia}{,} The Free Encyclopedia},
+	Url = {https://en.wikipedia.org/w/index.php?title=Dynamic_time_warping&oldid=844492907},
+	Year = {2018},
+	Bdsk-Url-1 = {https://en.wikipedia.org/w/index.php?title=Dynamic_time_warping&oldid=844492907}}
+
+@book{9783540740476,
+	Author = {Meinard M{\"u}ller},
+	Isbn = {3540740473},
+	Publisher = {Springer},
+	Title = {Information Retrieval for Music and Motion},
+	Url = {https://www.amazon.com/Information-Retrieval-Motion-Meinard-M%C3%BCller/dp/3540740473?SubscriptionId=0JYN1NVW651KCA56C102&tag=techkie-20&linkCode=xm2&camp=2025&creative=165953&creativeASIN=3540740473},
+	Year = {2007},
+	Bdsk-Url-1 = {https://www.amazon.com/Information-Retrieval-Motion-Meinard-M%C3%BCller/dp/3540740473?SubscriptionId=0JYN1NVW651KCA56C102&tag=techkie-20&linkCode=xm2&camp=2025&creative=165953&creativeASIN=3540740473}}
+
+@misc{ex87,
+	Author = {{LOVE LIFE}},
+	Day = {20},
+	Month = nov,
+	Title = {{LOVE LIFE - fever}},
+	Url = {http://www.youtube.com/watch?v=e1daOXRTIBU},
+	Year = {2000},
+	Bdsk-Url-1 = {http://www.youtube.com/watch?v=e1daOXRTIBU}}
+
+@article{sterr2016planning,
+	Author = {Sterr, Uwe and Dallmann, Daniel and Heine, Frank and Tr{\"o}ndle, Daniel and Meyer, Rolf and Lutzer, Michael and Benzi, Edoardo},
+	Journal = {Optical Engineering},
+	Number = {11},
+	Pages = {111608},
+	Publisher = {International Society for Optics and Photonics},
+	Title = {Planning constraints of low grazing altitude GEO-LEO laser links based on in-orbit data},
+	Volume = {55},
+	Year = {2016}}
+
+@article{friederichs2016vibration,
+	Author = {Friederichs, Lothar and Sterr, Uwe and Dallmann, Daniel},
+	Journal = {Journal of Lightwave Technology},
+	Number = {10},
+	Pages = {2500--2509},
+	Publisher = {IEEE},
+	Title = {Vibration influence on hit probability during beaconless spatial acquisition},
+	Volume = {34},
+	Year = {2016}}
+
+@inproceedings{sterr2015modelling,
+	Author = {Sterr, Uwe and Friederichs, Lothar and Diebold, Wolfgang and Dallmann, Daniel and Reinhardt, Martin},
+	Booktitle = {Space Optical Systems and Applications (ICSOS), 2015 IEEE International Conference on},
+	Organization = {IEEE},
+	Pages = {1--5},
+	Title = {Modelling and analysis of flight dynamics influences on the spatial acquisition and tracking performance of the TESAT laser communication terminal},
+	Year = {2015}}
+
+@inproceedings{dallmann2015geo,
+	Author = {Dallmann, Daniel and Reinhardt, Martin and Gregory, Mark and Heine, Frank and Sterr, Uwe and Meyer, Rolf},
+	Booktitle = {Space Optical Systems and Applications (ICSOS), 2015 IEEE International Conference on},
+	Organization = {IEEE},
+	Pages = {1--6},
+	Title = {GEO-LEO beaconless spatial acquisition reality in space},
+	Year = {2015}}
+
+@inproceedings{heine2015alphasat,
+	Author = {Heine, Frank and Martin-Pimentel, Patricia and Kaempfner, Hartmut and Muehlnikel, Gerd and Troendle, Daniel and Zech, Herwig and Rochow, Christoph and Dallmann, Daniel and Reinhardt, Martin and Gregory, Mark and others},
+	Booktitle = {Space Optical Systems and Applications (ICSOS), 2015 IEEE International Conference on},
+	Organization = {IEEE},
+	Pages = {1--4},
+	Title = {Alphasat and Sentinel 1A, the first 100 links},
+	Year = {2015}}
+
+@inproceedings{troendle2014optical,
+	Author = {Troendle, Daniel C and Rochow, Christoph and Martin-Pimentel, Patricia and Zech, Herwig and Heine, Frank F and Kaempfner, Hartmut and Motzigemba, Matthias and Sterr, Uwe and Meyer, Rolf and Lutzer, Michael and others},
+	Booktitle = {32nd AIAA International Communications Satellite Systems Conference},
+	Pages = {4439},
+	Title = {Optical LEO-GEO Data Relays: From Demonstrator to Commercial Application},
+	Year = {2014}}
+
+@article{schlepp2014laser,
+	Author = {Schlepp, Benjamin and Kahle, Ralph and Saleppico, Juri and Kuhlmann, Sven and Sterr, Uwe},
+	Title = {Laser communication with Alphasat-FD challenges and first flight results},
+	Year = {2014}}
+
+@inproceedings{martin2014laser,
+	Author = {Martin-Pimentel, Patricia and Rochow, Christoph and Troendle, Daniel C and Heine, Frank F and Sterr, Uwe and Kuhlmann, Sven and Ballweg, Ralph and Lutzer, Michael and Meyer, Rolf},
+	Booktitle = {SpaceOps 2014 Conference},
+	Pages = {1839},
+	Title = {Laser Com in space, the operational concept},
+	Year = {2014}}
+
+@inproceedings{seel2014alphasat,
+	Author = {Seel, Stefan and Troendle, Daniel and Heine, Frank and Zech, Herwig and Motzigemba, Matthias and Sterr, Uwe},
+	Booktitle = {Geoscience and Remote Sensing Symposium (IGARSS), 2014 IEEE International},
+	Organization = {IEEE},
+	Pages = {100--101},
+	Title = {Alphasat laser terminal commissioning status aiming to demonstrate Geo-Relay for Sentinel SAR and optical sensor data},
+	Year = {2014}}
+
+@inproceedings{heine2011verification,
+	Author = {Heine, Frank and Gregory, Mark and Kaempfner, Hartmut and Sterr, Uwe and Meyer, Rolf and Zech, Herwig and Troendle, Daniel},
+	Booktitle = {AIAA SPACE 2011 Conference \& Exposition},
+	Pages = {7359},
+	Title = {Verification of Optical Inter-Satellite Links and the European Data Relay System},
+	Year = {2011}}
+
+@inproceedings{seel2011space,
+	Author = {Seel, Stefan and K{\"a}mpfner, Hartmut and Heine, Frank and Dallmann, Daniel and M{\"u}hlnikel, Gerd and Gregory, Mark and Reinhardt, Martin and Saucke, Karen and Muckherjee, Juri and Sterr, Uwe and others},
+	Booktitle = {Aerospace Conference, 2011 IEEE},
+	Organization = {IEEE},
+	Pages = {1--7},
+	Title = {Space to ground bidirectional optical communication link at 5.6 Gbps and EDRS connectivity outlook},
+	Year = {2011}}
+
+@inproceedings{sterr2011beaconless,
+	Author = {Sterr, Uwe and Gregory, Mark and Heine, Frank},
+	Booktitle = {Space Optical Systems and Applications (ICSOS), 2011 International Conference on},
+	Organization = {IEEE},
+	Pages = {38--43},
+	Title = {Beaconless acquisition for ISL and SGL, summary of 3 years operation in space and on ground},
+	Year = {2011}}
+
+@article{smutny2009nfire,
+	Author = {Smutny, Berry and Fields, Renny and Lunde, Carl T and Skoog, Jonah and Muhlnikel, G and Sterr, Uwe and Meyer, Rolf and Wandernoth, Bernhardt and Kozlowski, David and Ranere, Michael and others},
+	Publisher = {IET},
+	Title = {NFIRE and TerraSAR-X laser communication tests: ground-breaking results for inter-satellite and space-to-ground links},
+	Year = {2009}}
+
+@inproceedings{fields2009nfire,
+	Author = {Fields, Renny and Lunde, Carl and Wong, Robert and Wicker, Josef and Kozlowski, David and Jordan, John and Hansen, Brian and Muehlnikel, Gerd and Scheel, Wayne and Sterr, Uwe and others},
+	Booktitle = {Sensors and Systems for Space Applications III},
+	Organization = {International Society for Optics and Photonics},
+	Pages = {73300Q},
+	Title = {NFIRE-to-TerraSAR-X laser communication results: satellite pointing, disturbances, and other attributes consistent with successful performance},
+	Volume = {7330},
+	Year = {2009}}
+
+@inproceedings{smutny2008orbit,
+	Author = {Smutny, Berry and Lange, Robert and K{\"a}mpfner, Hartmut and Dallmann, Daniel and M{\"u}hlnikel, Gerd and Reinhardt, Martin and Saucke, Karen and Sterr, Uwe and Wandernoth, Bernhard and Czichy, Reinhard},
+	Booktitle = {Free-Space Laser Communication Technologies XX},
+	Organization = {International Society for Optics and Photonics},
+	Pages = {687702},
+	Title = {In-orbit verification of optical inter-satellite communication links based on homodyne BPSK},
+	Volume = {6877},
+	Year = {2008}}
+
+@article{sterr1998variable,
+	Author = {Sterr, UO and Olver, AD and Clarricoats, PJB},
+	Journal = {Electronics Letters},
+	Number = {11},
+	Pages = {1050--1051},
+	Publisher = {IET},
+	Title = {Variable beamwidth corner reflector antenna},
+	Volume = {34},
+	Year = {1998}}
+
+@inproceedings{olver1997radiation,
+	Author = {Olver, AD and Sterr, UO},
+	Booktitle = {Antennas and Propagation Society International Symposium, 1997. IEEE., 1997 Digest},
+	Organization = {IEEE},
+	Pages = {1642--1645},
+	Title = {Radiation from gridded corner-reflector antennas using FDTD},
+	Volume = {3},
+	Year = {1997}}
+
+@inproceedings{olver1997study,
+	Author = {Olver, AD and Sterr, UO},
+	Booktitle = {Antennas and Propagation, Tenth International Conference on (Conf. Publ. No. 436)},
+	Organization = {IET},
+	Pages = {334--337},
+	Title = {Study of corner reflector antenna using FDTD},
+	Volume = {1},
+	Year = {1997}}
+</script>
+<!--/radix_placeholder_appendices-->
+<!--radix_placeholder_navigation_after_body-->
+<!--/radix_placeholder_navigation_after_body-->
+
+</body>
+
+</html>

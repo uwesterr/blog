@@ -7,14 +7,32 @@
     <description>A blog about ML, making and programming
 </description>
     <generator>Distill</generator>
-    <lastBuildDate>Fri, 17 Jan 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 13 Feb 2020 00:00:00 +0000</lastBuildDate>
+    <item>
+      <title>How to run Jupyter Notebooks on remote server — SSH</title>
+      <dc:creator>Uwe Sterr</dc:creator>
+      <link>http://uwesterr.de/posts/2020-02-13-how-to-run-jupyter-notebooks-on-remote-server-ssh</link>
+      <description>How to run a Jupyter Notebook on Nvidea nano via SSH</description>
+      <guid>http://uwesterr.de/posts/2020-02-13-how-to-run-jupyter-notebooks-on-remote-server-ssh</guid>
+      <pubDate>Thu, 13 Feb 2020 00:00:00 +0000</pubDate>
+      <media:content url="http://uwesterr.de/posts/2020-02-13-how-to-run-jupyter-notebooks-on-remote-server-ssh/images/notebook.png" medium="image" type="image/png" width="2336" height="1048"/>
+    </item>
+    <item>
+      <title>Machine learning, shall we?</title>
+      <dc:creator>Uwe Sterr</dc:creator>
+      <link>http://uwesterr.de/posts/2020-01-21-machine-learning-shall-we</link>
+      <description>Why should we use machine learning and what are reasons why we should restrict its use</description>
+      <guid>http://uwesterr.de/posts/2020-01-21-machine-learning-shall-we</guid>
+      <pubDate>Tue, 21 Jan 2020 00:00:00 +0000</pubDate>
+      <media:content url="http://uwesterr.de/posts/2020-01-21-machine-learning-shall-we/images/AiMlDeep.png" medium="image" type="image/png" width="1089" height="668"/>
+    </item>
     <item>
       <title>Analysis of 2019 Kaggle ML &amp; DS Survey</title>
       <dc:creator>Uwe Sterr</dc:creator>
       <link>http://uwesterr.de/posts/2020-01-18-analysis-of-2019-kaggle-ml-ds-survey</link>
       <description>This is an analysis based on Kaggle survey data, details are at https://www.kaggle.com/c/kaggle-survey-2019.</description>
       <guid>http://uwesterr.de/posts/2020-01-18-analysis-of-2019-kaggle-ml-ds-survey</guid>
-      <pubDate>Fri, 17 Jan 2020 00:00:00 +0000</pubDate>
+      <pubDate>Sat, 18 Jan 2020 00:00:00 +0000</pubDate>
       <media:content url="http://uwesterr.de/posts/2020-01-18-analysis-of-2019-kaggle-ml-ds-survey/analysis-of-2019-kaggle-ml-ds-survey_files/figure-html5/histo_age-1.png" medium="image" type="image/png" width="1248" height="768"/>
     </item>
     <item>
