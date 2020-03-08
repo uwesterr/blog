@@ -7,7 +7,16 @@
     <description>A blog about ML, making and programming
 </description>
     <generator>Distill</generator>
-    <lastBuildDate>Thu, 13 Feb 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 08 Mar 2020 00:00:00 +0000</lastBuildDate>
+    <item>
+      <title>Corona visus, why I don't shake hands</title>
+      <dc:creator>Uwe Sterr</dc:creator>
+      <link>http://uwesterr.de/posts/2020-03-08-corona-visus-why-i-dont-shake-hands</link>
+      <description>Information on why hand shaking should be avoided right now</description>
+      <guid>http://uwesterr.de/posts/2020-03-08-corona-visus-why-i-dont-shake-hands</guid>
+      <pubDate>Sun, 08 Mar 2020 00:00:00 +0000</pubDate>
+      <media:content url="http://uwesterr.de/posts/2020-03-08-corona-visus-why-i-dont-shake-hands/images/phaseAdjustedSpread.png" medium="image" type="image/png" width="685" height="428"/>
+    </item>
     <item>
       <title>How to run Jupyter Notebooks on remote server — SSH</title>
       <dc:creator>Uwe Sterr</dc:creator>
