@@ -7,7 +7,16 @@
     <description>A blog about ML, making and programming
 </description>
     <generator>Distill</generator>
-    <lastBuildDate>Sun, 08 Mar 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 11 Mar 2020 00:00:00 +0000</lastBuildDate>
+    <item>
+      <title>Develop Android app to park a camper level</title>
+      <dc:creator>Uwe Sterr</dc:creator>
+      <link>http://uwesterr.de/posts/2020-03-11-develop-android-app-to-park-a-camper-level</link>
+      <description>A short description of the post.</description>
+      <guid>http://uwesterr.de/posts/2020-03-11-develop-android-app-to-park-a-camper-level</guid>
+      <pubDate>Wed, 11 Mar 2020 00:00:00 +0000</pubDate>
+      <media:content url="http://uwesterr.de/posts/2020-03-11-develop-android-app-to-park-a-camper-level/images/MPU6050.jpeg" medium="image" type="image/jpeg"/>
+    </item>
     <item>
       <title>Corona visus, why I don't shake hands</title>
       <dc:creator>Uwe Sterr</dc:creator>
