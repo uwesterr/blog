@@ -2,7 +2,7 @@
   {
     "path": "posts/2020-03-11-develop-android-app-to-park-a-camper-level/",
     "title": "Develop Android app to park a camper level",
-    "description": "A short description of the post.",
+    "description": "Describe all necessary steps to get the MPU6050 data via raspi and mqqt onto a android phone",
     "author": [
       {
         "name": "Uwe Sterr",
@@ -16,7 +16,7 @@
       "android"
     ],
     "preview": "posts/2020-03-11-develop-android-app-to-park-a-camper-level/images/MPU6050.jpeg",
-    "last_modified": "2020-03-12T11:44:54+01:00"
+    "last_modified": "2020-03-12T12:04:27+01:00"
   },
   {
     "path": "posts/2020-03-08-corona-visus-why-i-dont-shake-hands/",
