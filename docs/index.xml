@@ -7,7 +7,15 @@
     <description>A blog about ML, making and programming
 </description>
     <generator>Distill</generator>
-    <lastBuildDate>Wed, 11 Mar 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 17 Mar 2020 00:00:00 +0000</lastBuildDate>
+    <item>
+      <title>Create Android App with Android Studio and Kotlin</title>
+      <dc:creator>Uwe Sterr</dc:creator>
+      <link>http://uwesterr.de/posts/2020-03-17-create-android-app-with-android-studio-and-kotlin</link>
+      <description>Using Kotlin seems to be an up to date approach, so lets try it out</description>
+      <guid>http://uwesterr.de/posts/2020-03-17-create-android-app-with-android-studio-and-kotlin</guid>
+      <pubDate>Tue, 17 Mar 2020 00:00:00 +0000</pubDate>
+    </item>
     <item>
       <title>Develop Android app to park a camper level</title>
       <dc:creator>Uwe Sterr</dc:creator>

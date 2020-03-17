@@ -1,5 +1,20 @@
 [
   {
+    "path": "posts/2020-03-17-create-android-app-with-android-studio-and-kotlin/",
+    "title": "Create Android App with Android Studio and Kotlin",
+    "description": "Using Kotlin seems to be an up to date approach, so lets try it out",
+    "author": [
+      {
+        "name": "Uwe Sterr",
+        "url": "http://uwesterr.de"
+      }
+    ],
+    "date": "2020-03-17",
+    "categories": [],
+    "preview": {},
+    "last_modified": "2020-03-17T18:19:16+01:00"
+  },
+  {
     "path": "posts/2020-03-11-develop-android-app-to-park-a-camper-level/",
     "title": "Develop Android app to park a camper level",
     "description": "Describe all necessary steps to get the MPU6050 data via raspi and mqqt onto a android phone",
@@ -16,7 +31,7 @@
       "android"
     ],
     "preview": "posts/2020-03-11-develop-android-app-to-park-a-camper-level/images/maueScheme.png",
-    "last_modified": "2020-03-13T15:00:08+01:00",
+    "last_modified": "2020-03-17T12:55:07+01:00",
     "preview_width": 2114,
     "preview_height": 997
   },
