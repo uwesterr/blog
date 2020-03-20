@@ -65,7 +65,7 @@
 <!--/radix_placeholder_rmarkdown_metadata-->
   
   <script type="text/json" id="radix-resource-manifest">
-  {"type":"character","attributes":{},"value":["create-android-app-with-android-studio-and-kotlin_files/bowser-1.9.3/bowser.min.js","create-android-app-with-android-studio-and-kotlin_files/distill-2.2.21/template.v2.js","create-android-app-with-android-studio-and-kotlin_files/jquery-1.11.3/jquery.min.js","create-android-app-with-android-studio-and-kotlin_files/webcomponents-2.0.0/webcomponents.js","images/photo_2020-03-17 18.47.39.jpeg","images/screenShotApp.png"]}
+  {"type":"character","attributes":{},"value":["create-android-app-with-android-studio-and-kotlin_files/bowser-1.9.3/bowser.min.js","create-android-app-with-android-studio-and-kotlin_files/distill-2.2.21/template.v2.js","create-android-app-with-android-studio-and-kotlin_files/jquery-1.11.3/jquery.min.js","create-android-app-with-android-studio-and-kotlin_files/webcomponents-2.0.0/webcomponents.js","images/handlePitchAndRollVar.png","images/interactionSwCompoInApp.png","images/photo_2020-03-17 18.47.39.jpeg","images/screenShotApp.png","images/screenshotMqttKotlin.png"]}
   </script>
   <!--radix_placeholder_navigation_in_header-->
 
@@ -1392,6 +1392,106 @@ class MainActivity : AppCompatActivity() {
 
 
 </code></pre>
+<h1 id="kotlin-mqtt-with-eclipse-paho">Kotlin: MQTT with Eclipse Paho</h1>
+<p>The video is on youtube <a href="https://www.youtube.com/watch?v=NpURY3zE8o8" class="uri">https://www.youtube.com/watch?v=NpURY3zE8o8</a>. The code is on <a href="https://github.com/anoop4real/KotlinMQTTSample">GitHub</a> and can be read into Android Studio via</p>
+<p>My version is on <a href="https://github.com/uwesterr/KotlinMQTTSample/tree/master" class="uri">https://github.com/uwesterr/KotlinMQTTSample/tree/master</a></p>
+<ul>
+<li>VCS
+<ul>
+<li>Checkout from Version Contrlol
+<ul>
+<li>Git, <code>input here GitHub Url https://github.com/anoop4real/KotlinMQTTSample</code></li>
+</ul></li>
+</ul></li>
+</ul>
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/NpURY3zE8o8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+</iframe>
+<p>On the pixel 2 that looks like</p>
+<hr />
+<div class="layout-chunk" data-layout="l-body">
+<p><img src="images/screenshotMqttKotlin.png" width="30%" /></p>
+</div>
+<hr />
+<p>To handle mqtt the Class MqttAndroidClient from eclipse is used <a href="https://www.eclipse.org/paho/files/android-javadoc/org/eclipse/paho/android/service/MqttAndroidClient.html" class="uri">https://www.eclipse.org/paho/files/android-javadoc/org/eclipse/paho/android/service/MqttAndroidClient.html</a></p>
+<h2 id="kommunikation-über-mqtt-german">Kommunikation über MQTT (German)</h2>
+<p>Detailed article about mqtt communicaiton by heise Developer is given at <a href="https://www.heise.de/developer/artikel/Kommunikation-ueber-MQTT-3238975.html" class="uri">https://www.heise.de/developer/artikel/Kommunikation-ueber-MQTT-3238975.html</a></p>
+<h2 id="subscribe">Subscribe</h2>
+<p>The number sign (#) is a wildcard character that matches any number of levels within a topic. For example, if you subscribe to finance/stock/ibm/#, you receive messages on these topics:</p>
+<ul>
+<li>finance/stock/ibm</li>
+<li>finance/stock/ibm/closingprice</li>
+<li>finance/stock/ibm/currentprice</li>
+</ul>
+<p>for my case it is</p>
+<ul>
+<li>IMU/#</li>
+</ul>
+<blockquote>
+<p>Hint, all of the sudden app did not work anymore. after<br />
+- File =&gt; Sync project with gradle files<br />
+- File =&gt; Sync with file system<br />
+the APP worked es before</p>
+</blockquote>
+<h1 id="android-app-maue">Android APP MAUE,</h1>
+<p>Notes on development aspects of MAUE.</p>
+<h2 id="maue-interaction-of-software-components-within-android-app">MAUE: Interaction of software components within Android App</h2>
+<p>The following graph shows how the software components interact.</p>
+<ul>
+<li>Activity_main.xml
+<ul>
+<li>GUI definition and function are assigned to actions</li>
+</ul></li>
+<li>MainActivity.kt
+<ul>
+<li>function which are triggered by action in GUI are defined</li>
+</ul></li>
+<li>MQTTmanager.kt
+<ul>
+<li>mqttt managing class is defined, used by MainActivity.kt</li>
+</ul></li>
+</ul>
+<hr />
+<div class="layout-chunk" data-layout="l-body">
+<p><img src="images/interactionSwCompoInApp.png" width="130%" /></p>
+</div>
+<hr />
+<h2 id="maue-handle-pitch-and-roll-variable">MAUE: Handle pitch and roll variable</h2>
+<p>Pitch an roll are reported via mqttt from the raspi to the phone. The values are needed for</p>
+<ul>
+<li>display
+<ul>
+<li>after offset is subtracted</li>
+</ul></li>
+<li>beeing send back to raspi to be stored when “RESET” button is pressed</li>
+</ul>
+<hr />
+<div class="layout-chunk" data-layout="l-body">
+<p><img src="images/handlePitchAndRollVar.png" width="80%" /></p>
+</div>
+<hr />
+<h2 id="maue-handling-offset-values">MAUE: Handling offset values</h2>
+<p>The offset values take into consideration that the sensor might not be perfectly horizontally installed. Rotation in yaw are not taken into consideration, so roll and pitch should be roughly aligned, the cross coupling is small for small yaw angels and should be negelectable for our purpose.</p>
+<ul>
+<li>offset values are stored in rapsi</li>
+<li>are read on when connected - MainActivity.kt: fun connect(view: View){</li>
+<li>are subtracted from measured value before displayed</li>
+</ul>
+<p><strong>Note, store measured values as offset when reset button is pressed, not measured minus offset</strong></p>
+<h2 id="maue-position-item-based-on-mqtt-message">MAUE: Position item based on mqtt message</h2>
+<p>We want to create a visual representation of mqttt messages</p>
+<ul>
+<li>IMU/pitch</li>
+<li>IMU/roll</li>
+</ul>
+<h2 id="maue-add-reset-button">MAUE: Add reset button</h2>
+<p>First add the <strong>Button</strong> element in <code>activity_main.xml</code></p>
+<p>and then connect buttion click event with function To make click event work add <code>android:onClick</code> attribute to Declared Attributes to the Button element in your XML layout. The value for this attribute must be the name of the method you want to call in response to a click event. The Activity hosting the layout must then implement the corresponding method.</p>
+<h1 id="android-instant-apps---sample-code-collection">Android Instant Apps - Sample code collection</h1>
+<p>At <a href="https://github.com/android/app-bundle-samples/tree/master/InstantApps" class="uri">https://github.com/android/app-bundle-samples/tree/master/InstantApps</a> you find a collection of sample code which can be run from within Android Studio</p>
+<blockquote>
+<p>Select the <code>instant</code> feature module run configuration<br />
+Run the selected configuration</p>
+</blockquote>
 <!--radix_placeholder_article_footer-->
 <div class="article-footer">
   <p class="social_footer">
