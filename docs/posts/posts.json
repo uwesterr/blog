@@ -1,5 +1,26 @@
 [
   {
+    "path": "posts/2020-03-21-build-a-touch-free-disinfection-dispenser/",
+    "title": "Build a touch free disinfection dispenser ",
+    "description": "Build a disinfection dispenser which can be used without touching it",
+    "author": [
+      {
+        "name": "Uwe Sterr",
+        "url": "http://uwesterr.de"
+      }
+    ],
+    "date": "2020-03-21",
+    "categories": [
+      "disinfection dispenser",
+      "arduino",
+      "machine learning"
+    ],
+    "preview": "posts/2020-03-21-build-a-touch-free-disinfection-dispenser/images/arduinoWithUltrasonic.png",
+    "last_modified": "2020-03-21T13:57:08+01:00",
+    "preview_width": 660,
+    "preview_height": 517
+  },
+  {
     "path": "posts/2020-03-17-create-android-app-with-android-studio-and-kotlin/",
     "title": "Create Android App with Android Studio and Kotlin",
     "description": "Using Kotlin seems to be an up to date approach, so lets try it out",
