@@ -9,13 +9,13 @@
     <generator>Distill</generator>
     <lastBuildDate>Sat, 21 Mar 2020 00:00:00 +0000</lastBuildDate>
     <item>
-      <title>Build a touch free disinfection dispenser </title>
+      <title>Build a touch free disinfection dispenser Seb@Sterr </title>
       <dc:creator>Uwe Sterr</dc:creator>
       <link>http://uwesterr.de/posts/2020-03-21-build-a-touch-free-disinfection-dispenser</link>
-      <description>Build a disinfection dispenser which can be used without touching it</description>
+      <description>Build a disinfection dispenser which can be used without touching it. The valve is controlled by an Arduino with relay shield and an ultrasonic sensor.</description>
       <guid>http://uwesterr.de/posts/2020-03-21-build-a-touch-free-disinfection-dispenser</guid>
       <pubDate>Sat, 21 Mar 2020 00:00:00 +0000</pubDate>
-      <media:content url="http://uwesterr.de/posts/2020-03-21-build-a-touch-free-disinfection-dispenser/images/systemOverview.png" medium="image" type="image/png" width="1502" height="931"/>
+      <media:content url="http://uwesterr.de/posts/2020-03-21-build-a-touch-free-disinfection-dispenser/images/sebasterr.png" medium="image" type="image/png" width="896" height="1444"/>
     </item>
     <item>
       <title>Create Android App with Android Studio and Kotlin</title>
@@ -24,10 +24,10 @@
       <description>Using Kotlin seems to be an up to date approach, so lets try it out</description>
       <guid>http://uwesterr.de/posts/2020-03-17-create-android-app-with-android-studio-and-kotlin</guid>
       <pubDate>Tue, 17 Mar 2020 00:00:00 +0000</pubDate>
-      <media:content url="http://uwesterr.de/posts/2020-03-17-create-android-app-with-android-studio-and-kotlin/images/screenShotApp.png" medium="image" type="image/png" width="720" height="1280"/>
+      <media:content url="http://uwesterr.de/posts/2020-03-17-create-android-app-with-android-studio-and-kotlin/images/interactionSwCompoInApp.png" medium="image" type="image/png" width="1885" height="1018"/>
     </item>
     <item>
-      <title>Develop Android app to park a camper level</title>
+      <title>Develop Android app to park a camper level with MIT App Inventor</title>
       <dc:creator>Uwe Sterr</dc:creator>
       <link>http://uwesterr.de/posts/2020-03-11-develop-android-app-to-park-a-camper-level</link>
       <description>Describe all necessary steps to get the MPU6050 data via raspi and mqqt onto a android phone</description>

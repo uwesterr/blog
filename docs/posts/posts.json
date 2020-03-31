@@ -1,8 +1,8 @@
 [
   {
     "path": "posts/2020-03-21-build-a-touch-free-disinfection-dispenser/",
-    "title": "Build a touch free disinfection dispenser ",
-    "description": "Build a disinfection dispenser which can be used without touching it",
+    "title": "Build a touch free disinfection dispenser Seb@Sterr ",
+    "description": "Build a disinfection dispenser which can be used without touching it. The valve is controlled by an Arduino with relay shield and an ultrasonic sensor.",
     "author": [
       {
         "name": "Uwe Sterr",
@@ -15,10 +15,10 @@
       "arduino",
       "machine learning"
     ],
-    "preview": "posts/2020-03-21-build-a-touch-free-disinfection-dispenser/images/systemOverview.png",
-    "last_modified": "2020-03-22T10:27:49+01:00",
-    "preview_width": 1502,
-    "preview_height": 931
+    "preview": "posts/2020-03-21-build-a-touch-free-disinfection-dispenser/images/sebasterr.png",
+    "last_modified": "2020-03-31T09:49:28+02:00",
+    "preview_width": 896,
+    "preview_height": 1444
   },
   {
     "path": "posts/2020-03-17-create-android-app-with-android-studio-and-kotlin/",
@@ -36,14 +36,14 @@
       "android",
       "app"
     ],
-    "preview": "posts/2020-03-17-create-android-app-with-android-studio-and-kotlin/images/screenShotApp.png",
-    "last_modified": "2020-03-20T09:23:10+01:00",
-    "preview_width": 720,
-    "preview_height": 1280
+    "preview": "posts/2020-03-17-create-android-app-with-android-studio-and-kotlin/images/interactionSwCompoInApp.png",
+    "last_modified": "2020-03-22T17:43:35+01:00",
+    "preview_width": 1885,
+    "preview_height": 1018
   },
   {
     "path": "posts/2020-03-11-develop-android-app-to-park-a-camper-level/",
-    "title": "Develop Android app to park a camper level",
+    "title": "Develop Android app to park a camper level with MIT App Inventor",
     "description": "Describe all necessary steps to get the MPU6050 data via raspi and mqqt onto a android phone",
     "author": [
       {
@@ -58,7 +58,7 @@
       "android"
     ],
     "preview": "posts/2020-03-11-develop-android-app-to-park-a-camper-level/images/maueScheme.png",
-    "last_modified": "2020-03-17T12:55:07+01:00",
+    "last_modified": "2020-03-22T17:42:11+01:00",
     "preview_width": 2114,
     "preview_height": 997
   },
